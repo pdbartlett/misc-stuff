@@ -1,0 +1,27 @@
+!!!
+- title = current_page.data.title || "The Bartletts"
+- subtitle = current_page.data.subtitle || ""
+
+%html
+  %head
+    =partial :head, :locals => {title: title}
+  %body
+    #page{:align => "center"}
+      #header= partial :header, :locals => {title: title}
+      #content
+        #leftpanel
+          %br
+          =partial :news
+          %br
+          =partial :links
+          %br
+        #contenttext
+          %span.title_blue= title
+          %br
+          %span.subtitle_gray= subtitle
+          %br
+          %br
+          %p.body_text{align: "justify"}= yield
+      %br
+      %br
+      .footer= partial :footer

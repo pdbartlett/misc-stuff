@@ -11,6 +11,25 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
+.worksheet
 
 # Middleman
 build/*
+
+# OSX
+.DS_Store
+
+# Eclipse
+.cache
+.project
+.classpath
+*.prefs
+
+# ABC (careful of XHTML)
+*.midi
+*.xhtml
+
+# Misc.
+ews/*
+scratch/*
+*.pdf

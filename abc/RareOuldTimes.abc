@@ -1,0 +1,14 @@
+X:1
+T:Rare Ould Times
+C:Pete St. John
+M:C
+L:1/4
+K:C
+%%MIDI chordprog 33 % Acoustic bass
+%%MIDI program 111 % Fiddle
+"C" C E G G | "F" A2 "C" G2 | "Am" c d e>c | "F" A3 z/ c/ | "C" c<G G E |
+"F" F2 "C" G>G | "G" G G A<B | "G7" G3 z/ G/ | "C" c<d e c | "F" A2 "C" G>G |
+"Am" c<d e<c | "F" A3 c | "C" c>G G<E | "F" F<F "C" G>E |
+"G7" (D3 E/)D/ | "C" C4 | z "C" C/E/ G G | "F" A2 "C" G2 | z "Am" c/d/ e>c |
+"F" A3 c/c/ | "C" c<G G<E | "F" F/(F/ F2) "C" G/E/ | "G" (D2 (D/)E/) D | "C" C4 |]
+

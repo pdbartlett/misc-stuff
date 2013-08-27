@@ -1,0 +1,10 @@
+!!!
+- title = current_page.data.title || "Middleman minimal setup"
+
+%html
+  %head
+    =partial :head, :locals => { :title => title }
+  %body
+    %header= partial :header, :locals => { :title => title }
+    .contents= yield
+    %footer= partial :footer
