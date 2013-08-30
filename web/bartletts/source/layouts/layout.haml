@@ -10,18 +10,10 @@
       #header= partial :header, :locals => {title: title}
       #content
         #leftpanel
-          %br
           =partial :news
-          %br
           =partial :links
-          %br
         #contenttext
-          %span.title_blue= title
-          %br
-          %span.subtitle_gray= subtitle
-          %br
-          %br
-          %p.body_text{align: "justify"}= yield
-      %br
-      %br
+          .title_blue= title
+          .subtitle_gray= subtitle
+          .body_text= yield
       .footer= partial :footer
