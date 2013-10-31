@@ -1,0 +1,12 @@
+!!!
+- title = current_page.data.title || "It's just a game..."
+
+%html
+  %head
+    =partial :head, :locals => { :title => title }
+  %body
+    %header= partial :header, :locals => { :title => title }
+    .lhs= partial :lhs
+    .contents= yield
+    .rhs= partial :rhs
+    %footer= partial :footer
