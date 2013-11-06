@@ -1,9 +1,20 @@
 @charset "utf-8";
 
+$border_color: #161;
 $main_font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 body {
   font-family: $main_font;
+  border-width: 0 10em;
+  border-style: solid;
+  border-color: $border_color;
+  padding: 1em;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3em;
 }
 
 .copyright {

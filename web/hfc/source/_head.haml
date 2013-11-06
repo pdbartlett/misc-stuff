@@ -1,8 +1,6 @@
-- titleFont = "Tangerine"
-
 %meta{'charset' => 'utf-8'}/
 %title= title
 = stylesheet_link_tag "all"
-= stylesheet_link_tag "http://fonts.googleapis.com/css?family=#{titleFont}"
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=#{data.site.titleGoogleFont}"
 :css
-  h1 { font-family: #{titleFont} }
+  h1 { font-family: #{data.site.titleGoogleFont}, #{data.site.titleBackupFonts} }
