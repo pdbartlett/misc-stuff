@@ -1,1 +1,4 @@
-%h1= title
+- if content_for? :header_bar
+  =yield_content :header_bar
+- else
+  %h1= title
