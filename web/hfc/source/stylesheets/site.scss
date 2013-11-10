@@ -1,23 +1,54 @@
 @charset "utf-8";
 
-$border_color: #161;
+$border_color: #141;
+$box_color: #220;
 $main_font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 body {
   font-family: $main_font;
-  border-width: 0 10em;
-  border-style: solid;
-  border-color: $border_color;
+  border: {
+    width: 0 12em;
+    style: solid;
+    color: $border_color;
+  } 
   padding: 1em;
 }
 
 h1 {
   margin-top: 0;
-  text-align: center;
   font-size: 3em;
+}
+
+header, .contents, footer {
+  text-align: center;
 }
 
 footer {
   font-size: smaller;
-  text-align: center;
+}
+
+.page_section {
+  margin: 5px;
+}
+
+.boxed {
+  display: inline-block;
+  border: 2px solid $box_color;
+  padding: 3px;
+}
+
+hr.partial {
+  width: 75%;
+}
+
+#site_links a {
+  width: 75%;
+  &:link {
+    color: #777;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #11C;
+    text-decoration: underline;
+  }
 }

@@ -1,4 +1,19 @@
-- content_for :header_bar do
-  =s_img "welBanner.gif"
+-content_for :header_bar do
+  =s_link_block "welcome/contact.htm" do
+    =s_img "welBanner.gif"
 
-TO DO...
+.page_section
+  %span.boxed
+    =s_img "welNewGroup.jpg"
+    =s_img "welNewGrouptxt.gif"
+  =s_img "welMassTimes.gif"
+  %span.boxed= s_img "welWexhamHospTxt.gif"
+
+.page_section= s_img "welHomeCommunion.gif"
+
+%hr.partial
+.page_section
+  %span#site_links
+    -@links = data.site.site_links.map { |text, link| s_link text, link }
+    =@links.join " | "
+%hr.partial
