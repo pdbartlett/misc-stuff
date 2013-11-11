@@ -2,6 +2,8 @@
 
 $border_color: #141;
 $box_color: #220;
+$partial_width: 80%;
+
 $main_font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 body {
@@ -28,6 +30,7 @@ footer {
 }
 
 .page_section {
+  display: inline-block;
   margin: 5px;
 }
 
@@ -38,17 +41,19 @@ footer {
 }
 
 hr.partial {
-  width: 75%;
+  width: $partial_width;
 }
 
-#site_links a {
-  width: 75%;
-  &:link {
-    color: #777;
-    text-decoration: none;
-  }
-  &:hover {
-    color: #11C;
-    text-decoration: underline;
+#site_links {
+  width: $partial_width;
+  a {
+    &:link, &:visited {
+      color: #777;
+      text-decoration: none;
+    }
+    &:hover {
+      color: #11C;
+      text-decoration: underline;
+    }
   }
 }
