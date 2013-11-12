@@ -1,6 +1,10 @@
 module SiteHelpers
   def s_img(fragment)
-    image_tag fragment
+    if data.site.image_root.empty?
+      image_tag fragment
+    else
+      image_tag data.site.image_root + fragment
+    end
   end
   def s_link(link_text, fragment)
     if fragment.start_with? "http"

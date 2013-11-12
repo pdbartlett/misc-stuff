@@ -3,6 +3,7 @@ title_google_font: "Tangerine"
 title_backup_fonts: "Palatino Linotype, Book Antiqua, Palatino, serif"
 
 link_root: "http://holyfamily.co.uk/"
+image_root: "http://holyfamily.co.uk/welcome/"
 
 site_links:
   "Past events": "archives/archive.htm"
