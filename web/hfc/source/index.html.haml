@@ -3,18 +3,26 @@ header:
   - type: image
     src: welBanner.gif
     link: welcome/contact.htm
+sections:
+  topinfo:
+    - type: partial
+      name: topinfo
+  home_communion:
+    - type: image
+      src: welHomeCommunion.gif
+  sitelinks:
+    - type: partial
+      name: sitelinks
+  holy_souls:
+    - type: image
+      src: welHlySouls.gif
 ---
 
 -content_for :header_bar do
   =s_section current_page.data.header
-
-.page_section= partial :topinfo
-
-.page_section= s_img "welHomeCommunion.gif"
-
-.page_section= partial :sitelinks
-
-.page_section= s_img "welHlySouls.gif"
+  
+-sections = current_page.data.sections.values.each do |section|
+  .page_section= s_section section
 
 .page_section
   %span.boxed

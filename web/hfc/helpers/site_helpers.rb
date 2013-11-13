@@ -19,7 +19,9 @@ module SiteHelpers
   end
   def s_section(elements)
     rendered = elements.map do |element|
-      if element.type == "image"
+      if element.type == "partial"
+        partial element.name
+      elsif element.type == "image"
         if element.link.nil?
           s_img element.src
         else
@@ -27,6 +29,8 @@ module SiteHelpers
             s_img element.src
           end
         end
+      else
+        ""
       end
     end
     rendered.join ""
