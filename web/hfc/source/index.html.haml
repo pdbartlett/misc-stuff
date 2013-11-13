@@ -16,6 +16,115 @@ sections:
   holy_souls:
     - type: image
       src: welHlySouls.gif
+  school_cake:
+    - type: image
+      src: welschool.gif
+      style: boxed
+    - type: image
+      src: welcake.jpg
+      style: boxed
+  luke_vmm:
+    - type: image
+      src: welLuke.gif
+    - type: image
+      src: welVMM.gif
+      style: boxed
+  reconciliation_banner:
+    - type: image
+      src: welReconc.gif
+    - type: image
+      src: welChildTxt.gif
+  all_saints:
+    - type: separator
+    - type: heading
+      text: Friday, 1st was the Feast of All The Saints and a Holy Day of Obligation.
+    - type: image
+      src: welAllSaints.gif
+      style: boxed
+  soiree:
+    - type: image
+      src: wello13.jpg
+      link: features/lo13.htm
+  school_notices:
+    - type: image
+      src: welSchoolNotes.gif
+  st_josephs:
+    - type: image
+      src: welStJose.gif
+  toddlers_outdoor_mass:
+    - type: image
+      src: weltoddler.gif
+      style: boxed
+    - type: image
+      src: weloam13.jpg
+      link: features/odm13/
+      style: boxed
+  hall_hire:
+    - type: image
+      src: welHire.gif
+      link: holyfamily1/social.htm
+  rcia_new_tif:
+    - type: image
+      src: welRcia.gif
+    - type: image
+      src: wel226new.gif
+      style: boxed
+    - type: image
+      src: welTIF1.gif
+      link: welcome/tif.htm
+  guestbook_humbly:
+    - type: image
+      src: welgbAni.GIF
+    - type: image
+      src: WELhumbly.gif
+      link: holyfamily1/humbly.htm
+  social:
+    - type: image
+      src: welSocialAniX.GIF
+    - type: image
+      src: welSocial.gif
+      link: holyfamily1/social.htm
+  kids_books_legion:
+    - type: image
+      src: welChildBooks.gif
+    - type: image
+      src: welLegion.gif
+      style: boxed
+  twitter:
+    - type: partial
+      name: twitter
+  reminder:
+    - type: separator
+    - type: heading
+      text: "Organisers: if any event has to be cancelled, please let us know so that the space can be reused for more information."
+    - type: separator
+  line_dancing:
+    - type: image
+      src: wellineDanceBanner.gif
+  1st_class_oconnor:
+    - type: image
+      src: welMaths.gif
+      link: "http://www.firstclasslearning.co.uk/"
+    - type: image
+      src: weloConnor.gif
+      link: "http://oconnoririshdancing.co.uk/"
+  coffee_dementia:
+    - type: image
+      src: WELcoffee_cup.gif
+    - type: image
+      src: welDementia.gif
+      link: "http://www.dementiauk.org/"
+  bowls:
+    - type: image
+      src: welbowls.gif
+  vine:
+    - type: image
+      src: WELvine.gif
+      link: "http://www.northamptondiocese.org/NEWSANDEVENTS/TheVineOnline/tabid/130/Default.aspx"
+  perfectly_groomed:
+    - type: image
+      src: WELpgbanner.gif
+      link: "http://www.perfectly-groomed.co.uk/"
 ---
 
 -content_for :header_bar do
@@ -23,94 +132,3 @@ sections:
   
 -sections = current_page.data.sections.values.each do |section|
   .page_section= s_section section
-
-.page_section
-  %span.boxed
-    =s_link_block "features/schoolChoice.htm" do
-      =s_img "welschool.gif"
-  %span.boxed
-    =s_link_block "features/cakeoct13/" do
-      =s_img "welcake.jpg"
-
-.page_section
-  =s_img "welLuke.gif"
-  %span.boxed= s_img "welVMM.gif"
-
-.page_section= s_img "welReconc.gif"
-.page_section= s_img "welChildTxt.gif"
-
-.page_section
-  %hr.partial
-  %h2 Friday, 1st was the Feast of All The Saints and a Holy Day of Obligation.
-  %span.boxed= s_img "welAllSaints.gif"
-
-.page_section
-  =s_link_block "features/lo13.htm" do
-    =s_img "wello13.jpg"
-
-.page_section= s_img "welSchoolNotes.gif"
-
-.page_section= s_img "welStJose.gif"
-
-.page_section
-  %span.boxed= s_img "weltoddler.gif"
-  %span.boxed
-    =s_link_block "features/odm13/" do
-      =s_img "weloam13.jpg"
-
-.page_section
-  =s_link_block "holyfamily1/social.htm" do
-    =s_img "welHire.gif"
-
-.page_section
-  =s_img "welRcia.gif"
-  %span.boxed= s_img "wel226new.gif"
-  =s_link_block "welcome/tif.htm" do
-    =s_img "welTIF1.gif"
-
-.page_section
-  =s_img "welgbAni.GIF"
-  =s_link_block "holyfamily1/humbly.htm" do
-    =s_img "WELhumbly.gif"
-
-.page_section
-  =s_img "welSocialAniX.GIF"
-  =s_link_block "holyfamily1/social.htm" do
-    =s_img "welSocial.gif"
-
-.page_section
-  =s_img "welChildBooks.gif"
-  %span.boxed= s_img "welLegion.gif"
-
-=partial :twitter
-
-%hr
-%h2
-  Organisers: if any event has to be cancelled, please let us know so that the space can be
-  reused for more information.
-%hr
-
-.page_section= s_img "wellineDanceBanner.gif"
-
-.page_section
-  =s_link_block "http://www.firstclasslearning.co.uk/" do
-    %span<>= s_img "welMaths.gif"
-  =s_link_block "http://www.oconnoririshdancing.co.uk/" do
-    %span<>= s_img "weloConnor.gif"
-
-.page_section
-  =s_img "WELcoffee_cup.gif"
-  %span.boxed
-    =s_link_block "http://www.dementiauk.org/" do
-      =s_img "welDementia.gif"
-
-.page_section= s_img "welbowls.gif"
-
-.page_section
-  =s_link_block "http://www.northamptondiocese.org/NEWSANDEVENTS/TheVineOnline/tabid/130/Default.aspx" do
-    =s_img "WELvine.gif"
-
-
-.page_section
-  =s_link_block "http://www.perfectly-groomed.co.uk/" do
-    =s_img "WELpgbanner.gif"

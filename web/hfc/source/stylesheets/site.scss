@@ -2,7 +2,6 @@
 
 $border_color: #141;
 $box_color: #220;
-$partial_width: 80%;
 
 $main_font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
@@ -35,8 +34,10 @@ footer {
 }
 
 .page_section {
-  display: inline-block;
   margin: 5px;
+  span {
+    margin: 2px;
+  }
 }
 
 .boxed {
@@ -45,12 +46,7 @@ footer {
   padding: 3px;
 }
 
-hr.partial {
-  width: $partial_width;
-}
-
 #site_links {
-  width: $partial_width;
   a {
     &:link, &:visited {
       color: #777;

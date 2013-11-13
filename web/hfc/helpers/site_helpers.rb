@@ -19,18 +19,29 @@ module SiteHelpers
   end
   def s_section(elements)
     rendered = elements.map do |element|
-      if element.type == "partial"
-        partial element.name
-      elsif element.type == "image"
-        if element.link.nil?
-          s_img element.src
-        else
-          s_link_block element.link do
-            s_img element.src
-          end
-        end
+      if element.style.nil? or element.style.empty?
+        span_attrs = {}
       else
-        ""
+        span_attrs = { "class" => element.style }
+      end
+      content_tag :span, span_attrs do
+        if element.type == "partial"
+          partial element.name
+        elsif element.type == "separator"
+          tag :hr
+        elsif element.type == "heading"
+          content_tag :h2, element.text
+        elsif element.type == "image"
+          if element.link.nil?
+            s_img element.src
+          else
+            s_link_block element.link do
+              s_img element.src
+            end
+          end
+        else
+          ""
+        end
       end
     end
     rendered.join ""
