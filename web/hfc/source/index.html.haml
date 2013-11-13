@@ -1,22 +1,18 @@
--content_for :header_bar do
-  =s_link_block "welcome/contact.htm" do
-    =s_img "welBanner.gif"
+---
+header:
+  - type: image
+    src: welBanner.gif
+    link: welcome/contact.htm
+---
 
-.page_section
-  =s_link_block "welcome/contact.htm" do
-    %span.boxed<>
-      %span<>= s_img "welNewGroup.jpg"
-      %span<>= s_img "welNewGrouptxt.gif"
-  =s_img "welMassTimes.gif"
-  %span.boxed= s_img "welWexhamHospTxt.gif"
+-content_for :header_bar do
+  =s_section current_page.data.header
+
+.page_section= partial :topinfo
 
 .page_section= s_img "welHomeCommunion.gif"
 
-%hr.partial
-.page_section#site_links
-  -@links = data.site.site_links.map { |text, link| s_link text, link }
-  =@links.join " | "
-%hr.partial
+.page_section= partial :sitelinks
 
 .page_section= s_img "welHlySouls.gif"
 
@@ -35,9 +31,9 @@
 .page_section= s_img "welReconc.gif"
 .page_section= s_img "welChildTxt.gif"
 
-%hr.partial
 .page_section
-  %h2 Friday, 1st was the Feast of all The Saints and a Holy Day of Obligation.
+  %hr.partial
+  %h2 Friday, 1st was the Feast of All The Saints and a Holy Day of Obligation.
   %span.boxed= s_img "welAllSaints.gif"
 
 .page_section
@@ -82,7 +78,7 @@
 
 %hr
 %h2
-  Organisers: If any event has to be cancelled, please let us know so that the space can be
+  Organisers: if any event has to be cancelled, please let us know so that the space can be
   reused for more information.
 %hr
 
