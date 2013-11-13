@@ -25,26 +25,32 @@ module SiteHelpers
         span_attrs = { "class" => element.style }
       end
       content_tag :span, span_attrs do
-        if element.type == "partial"
-          partial element.name
-        elsif element.type == "separator"
-          tag :hr
-        elsif element.type == "heading"
-          content_tag :h2, element.text
-        elsif element.type == "image"
-          if element.link.nil?
-            s_img element.src
+        case element.type
+          when "partial"
+            partial element.name
+          when "separator"
+            tag :hr
+          when "heading"
+            content_tag :h2, element.text
+          when "image"
+            _handle_image element.src, element.link
+          when "image2"
+            _handle_image(element.src1, element.link) + _handle_image(element.src2, element.link)
           else
-            s_link_block element.link do
-              s_img element.src
-            end
-          end
-        else
-          ""
+            raise "Unsupported element type: " + element.type
         end
       end
     end
     rendered.join ""
+  end
+  def _handle_image(src, link)
+    if link.nil?
+      s_img src
+    else
+      s_link_block link do
+        s_img src
+      end
+    end
   end
 end
     
