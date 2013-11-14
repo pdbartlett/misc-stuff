@@ -5,7 +5,7 @@
   %head
     =partial :head, :locals => { :title => title }
   %body
-    %header= partial :header, :locals => { :title => title }
+    %header= partial :header
     .lhs= partial :lhs
     .contents= yield
     .rhs= partial :rhs

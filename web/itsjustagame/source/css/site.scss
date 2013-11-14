@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+$main_font: Arial, Helvetica, sans-serif;
+$content_border: 1px solid silver;
+
+@mixin main_panel {
+  padding: 0.5em;
+  float: left;
+}
+
+body {
+  font-family: $main_font;
+}
+
+header {
+  padding: 2em;
+  border-bottom: $content_border;
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  clear: both;
+  border-top: $content_border;
+  padding: 0.5em;
+  font-size: smaller;
+  text-align: center;
+}
+
+.lhs {
+  @include main_panel;
+  width: 15%;
+}
+
+.contents {
+  @include main_panel;
+  width: 70%;
+  border-left: $content_border;
+  border-right: $content_border;
+}
+
+.rhs {
+  @include main_panel;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+p {
+  margin-top: 1em;
+  &:first-child {
+    margin-top: 0;
+  }
+}
