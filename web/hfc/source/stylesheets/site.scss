@@ -30,7 +30,7 @@ header, .contents, footer {
 }
 
 footer {
-  font-size: smaller;
+  font-size: 0.8em;
 }
 
 .page_section {
@@ -46,15 +46,13 @@ footer {
   padding: 3px;
 }
 
-#site_links {
-  a {
-    &:link, &:visited {
-      color: #777;
-      text-decoration: none;
-    }
-    &:hover {
-      color: #11C;
-      text-decoration: underline;
-    }
+#site_links a {
+  &:link, &:visited {
+    color: #777;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #11C;
+    text-decoration: underline;
   }
 }
