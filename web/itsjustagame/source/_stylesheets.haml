@@ -18,10 +18,12 @@
 
   header {
     padding: 2em;
-    .title {
+    .title a {
+      color: #fff;
       font-family: $led;
       font-size: 5em;
       text-transform: lowercase;
+      text-decoration: none;
     }
     .tag_line {
       font-family: $tagline;
@@ -36,12 +38,18 @@
   }
 
   .lhs, .rhs, footer {
-    color: #191;
-    > ul >li {
+    li {
+      color: #191;
       font-family: $led;
     }
-    > ul > li > ul > li {
+    a {
       font-family: $main-font;
+      color: #999;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
 

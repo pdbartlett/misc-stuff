@@ -1,5 +1,6 @@
 name: It's just a game...
 tag_line: Confessions of a casual gamer
+
 webfonts:
   - family: Snippet
     varname: tagline
@@ -8,4 +9,3 @@ webfonts:
     weight: 700
     varname: led
     backups: sans-serif
-    

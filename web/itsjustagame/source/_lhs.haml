@@ -1,17 +1,7 @@
 %ul
  %li
-  One
+  Sections
   %ul
-   %li 1a
-   %li 1b
- %li
-  Two
-  %ul
-   %li 2a
-   %li 2b
- %li Three
- %li Four
- %li Five
- %li Six
- %li Seven
+   -sections.each do |s|
+    %li= link_to s.metadata[:page]["title"], "/" + s.request_path
  
