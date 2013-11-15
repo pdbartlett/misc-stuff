@@ -37,7 +37,7 @@
     padding: 1em;
   }
 
-  .lhs, .rhs, footer {
+  .lhs, .rhs {
     li {
       color: #191;
       font-family: $led;
@@ -58,6 +58,7 @@
     padding: 0.5em;
     font-size: 0.7em;
     text-align: center;
+    color: #191;
   }
 
   .lhs {
@@ -67,9 +68,18 @@
   .contents {
     width: 75%;
     background: #fff;
-    background-image: radial-gradient(rgba($bgr, $bgg, $bgb, 0) 60%, rgba($bgr, $bgg, $bgb, 0.1));
-    color: #000;
+    background-image: radial-gradient(rgba($bgr, $bgg, $bgb, 0) 60%, rgba($bgr, $bgg, $bgb, 0.25));
+    color: #111;
     border-radius: 25px;
+    h1 {
+      text-align: center;
+      font-family: $led;
+      font-size: 2em;
+      color: #000;
+    }
+    h2 {
+      margin-top: 1.5em;
+    }
   }
 
   * {
