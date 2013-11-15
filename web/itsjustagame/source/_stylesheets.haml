@@ -1,0 +1,80 @@
+=stylesheet_link_tag "http://fonts.googleapis.com/css?family=" + webfont_families
+
+:scss
+  @charset "utf-8";
+  
+  $main_font: Arial, Helvetica, sans-serif;
+  $bgr: 0;
+  $bgg: 0;
+  $bgb: 0;
+  
+  #{webfont_sass_vars}
+
+  body {
+    font-family: $main_font;
+    background: rgb($bgr, $bgg, $bgb);
+    color: #fff;
+  }
+
+  header {
+    padding: 2em;
+    .title {
+      font-family: $led;
+      font-size: 5em;
+      text-transform: lowercase;
+    }
+    .tag_line {
+      font-family: $tagline;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+  }
+
+  .lhs, .rhs, .contents {
+    float: left;
+    padding: 1em;
+  }
+
+  .lhs, .rhs, footer {
+    color: #191;
+    > ul >li {
+      font-family: $led;
+    }
+    > ul > li > ul > li {
+      font-family: $main-font;
+    }
+  }
+
+  footer {
+    clear: both;
+    padding: 0.5em;
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .lhs {
+    width: 10%;
+  }
+
+  .contents {
+    width: 75%;
+    background: #fff;
+    background-image: radial-gradient(rgba($bgr, $bgg, $bgb, 0) 60%, rgba($bgr, $bgg, $bgb, 0.1));
+    color: #000;
+    border-radius: 25px;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 1.5em;
+  }
+
+  p {
+    margin-top: 1em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
