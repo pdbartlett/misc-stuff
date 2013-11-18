@@ -3,5 +3,4 @@
   Sections
   %ul
    -sections.each do |s|
-    %li= link_to s.metadata[:page]["title"], "/" + s.request_path
- 
+    %li= link_to s.data["title"], s.url
