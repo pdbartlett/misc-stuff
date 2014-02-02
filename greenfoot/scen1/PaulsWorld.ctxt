@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PaulsWorld()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ PaulsWorld.\n
+comment1.params=isSnake
+comment1.target=void\ addOther(boolean)
+comment2.params=
+comment2.target=Paul\ getPaul()
+numComments=3
