@@ -1,0 +1,15 @@
+.bannerad#placeholder
+
+:javascript
+ if (chosen == 0) {
+   var elem = document.getElementById("placeholder");
+   if (elem) {
+     var ad = document.createElement("ins");
+     ad.setAttribute("class", "adsbygoogle");
+     ad.setAttribute("style", "display:inline-block;width:728px;height:90px");
+     ad.setAttribute("data-ad-client", "ca-pub-1351122798432528");
+     ad.setAttribute("data-ad-slot", "8631334465");
+     elem.appendChild(ad);
+     (adsbygoogle = window.adsbygoogle || []).push({});
+   }
+ }

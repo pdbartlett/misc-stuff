@@ -1,0 +1,15 @@
+%script(src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' async)
+%script(src = '//www.google-analytics.com/cx/api.js?experiment=B5dyH7ShSXq6F6bpq_l4rA')
+
+:javascript
+ (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+ var chosen = cxApi.chooseVariation();
+ 
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-44825232-1']);
+ _gaq.push(['_trackPageview']);
