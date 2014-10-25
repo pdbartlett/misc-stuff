@@ -23,5 +23,5 @@ V:B clef=bass
 [V:T]      C C/D/ E E   | G/F/E/D/ D2   | C/4D/4C/4D/4 C/D/E/D/E/D/ | F A, C2        |
 [V:B]      C,G,E,C,     | G,E,G,2       | G, G,3                    | [F,A,C]4       |
 % Coda
-[V:T]      C/4D/4C/4D/4 C/D/E/D/E/D/ | F2 A,2 | C4 ||
-[V:B]      G, G,3 | ([F,A,C]4 | [F,A,C]4) ||
+[V:T]      C/4D/4C/4D/4 C/D/E/D/E/D/ | F2 A,2    | C4        ||
+[V:B]      G, G,3                    | ([F,A,C]4 | [F,A,C]4) ||
