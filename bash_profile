@@ -1,3 +1,5 @@
+# .bash(rc|_profile) extract for common setup.
+
 # Get aliases to a known, clean state before we start
 unalias -a
 
