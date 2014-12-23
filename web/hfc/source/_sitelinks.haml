@@ -1,0 +1,5 @@
+%hr.partial
+%span#site_links
+  -links = data.site.site_links.map { |text, link| s_link text, link }
+  =links.join " | "
+%hr.partial

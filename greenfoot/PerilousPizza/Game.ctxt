@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Game.\n\ \n
+comment1.params=increment
+comment1.target=void\ updateScore(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ addTargets()
+comment4.params=
+comment4.target=void\ addBaddiesIfNeeded()
+comment5.params=a
+comment5.target=void\ addRandomly(greenfoot.Actor)
+comment6.params=klass
+comment6.target=java.util.List\ getAll(java.lang.Class)
+numComments=7

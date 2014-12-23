@@ -1,0 +1,27 @@
+X:1
+T:Rare Ould Times
+C:Pete St. John
+include(`chords.m4')
+M:4/4
+L:1/4
+K:C
+V:T clef=treble
+V:B clef=bass
+% 1
+[V:T] C E G G    | A2 G2          | c d e>c       | A3 z/ c/ |
+[V:B] _C(4)      | _F(2) _C(2)    | _Am(4)        | _F(4)    |
+% 5
+[V:T] c<G G E    | F2 G>G         | G G A<B       | G3 z/ G/ |
+[V:B] _C(4)      | _F(2) _C(2)    | _G(4)         | _G7(4)   |
+% 9
+[V:T] c<d e c    | A2 G>G         | c<d e<c       | A3 c     |
+[V:B] _C(4)      | _F(2) _C(2)    | _Am(4)        | _F(4)    |
+% 13
+[V:T] c>G G<E    | F<F G>E        | (D3 E/)D/     | C4       |
+[V:B] _C(4)      | _F(2) _C(2)    | _G7(4)        | _C(4)    |
+% 17
+[V:T] z C/E/ G G | A2 G2          | z c/d/ e>c    | A3 c/c/  |
+[V:B] _C(4)      | _F(2) _C(2)    | z _Am(3)      | _F(4)    |
+% 21
+[V:T] c<G G<E    | F/(F/ F2) G/E/ | (D2 (D/)E/) D | C4       |]
+[V:B] _C(4)      | _F(2) _C(2)    | _G(4)         | _C(4)    |]

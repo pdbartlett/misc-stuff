@@ -1,0 +1,10 @@
+!!!
+- title = current_page.data.title || data.site.default_title
+%html
+  %head= partial :head, :locals => { :title => title }
+  %body
+    %header= partial :header, :locals => { :title => title }
+    %hr
+    .contents= yield
+    %hr
+    %footer= partial :footer

@@ -1,0 +1,20 @@
+X:1
+T:Awesome Blue Crocodile
+C:Sophie Bartlett
+M:4/4
+L:1/4
+K:C
+V:T clef=treble
+V:B clef=bass
+% 1
+[V:T] C C E G     | C E G2    | G G B d     | B B G2    |
+[V:B] [C,E,G,]4   | [C,E,G,]4 | [G,B,D]4    | [G,B,D]4  |
+% 5
+[V:T] C C E G     | C E G2    | F A c c     | c2 A2     |
+[V:B] [C,E,G,]4   | [C,E,G,]4 | [F,A,C]4    | [F,A,C]4  |
+% 9
+[V:T] A/c/A/c/ e2 | A c e2    | G/B/G/B/ d2 | G B d2    |
+[V:B] [A,CE]4     | [A,CE]4   | [G,B,D]4    | [G,B,D]4  |
+% 13
+[V:T] C C E G     | C E G2    | B d B G     | d/B/ G2 G ||
+[V:B] [C,E,G,]4   | [C,E,G,]4 | [G,B,D]4    | [G,B,D]4  ||

@@ -1,0 +1,6 @@
+%meta{'charset' => 'utf-8'}/
+%title= title
+= stylesheet_link_tag "all"
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=#{data.site.title_google_font}"
+:css
+  h1 { font-family: #{data.site.title_google_font}, #{data.site.title_backup_fonts} }

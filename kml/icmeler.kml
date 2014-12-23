@@ -1,0 +1,4724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Around Icmeler</name>
+  <description><![CDATA[Miray hote]]></description>
+  <Style id="style135">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/hospitals.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style296">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/hospitals.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style74">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/hospitals.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style102">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style233">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/hospitals.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style268">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/info.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style170">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style222">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style67">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style139">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style76">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style110">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style240">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style117">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style155">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style174">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style92">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style161">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style98">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style41">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style190">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style44">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style95">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style189">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style65">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style162">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style207">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style145">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style172">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style107">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style53">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style178">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style285">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style267">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style229">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style36">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style273">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style208">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style81">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style87">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style293">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style77">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style290">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style254">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style45">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style277">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style312">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style261">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style218">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style231">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style130">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style191">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style227">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style280">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style288">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style154">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style271">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style269">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style149">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style199">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style286">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style141">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style71">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style247">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style239">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style79">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style236">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style80">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style192">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style59">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style275">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style85">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style265">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style256">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style219">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style167">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style52">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style203">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style78">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style250">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style283">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style111">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style205">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style48">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style121">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style37">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style186">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style124">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style258">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style232">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style237">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style105">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style281">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style272">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style249">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style295">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style151">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style307">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style108">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style284">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style266">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style120">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style101">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style55">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style253">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style104">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style128">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style304">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style103">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style63">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style88">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style94">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style274">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style220">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style313">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style226">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style142">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style242">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style136">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style112">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style309">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style61">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style64">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style302">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style116">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style82">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style255">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style195">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style93">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style132">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style113">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style213">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style150">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style245">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style263">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style68">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style282">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/bar.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style57">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/dollar.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style182">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/dollar.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style243">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/bus.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style246">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/bus.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style66">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/bus.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style223">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/cabs.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style238">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/cabs.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style164">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/cabs.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style46">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/cabs.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style262">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style133">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style83">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style270">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style90">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style118">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style206">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style60">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/convienancestore.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/toilets.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style125">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/toilets.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style127">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style158">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style276">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style187">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/ski.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style54">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style143">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style179">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style248">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style230">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style163">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style169">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style306">
+    <IconStyle>
+      <Icon>
+        <href></href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style84">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style62">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style260">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style298">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style148">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style301">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style279">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style70">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style171">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style308">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style297">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style204">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style224">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style201">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style100">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style214">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style173">
+    <IconStyle>
+      <Icon>
+        <href></href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style134">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style137">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style97">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style198">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style180">
+    <IconStyle>
+      <Icon>
+        <href></href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style217">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style153">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style159">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style129">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style311">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style75">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style184">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style40">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style58">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style72">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style140">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style241">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style109">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style305">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style86">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style215">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style234">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style89">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style73">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style303">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style156">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style91">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style299">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style212">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style183">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style289">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style160">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style292">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style196">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style114">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style291">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style50">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style176">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style200">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style152">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style39">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style168">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style49">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style264">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style202">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style209">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style99">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style294">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style287">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style216">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style210">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style138">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style147">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style166">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style177">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style146">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style235">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style157">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style131">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style221">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style123">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style119">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style194">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style175">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style259">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style225">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style251">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/volcano.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style228">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style244">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style122">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style310">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style165">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/ylw-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style300">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style38">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style188">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style69">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style252">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style42">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style43">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style185">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style56">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style96">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style193">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style211">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style115">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style47">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style257">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style144">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style126">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style181">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style278">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style197">
+    <LineStyle>
+      <color>73FF0000</color>
+      <width>5</width>
+    </LineStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style51">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style106">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Hospital-Clinic</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style135</styleUrl>
+    <Point>
+      <coordinates>28.225573,36.802071,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pharmacy</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style296</styleUrl>
+    <Point>
+      <coordinates>28.220583,36.800694,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pharmacy </name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style74</styleUrl>
+    <Point>
+      <coordinates>28.225100,36.801586,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Amigos Paradise</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style102</styleUrl>
+    <Point>
+      <coordinates>28.232815,36.802917,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pharmacy</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style233</styleUrl>
+    <Point>
+      <coordinates>28.229755,36.800079,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ICR Office</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style268</styleUrl>
+    <Point>
+      <coordinates>28.231789,36.801170,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alin&#39;s Grill Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style170</styleUrl>
+    <Point>
+      <coordinates>28.226280,36.801575,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Apollon restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style222</styleUrl>
+    <Point>
+      <coordinates>28.235571,36.799862,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name> 3 (4) Bells</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style67</styleUrl>
+    <Point>
+      <coordinates>28.221109,36.786381,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bistro Med</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style139</styleUrl>
+    <Point>
+      <coordinates>28.233683,36.799290,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blondies</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style76</styleUrl>
+    <Point>
+      <coordinates>28.231747,36.802151,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bonjour Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style110</styleUrl>
+    <Point>
+      <coordinates>28.230921,36.801392,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cactus bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style240</styleUrl>
+    <Point>
+      <coordinates>28.230062,36.801086,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Del Mar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>28.243103,36.827698,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chill Out</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style117</styleUrl>
+    <Point>
+      <coordinates>28.233587,36.800747,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Savas</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style155</styleUrl>
+    <Point>
+      <coordinates>28.234896,36.801098,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Vela</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style174</styleUrl>
+    <Point>
+      <coordinates>28.228544,36.799889,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Champagne Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>28.232750,36.799313,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Champion Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style92</styleUrl>
+    <Point>
+      <coordinates>28.232454,36.800167,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Charlie&#39;s Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style161</styleUrl>
+    <Point>
+      <coordinates>28.227442,36.801193,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Coco Beach</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style98</styleUrl>
+    <Point>
+      <coordinates>28.233688,36.802811,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cupids</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>28.232428,36.801834,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Deja Vu</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style190</styleUrl>
+    <Point>
+      <coordinates>28.223351,36.799225,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Deniz Kapisi </name>
+    <description><![CDATA[<div dir="ltr">36° 48' 0.58", +28° 14' 12.57</div>]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>28.237057,36.800144,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Diva Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style95</styleUrl>
+    <Point>
+      <coordinates>28.229927,36.802292,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Don Corleone&#39;s</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style189</styleUrl>
+    <Point>
+      <coordinates>28.232632,36.802101,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dream3Bells</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style65</styleUrl>
+    <Point>
+      <coordinates>28.215466,36.787361,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dream Friends</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>28.232498,36.799278,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Friends Bar/.......................</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style162</styleUrl>
+    <Point>
+      <coordinates>28.230316,36.802620,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Eddies bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style207</styleUrl>
+    <Point>
+      <coordinates>28.230057,36.803204,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Elvis Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style145</styleUrl>
+    <Point>
+      <coordinates>28.232321,36.799217,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Erdem Cafe</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style172</styleUrl>
+    <Point>
+      <coordinates>28.233555,36.802937,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Florida Bar/Resturant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style107</styleUrl>
+    <Point>
+      <coordinates>28.228168,36.802147,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Friends Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style53</styleUrl>
+    <Point>
+      <coordinates>28.231026,36.800648,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Golden Moon Restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style178</styleUrl>
+    <Point>
+      <coordinates>28.230228,36.801247,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Harmony</name>
+    <description><![CDATA[<div dir="ltr">36° 47' 59.93", +28° 14' 13.42</div>]]></description>
+    <styleUrl>#style285</styleUrl>
+    <Point>
+      <coordinates>28.237309,36.800060,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Harrys Steakhouse</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style267</styleUrl>
+    <Point>
+      <coordinates>28.232090,36.801884,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hob Nobs Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>28.236902,36.801125,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Home Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style229</styleUrl>
+    <Point>
+      <coordinates>28.232868,36.797920,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ida lounge ZaZa</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>28.230791,36.801273,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Jasmin Bar/Restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>28.228704,36.799938,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kerem Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style273</styleUrl>
+    <Point>
+      <coordinates>28.230761,36.803448,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Korsan Canary Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style208</styleUrl>
+    <Point>
+      <coordinates>28.230181,36.802959,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Liberty Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style81</styleUrl>
+    <Point>
+      <coordinates>28.237642,36.799843,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lighthouse</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style87</styleUrl>
+    <Point>
+      <coordinates>28.230646,36.801140,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Linekers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style293</styleUrl>
+    <Point>
+      <coordinates>28.231642,36.802135,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Maestro Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style77</styleUrl>
+    <Point>
+      <coordinates>28.233318,36.802422,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Love Boat</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style290</styleUrl>
+    <Point>
+      <coordinates>28.230188,36.802498,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marios restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style254</styleUrl>
+    <Point>
+      <coordinates>28.236403,36.800110,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Majestic restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>28.256321,36.826771,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Masala</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>28.226118,36.800137,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mitos bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style277</styleUrl>
+    <Point>
+      <coordinates>28.230415,36.803150,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Moonlight</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style312</styleUrl>
+    <Point>
+      <coordinates>28.245249,36.797874,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Nazzer Cafe</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style261</styleUrl>
+    <Point>
+      <coordinates>28.228491,36.805710,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>New Bamboo</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style218</styleUrl>
+    <Point>
+      <coordinates>28.231300,36.805420,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paris Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style231</styleUrl>
+    <Point>
+      <coordinates>28.233854,36.800907,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pier 15</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style130</styleUrl>
+    <Point>
+      <coordinates>28.233511,36.803074,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Robin Hood</name>
+    <description><![CDATA[<div dir="ltr"> </div>]]></description>
+    <styleUrl>#style191</styleUrl>
+    <Point>
+      <coordinates>28.227139,36.797737,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Romance</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style227</styleUrl>
+    <Point>
+      <coordinates>28.223019,36.779110,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Romeo &amp; Juliets</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>28.232052,36.797817,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rush Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style280</styleUrl>
+    <Point>
+      <coordinates>28.228607,36.801781,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sabri&#39;s bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style288</styleUrl>
+    <Point>
+      <coordinates>28.252716,36.833195,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Scotia Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style154</styleUrl>
+    <Point>
+      <coordinates>28.231951,36.800968,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sevgi bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style271</styleUrl>
+    <Point>
+      <coordinates>28.231140,36.802296,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>YOLO</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style269</styleUrl>
+    <Point>
+      <coordinates>28.229971,36.800049,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sonny&#39;s</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>28.228104,36.797291,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tandoori Sizzler</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style149</styleUrl>
+    <Point>
+      <coordinates>28.231705,36.801182,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tin Tin Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style199</styleUrl>
+    <Point>
+      <coordinates>28.232738,36.800198,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Titanic Restuarnt</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style286</styleUrl>
+    <Point>
+      <coordinates>28.228909,36.800163,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tommys Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style141</styleUrl>
+    <Point>
+      <coordinates>28.219597,36.793247,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Turkish Delight</name>
+    <description><![CDATA[<div dir="ltr"></div>]]></description>
+    <styleUrl>#style71</styleUrl>
+    <Point>
+      <coordinates>28.228619,36.801723,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Venice</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style247</styleUrl>
+    <Point>
+      <coordinates>28.230663,36.803421,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vince&#39;s</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style239</styleUrl>
+    <Point>
+      <coordinates>28.232019,36.799168,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wayside Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style79</styleUrl>
+    <Point>
+      <coordinates>28.225191,36.801102,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style236</styleUrl>
+    <Point>
+      <coordinates>28.231646,36.799137,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wembly bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style80</styleUrl>
+    <Point>
+      <coordinates>28.228189,36.799320,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wine House</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style192</styleUrl>
+    <Point>
+      <coordinates>28.229284,36.805599,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wonderboys</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style59</styleUrl>
+    <Point>
+      <coordinates>28.232590,36.799107,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Yakamoz</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style275</styleUrl>
+    <Point>
+      <coordinates>28.234360,36.801743,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Adler apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style85</styleUrl>
+    <Point>
+      <coordinates>28.221033,36.793423,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alinda Beach Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>28.233824,36.800632,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Angel aparts</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style265</styleUrl>
+    <Point>
+      <coordinates>28.221142,36.793812,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Aqua Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style256</styleUrl>
+    <Point>
+      <coordinates>28.233215,36.803528,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Arya Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style219</styleUrl>
+    <Point>
+      <coordinates>28.228254,36.804802,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Avlu 1 Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style167</styleUrl>
+    <Point>
+      <coordinates>28.227417,36.800831,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Babadan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style52</styleUrl>
+    <Point>
+      <coordinates>28.227825,36.798840,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Babadan Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>28.228210,36.800472,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bahar Aparts</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>28.224113,36.798141,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blue Rainbow Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style203</styleUrl>
+    <Point>
+      <coordinates>28.234037,36.800743,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bonjour Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style78</styleUrl>
+    <Point>
+      <coordinates>28.230883,36.801407,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Casablanca</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style250</styleUrl>
+    <Point>
+      <coordinates>28.234245,36.801136,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chateau De Ville</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style283</styleUrl>
+    <Point>
+      <coordinates>28.235888,36.800339,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Aquarium</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style111</styleUrl>
+    <Point>
+      <coordinates>28.220295,36.795677,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Daystar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style205</styleUrl>
+    <Point>
+      <coordinates>28.222847,36.801998,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Tokmak</name>
+    <description><![CDATA[<STRONG></STRONG>]]></description>
+    <styleUrl>#style48</styleUrl>
+    <Point>
+      <coordinates>28.220518,36.801392,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Demircioglu Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style121</styleUrl>
+    <Point>
+      <coordinates>28.231859,36.799114,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Devamli Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Point>
+      <coordinates>28.230059,36.802589,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Diva Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style186</styleUrl>
+    <Point>
+      <coordinates>28.230305,36.802326,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Eda hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style124</styleUrl>
+    <Point>
+      <coordinates>28.230196,36.803047,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Efem apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style258</styleUrl>
+    <Point>
+      <coordinates>28.223501,36.795387,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ekinci Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style232</styleUrl>
+    <Point>
+      <coordinates>28.225679,36.796535,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Fantasia Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style237</styleUrl>
+    <Point>
+      <coordinates>28.267479,36.849957,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Gondol apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style105</styleUrl>
+    <Point>
+      <coordinates>28.230314,36.803349,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Golmar Hotel</name>
+    <description><![CDATA[<div dir="ltr">36° 47' 58.29", +28° 14' 17.08</div>]]></description>
+    <styleUrl>#style281</styleUrl>
+    <Point>
+      <coordinates>28.238092,36.799183,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Green World</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style272</styleUrl>
+    <Point>
+      <coordinates>28.257008,36.779865,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Grand Aquarium</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style249</styleUrl>
+    <Point>
+      <coordinates>28.218233,36.791779,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hotel 47</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>28.230143,36.810143,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ida Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style295</styleUrl>
+    <Point>
+      <coordinates>28.230738,36.801235,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Iguana Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style151</styleUrl>
+    <Point>
+      <coordinates>28.231661,36.801254,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Imperial Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style307</styleUrl>
+    <Point>
+      <coordinates>28.225615,36.804218,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Juniper hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style108</styleUrl>
+    <Point>
+      <coordinates>28.229927,36.800316,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Julian Forest</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style284</styleUrl>
+    <Point>
+      <coordinates>28.208084,36.787704,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kapmar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style266</styleUrl>
+    <Point>
+      <coordinates>28.230640,36.800148,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kleopatra Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style120</styleUrl>
+    <Point>
+      <coordinates>28.221003,36.801483,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kontes Beach Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style101</styleUrl>
+    <Point>
+      <coordinates>28.233662,36.803272,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kurt Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style55</styleUrl>
+    <Point>
+      <coordinates>28.223877,36.801792,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Le-Etoil Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style253</styleUrl>
+    <Point>
+      <coordinates>28.232670,36.802650,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Life Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style104</styleUrl>
+    <Point>
+      <coordinates>28.219221,36.802757,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marbas Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style128</styleUrl>
+    <Point>
+      <coordinates>28.237213,36.799644,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marti La Perla</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style304</styleUrl>
+    <Point>
+      <coordinates>28.231966,36.804035,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marti Resort Hotel</name>
+    <description><![CDATA[<div dir="ltr"></div>]]></description>
+    <styleUrl>#style103</styleUrl>
+    <Point>
+      <coordinates>28.232149,36.805996,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mersoy Exclusive Aqua Resort</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style63</styleUrl>
+    <Point>
+      <coordinates>28.234777,36.798016,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mersoy Exclusive Aqua Resort</name>
+    <description><![CDATA[<div dir="ltr"></div>]]></description>
+    <styleUrl>#style88</styleUrl>
+    <Point>
+      <coordinates>28.233833,36.799129,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Miramonte apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style94</styleUrl>
+    <Point>
+      <coordinates>28.227310,36.799507,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Mote Apts</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style274</styleUrl>
+    <Point>
+      <coordinates>28.226538,36.799747,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Miramonte Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style220</styleUrl>
+    <Point>
+      <coordinates>28.223223,36.798767,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Miray Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>28.231871,36.802128,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mola Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style313</styleUrl>
+    <Point>
+      <coordinates>28.221560,36.793373,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Moonlight Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>28.223480,36.796234,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Munamar Beach Resort</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style226</styleUrl>
+    <Point>
+      <coordinates>28.234390,36.799793,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Munamar Residence (ex effes Inn)</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style142</styleUrl>
+    <Point>
+      <coordinates>28.234348,36.800507,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Munamar Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style242</styleUrl>
+    <Point>
+      <coordinates>28.235390,36.800350,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Navy Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style136</styleUrl>
+    <Point>
+      <coordinates>28.231581,36.800850,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Oylum Garden Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style112</styleUrl>
+    <Point>
+      <coordinates>28.232691,36.798710,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ozlem 1 Aprtments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style309</styleUrl>
+    <Point>
+      <coordinates>28.221891,36.800240,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Palm gardens</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style61</styleUrl>
+    <Point>
+      <coordinates>28.232267,36.797943,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pınewood Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style64</styleUrl>
+    <Point>
+      <coordinates>28.222610,36.802635,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Portofino</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style302</styleUrl>
+    <Point>
+      <coordinates>28.234650,36.799541,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Prestij Apartments (ex onat)</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style116</styleUrl>
+    <Point>
+      <coordinates>28.224176,36.802517,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Private Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style82</styleUrl>
+    <Point>
+      <coordinates>28.232697,36.799431,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sahara Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>28.229841,36.805241,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sahin Palace</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style255</styleUrl>
+    <Point>
+      <coordinates>28.225765,36.800575,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Selen Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style195</styleUrl>
+    <Point>
+      <coordinates>28.228189,36.802101,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Selen 2 Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style93</styleUrl>
+    <Point>
+      <coordinates>28.252802,36.801659,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Siesta hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style132</styleUrl>
+    <Point>
+      <coordinates>28.229778,36.800545,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sun Blue Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style113</styleUrl>
+    <Point>
+      <coordinates>28.230497,36.803307,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tolan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style213</styleUrl>
+    <Point>
+      <coordinates>28.228748,36.802299,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Uysal Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style150</styleUrl>
+    <Point>
+      <coordinates>28.231859,36.801449,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Varol hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style245</styleUrl>
+    <Point>
+      <coordinates>28.221237,36.799835,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vela Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style263</styleUrl>
+    <Point>
+      <coordinates>28.234585,36.801098,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vilamar Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style68</styleUrl>
+    <Point>
+      <coordinates>28.228254,36.797153,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ambience Nightclub</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style282</styleUrl>
+    <Point>
+      <coordinates>28.229412,36.799747,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ATM&#39;s</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style57</styleUrl>
+    <Point>
+      <coordinates>28.229832,36.802532,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bank</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style182</styleUrl>
+    <Point>
+      <coordinates>28.229927,36.802601,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dolmuş</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style243</styleUrl>
+    <Point>
+      <coordinates>28.224564,36.794785,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dolmuş</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style246</styleUrl>
+    <Point>
+      <coordinates>28.225176,36.800858,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dolmuş</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style66</styleUrl>
+    <Point>
+      <coordinates>28.231859,36.807121,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taxi rank</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style223</styleUrl>
+    <Point>
+      <coordinates>28.229755,36.799355,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taxi rank</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style238</styleUrl>
+    <Point>
+      <coordinates>28.228897,36.802723,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taxi rank</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style164</styleUrl>
+    <Point>
+      <coordinates>28.225851,36.801670,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taxi rank</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style46</styleUrl>
+    <Point>
+      <coordinates>28.231794,36.798599,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Icmeler Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style262</styleUrl>
+    <Point>
+      <coordinates>28.220261,36.802025,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tansas</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style133</styleUrl>
+    <Point>
+      <coordinates>28.226116,36.801403,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name> mini supermarket</name>
+    <description><![CDATA[<div dir="ltr">.</div>]]></description>
+    <styleUrl>#style83</styleUrl>
+    <Point>
+      <coordinates>28.223572,36.799980,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Supermarket</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style270</styleUrl>
+    <Point>
+      <coordinates>28.228041,36.802757,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>mini supermarket</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style90</styleUrl>
+    <Point>
+      <coordinates>28.222607,36.798336,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Supermarket</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style118</styleUrl>
+    <Point>
+      <coordinates>28.227097,36.799629,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Supermarket</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style206</styleUrl>
+    <Point>
+      <coordinates>28.234434,36.793339,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Supermarket</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style60</styleUrl>
+    <Point>
+      <coordinates>28.224691,36.793358,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Public Toilet</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>28.233667,36.802822,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Public toilets</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style125</styleUrl>
+    <Point>
+      <coordinates>28.222589,36.801449,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bakery</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style127</styleUrl>
+    <Point>
+      <coordinates>28.225803,36.801388,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Azra Jewellers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style158</styleUrl>
+    <Point>
+      <coordinates>28.229853,36.799698,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Firuze Jewellers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style276</styleUrl>
+    <Point>
+      <coordinates>28.229500,36.799908,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Medusa Jewellery</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style187</styleUrl>
+    <Point>
+      <coordinates>28.224049,36.800213,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Brothers Watersports</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>28.234983,36.801201,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mosque 1</name>
+    <description><![CDATA[<div dir="ltr">&nbsp;</div>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>28.224058,36.802197,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mosque 2</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style54</styleUrl>
+    <Point>
+      <coordinates>28.226725,36.793987,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>The Flag</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style143</styleUrl>
+    <Point>
+      <coordinates>28.206024,36.794819,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Champion Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style179</styleUrl>
+    <Point>
+      <coordinates>28.232428,36.800480,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blue Star Apartment Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style248</styleUrl>
+    <Point>
+      <coordinates>28.220198,36.793663,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rangers Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style230</styleUrl>
+    <Point>
+      <coordinates>28.228952,36.802013,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Aquarium</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style163</styleUrl>
+    <Point>
+      <coordinates>28.220301,36.795700,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Castle Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style169</styleUrl>
+    <Point>
+      <coordinates>28.220636,36.796913,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Gölenye Mh. (İçmeler Bld.)</name>
+    <description><![CDATA[48700 İçmeler/Muğla Province, Turkey<br>]]></description>
+    <styleUrl>#style306</styleUrl>
+    <Point>
+      <coordinates>28.219391,36.792698,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style84</styleUrl>
+    <Point>
+      <coordinates>28.230667,36.799591,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style62</styleUrl>
+    <Point>
+      <coordinates>28.230453,36.799732,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style260</styleUrl>
+    <Point>
+      <coordinates>28.231190,36.799946,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ICR Office</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style298</styleUrl>
+    <Point>
+      <coordinates>28.236364,36.803032,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>28.231012,36.800091,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style148</styleUrl>
+    <Point>
+      <coordinates>28.231190,36.799946,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Underground Market</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style301</styleUrl>
+    <Point>
+      <coordinates>28.229198,36.799320,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Senem Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style279</styleUrl>
+    <Point>
+      <coordinates>28.223066,36.797134,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Love Star</name>
+    <description><![CDATA[Gölenye Mh., 48700 İçmeler/Muğla, Turkey<br>]]></description>
+    <styleUrl>#style70</styleUrl>
+    <Point>
+      <coordinates>28.224262,36.794132,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RFC bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style171</styleUrl>
+    <Point>
+      <coordinates>28.228947,36.801971,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bakery</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style308</styleUrl>
+    <Point>
+      <coordinates>28.225895,36.801682,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bal Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style297</styleUrl>
+    <Point>
+      <coordinates>28.221577,36.797260,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bal Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style204</styleUrl>
+    <Point>
+      <coordinates>28.221577,36.797260,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kardelin Pide</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>28.233297,36.800713,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[<a href="https://www.facebook.com/pages/April-travel-agency/226286674066765?fref=ts" target="_blank">https://www.facebook.com/pages/April-travel-agency/226286674066765?fref=ts</a>]]></description>
+    <styleUrl>#style224</styleUrl>
+    <Point>
+      <coordinates>28.229027,36.800671,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style201</styleUrl>
+    <Point>
+      <coordinates>28.231516,36.799458,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Majestic Appartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style100</styleUrl>
+    <Point>
+      <coordinates>28.221178,36.794281,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kapmar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style214</styleUrl>
+    <Point>
+      <coordinates>28.230228,36.798923,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Üstün Apartments</name>
+    <styleUrl>#style173</styleUrl>
+    <Point>
+      <coordinates>28.231083,36.802227,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Meryem Yemek Evi</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style134</styleUrl>
+    <Point>
+      <coordinates>28.228127,36.802963,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Meryem Yemek Evi</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style137</styleUrl>
+    <Point>
+      <coordinates>28.228640,36.799023,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Meryem Yemek Evi</name>
+    <description><![CDATA[<div dir="ltr">Turkish Cafe/Rest</div>]]></description>
+    <styleUrl>#style97</styleUrl>
+    <Point>
+      <coordinates>28.228640,36.799053,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chateau De Ville</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style198</styleUrl>
+    <Point>
+      <coordinates>28.235920,36.799999,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>35 Park Rd</name>
+    <description><![CDATA[Mansfield Woodhouse, Nottinghamshire NG19 8EG, UK<br><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=53.165575,-1.195131&amp;thumb=0">]]></description>
+    <styleUrl>#style180</styleUrl>
+    <Point>
+      <coordinates>-1.195131,53.165573,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sidiks Family Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style217</styleUrl>
+    <Point>
+      <coordinates>28.229210,36.803486,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Fun Pub Richards Place Restoran</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style153</styleUrl>
+    <Point>
+      <coordinates>28.232321,36.799114,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hanedan Grill</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style159</styleUrl>
+    <Point>
+      <coordinates>28.227852,36.798771,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wine House Restaurant &amp; Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style129</styleUrl>
+    <Point>
+      <coordinates>28.229685,36.805450,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wayside Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style311</styleUrl>
+    <Point>
+      <coordinates>28.223555,36.799362,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Selen2 Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style75</styleUrl>
+    <Point>
+      <coordinates>28.227701,36.802975,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Sun Village</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style184</styleUrl>
+    <Point>
+      <coordinates>28.223845,36.797577,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Club Sun Village</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>28.223845,36.797577,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Navy Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style58</styleUrl>
+    <Point>
+      <coordinates>28.232544,36.801105,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Golmar Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style72</styleUrl>
+    <Point>
+      <coordinates>28.235849,36.799889,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chateau De Ville</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style140</styleUrl>
+    <Point>
+      <coordinates>28.235920,36.799999,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alin&#39;s Grill Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>28.227091,36.801006,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name> 3 (4) Bells</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style241</styleUrl>
+    <Point>
+      <coordinates>28.228725,36.797604,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Vela</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style109</styleUrl>
+    <Point>
+      <coordinates>28.230330,36.800426,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Vela</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style305</styleUrl>
+    <Point>
+      <coordinates>28.230330,36.800426,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Rose</name>
+    <description><![CDATA[<div dir="ltr"><br>&nbsp;</div>]]></description>
+    <styleUrl>#style86</styleUrl>
+    <Point>
+      <coordinates>28.225937,36.800213,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Champagne Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style215</styleUrl>
+    <Point>
+      <coordinates>28.232611,36.799232,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Deja Vu</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style234</styleUrl>
+    <Point>
+      <coordinates>28.223347,36.799240,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dream3Bells</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style89</styleUrl>
+    <Point>
+      <coordinates>28.233259,36.800999,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Friends Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style73</styleUrl>
+    <Point>
+      <coordinates>28.231026,36.800648,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Golden Moon Restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style303</styleUrl>
+    <Point>
+      <coordinates>28.230228,36.801247,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hob Nobs Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style156</styleUrl>
+    <Point>
+      <coordinates>28.231140,36.801826,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Magic Garden</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style91</styleUrl>
+    <Point>
+      <coordinates>28.230042,36.801289,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mitos bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style299</styleUrl>
+    <Point>
+      <coordinates>28.230095,36.803364,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Moonlight</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style212</styleUrl>
+    <Point>
+      <coordinates>28.228556,36.798141,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Nazzer Cafe</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>28.228491,36.805710,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Richards Place</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style183</styleUrl>
+    <Point>
+      <coordinates>28.232126,36.799225,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mitos bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style289</styleUrl>
+    <Point>
+      <coordinates>28.230095,36.803364,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rush Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style160</styleUrl>
+    <Point>
+      <coordinates>28.228607,36.801781,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sidiks Family Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style292</styleUrl>
+    <Point>
+      <coordinates>28.229210,36.803486,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Waterfall</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style196</styleUrl>
+    <Point>
+      <coordinates>28.232353,36.798748,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wine House</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style114</styleUrl>
+    <Point>
+      <coordinates>28.229607,36.805397,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wonderboys</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style291</styleUrl>
+    <Point>
+      <coordinates>28.232407,36.799053,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wonderboys</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style50</styleUrl>
+    <Point>
+      <coordinates>28.232407,36.799053,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vela Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style176</styleUrl>
+    <Point>
+      <coordinates>28.230223,36.800713,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vela Hotel</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>28.230223,36.800713,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Buffalo Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style200</styleUrl>
+    <Point>
+      <coordinates>28.232870,36.800400,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Buffalo Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style152</styleUrl>
+    <Point>
+      <coordinates>28.232870,36.800400,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marti La Perla</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>28.231560,36.806820,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Selen Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style168</styleUrl>
+    <Point>
+      <coordinates>28.229364,36.802540,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Prestij Apartments (ex onat)</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style49</styleUrl>
+    <Point>
+      <coordinates>28.223083,36.798851,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lighthouse</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style264</styleUrl>
+    <Point>
+      <coordinates>28.230448,36.800957,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Istanbul Restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style202</styleUrl>
+    <Point>
+      <coordinates>28.233490,36.801132,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Friends Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style209</styleUrl>
+    <Point>
+      <coordinates>28.231026,36.800648,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lighthouse</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>28.230448,36.800957,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Linekers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>28.231483,36.802029,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Linekers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style99</styleUrl>
+    <Point>
+      <coordinates>28.231483,36.802029,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Linekers</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style294</styleUrl>
+    <Point>
+      <coordinates>28.231483,36.802029,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Love Boat</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style287</styleUrl>
+    <Point>
+      <coordinates>28.230175,36.802361,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Majestic restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style216</styleUrl>
+    <Point>
+      <coordinates>28.231258,36.803856,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rush Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>28.228607,36.801781,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alin&#39;s Grill Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style210</styleUrl>
+    <Point>
+      <coordinates>28.227091,36.801006,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sidiks Family Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style138</styleUrl>
+    <Point>
+      <coordinates>28.227781,36.802429,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wine House</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style147</styleUrl>
+    <Point>
+      <coordinates>28.229607,36.805397,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Avlu 1 Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>28.227407,36.800865,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Demircioglu Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style166</styleUrl>
+    <Point>
+      <coordinates>28.231871,36.799137,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kapmar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style177</styleUrl>
+    <Point>
+      <coordinates>28.230486,36.799904,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mini Mote Apts</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style146</styleUrl>
+    <Point>
+      <coordinates>28.226410,36.800816,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sahara Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style235</styleUrl>
+    <Point>
+      <coordinates>28.229790,36.805283,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Selen Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style157</styleUrl>
+    <Point>
+      <coordinates>28.229364,36.802540,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rangers Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style131</styleUrl>
+    <Point>
+      <coordinates>28.228952,36.802013,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alin&#39;s Grill Restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style221</styleUrl>
+    <Point>
+      <coordinates>28.227091,36.801006,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rangers Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style123</styleUrl>
+    <Point>
+      <coordinates>28.228952,36.802013,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rangers Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style119</styleUrl>
+    <Point>
+      <coordinates>28.228952,36.802013,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Babadan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style194</styleUrl>
+    <Point>
+      <coordinates>28.228195,36.799145,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[<div dir="ltr">Cafe Annes</div>]]></description>
+    <styleUrl>#style175</styleUrl>
+    <Point>
+      <coordinates>28.231730,36.798325,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Holiday Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style259</styleUrl>
+    <Point>
+      <coordinates>28.228018,36.802704,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style225</styleUrl>
+    <Point>
+      <coordinates>28.228382,36.800282,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style251</styleUrl>
+    <Point>
+      <coordinates>28.231569,36.798656,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>28.227224,36.808323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style228</styleUrl>
+    <Point>
+      <coordinates>28.231688,36.798771,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Holiday Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style244</styleUrl>
+    <Point>
+      <coordinates>28.228201,36.802948,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Placemark 201</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style122</styleUrl>
+    <Point>
+      <coordinates>28.222525,36.803116,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sun Village</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style310</styleUrl>
+    <Point>
+      <coordinates>28.226151,36.795521,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style165</styleUrl>
+    <Point>
+      <coordinates>28.228470,36.800335,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Holiday Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>28.228195,36.802925,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>28.228426,36.800228,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pharmacy</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style300</styleUrl>
+    <Point>
+      <coordinates>28.234413,36.800343,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>April Tours</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>28.228415,36.800323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Holiday Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style188</styleUrl>
+    <Point>
+      <coordinates>28.228373,36.802956,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tolan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style69</styleUrl>
+    <Point>
+      <coordinates>28.228748,36.802299,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tolan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>28.228748,36.802299,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tansas</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style252</styleUrl>
+    <Point>
+      <coordinates>28.226109,36.801403,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tolan Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Point>
+      <coordinates>28.228748,36.802299,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dursun Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>28.228632,36.803574,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Florida Bar/Resturant </name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style185</styleUrl>
+    <Point>
+      <coordinates>28.228168,36.802147,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Jasmin Bar/Restaurent</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>28.230652,36.803230,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Doruk Otel &amp; Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style56</styleUrl>
+    <Point>
+      <coordinates>28.233786,36.801323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name> 3 (4) Bells</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style96</styleUrl>
+    <Point>
+      <coordinates>28.227503,36.798134,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Doruk Otel &amp; Apart</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style193</styleUrl>
+    <Point>
+      <coordinates>28.233786,36.801323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Placemark 201</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style211</styleUrl>
+    <Point>
+      <coordinates>28.233786,36.801323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Anne</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style115</styleUrl>
+    <Point>
+      <coordinates>28.231424,36.798977,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sun Blue Apartments</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style47</styleUrl>
+    <Point>
+      <coordinates>28.230497,36.803307,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Champagne Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>28.232605,36.799229,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cafe Annes</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style257</styleUrl>
+    <Point>
+      <coordinates>28.231646,36.799137,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Harrys Steakhouse</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style144</styleUrl>
+    <Point>
+      <coordinates>28.231495,36.801476,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Majestic restaurant</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style126</styleUrl>
+    <Point>
+      <coordinates>28.256321,36.826771,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hospital-Clinic</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style181</styleUrl>
+    <Point>
+      <coordinates>28.225573,36.802071,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>From: Club Tokmak @36.80139,28.220519</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style278</styleUrl>
+    <Point>
+      <coordinates>28.220760,36.801102,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Driving directions to Cactus bar @36.801085,28.230062</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style197</styleUrl>
+    <ExtendedData>
+      <Data name="_SnapToRoads">
+        <value>true</value>
+      </Data>
+    </ExtendedData>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        28.220760,36.801102,0.000000
+        28.221115,36.801266,0.000000
+        28.221380,36.801479,0.000000
+        28.221380,36.801479,0.000000
+        28.223497,36.801159,0.000000
+        28.223810,36.801083,0.000000
+        28.224005,36.800880,0.000000
+        28.224005,36.800880,0.000000
+        28.224802,36.802200,0.000000
+        28.224802,36.802200,0.000000
+        28.225332,36.802120,0.000000
+        28.227116,36.801147,0.000000
+        28.229176,36.800140,0.000000
+        28.229176,36.800140,0.000000
+        28.230024,36.801128,0.000000
+        28.230024,36.801128,0.000000
+        28.230068,36.801090,0.000000
+      </coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>To: Cactus bar @36.801085,28.230062</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>28.230068,36.801090,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Romance Restoran Bar</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>28.229059,36.799416,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ince</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style51</styleUrl>
+    <Point>
+      <coordinates>28.222954,36.799103,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>36.799479, 28.222721</name>
+    <description><![CDATA[36°47'58.1"N 28°13'21.8"E<br>]]></description>
+    <styleUrl>#style106</styleUrl>
+    <Point>
+      <coordinates>28.222721,36.799480,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

@@ -1,0 +1,14 @@
+X:1
+T:<title>
+C:<composer>
+M:4/4
+L:1/4
+K:C
+V:T clef=treble
+V:B clef=bass
+% 1
+[V:T] 
+[V:B] 
+% 5
+[V:T] 
+[V:B] 
