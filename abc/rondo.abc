@@ -7,6 +7,8 @@ Q:1/4=144
 K:C
 V:T clef=treble
 V:B clef=bass
+%%MIDI program 0
+%%MIDI bassprog 0
 % Start
 [V:T]      C C/D/ E E   | G/F/E/D/ D2   | C/4D/4C/4D/4 C/D/E/D/E/D/ | F A, C2        |
 [V:B]      C,G,E,C,     | G,E,G,2       | G, G,3                    | [F,A,C]4       |

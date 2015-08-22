@@ -1,0 +1,54 @@
+X:1
+T:Wherever You Will Go
+C:Aaron Kamin & Alex Band
+M:4/4
+L:1/8
+Q:1/4=112
+K:G
+V:T clef=treble
+V:B clef=bass
+%%MIDI program 0
+%%MIDI bassprog 0
+%%MIDI chordprog 0
+% 1
+[V:T] "G" z2  D(F F) G3  | z2  D(F F) G3  | "Em" z2  D(F F2) G2  |
+[V:B]     G,2 G,4    G,2 | F,2 F,4    F,2 |      E,2 E,4     E,2 |
+% 4
+[V:T] (AG)G(G G2) G(E/D/) | "G" z2  D(F F) G3  | "D" z2  D(A G) F3  |
+[V:B] E,6         z2      |     G,2 G,4    G,2 |     D,2 D,4    D,2 |
+% 7
+[V:T] "Em" z2  D(F F) G3  | "C" A   B2 (A G2) G(G | "G" G2)  z2  z B G(A |
+[V:B]      E,2 E,4    E,2 |     C,6           z2  |     G,,2 D,2 G,4     |
+% 10
+[V:T] "D" A3)       (A A) B2 (E | "Em" E2)  z2   z E E(B/A/ | "C" G) G2  (G G2) G(G |
+[V:B]     D,,2 A,,2 D,4         |      E,,2 B,,2 E,4        |     C,,2 G,,2 C,4     |
+% 13
+[V:T] "G" G2)  z2  z B G(A | "D" A2)  G(A A) B2 (B | "Em" B2)  z2   G G2 (c |
+[V:B]     G,,2 D,2 G,4     |     D,,2 A,,2 D,4     |      E,,2 B,,2 E,4     |
+% 16
+[V:T] "C" c2)  B2   GG G2 | "G" z D  D(F F) G3 | "D" z2 D(F F) G3  |
+[V:B]     C,,2 G,,2 C,4   |     G,,2 D,2 G,4   |     D,,2 A,,2 D,4 |
+% 19
+[V:T] "Em" z2 D(F F) G3  | "C" A G2 (G G2) G(D | "G" D2)  D(F F) G3 |
+[V:B]      E,,2 B,,2 E,4 |     C,,2 G,,2 C,4   |     G,,2 D,2 G,4   |
+% 22
+[V:T] "D" z2   D(A A) F3 | "Em" z2   D(F F) G3 | "C" A G2 (G G2) GD |
+[V:B]     D,,2 A,,2 D,4  |      E,,2 B,,2 E,4  |     C,,2 G,,2 C,4  |
+% 25
+[V:T] "G" z2  z D F2 G2  | z2 D(F F) G3   | "Em" z2  D(F F) G3   |
+[V:B]     G,2 G,4    G,2 | F,2 F,4    F,2 |      E,2 E,4     E,2 |
+% 28
+[V:T] A B2 (B A2) G(G | "G" G2)  d(c c)(B A2) | "D" z2   A(B B)(c/(B/ B2)) |
+[V:B] E,6         z2  |     G,,2 D,2 G,4      |     D,,2 A,,2 D,4          |
+% 31
+[V:T] "Em" z2   z (A A) B3 | "C" c B2 (A A)(BG)(G | "G" G2)  z2  z B G(A |
+[V:B]      E,,2 B,,2 E,4   |     C,,2 G,,2 C,4    |     G,,2 D,2 G,4     |
+% 34
+[V:T] "D" A3) (A A) B2 (c | "Em" B2)  z2   z G G(B/A/ | "C" G) G2 (G G2) G((3e/d/c/) |
+[V:B]     D,,2 A,,2 D,4   |      E,,2 B,,2 E,4        |     C,,2 G,,2 C,4            |
+% 37
+[V:T] "G" B2)  z2  z g g(g | "D" g)(gf)(f d) d2 (g |
+[V:B]     G,,2 D,2 G,4     |     D,,2 A,,2 D,4     |
+% 39
+[V:T] "Em" e) e2 (e d2) z d | "C" b b2 (b a)g (g2 | g8)  ||
+[V:B]      E,,2 B,,2 E,4    |     C,,2 G,,2 (C,4  | C,8) ||
