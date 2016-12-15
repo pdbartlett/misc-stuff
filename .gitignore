@@ -33,3 +33,4 @@ build/*
 ews/*
 scratch/*
 *.pdf
+bazel-*

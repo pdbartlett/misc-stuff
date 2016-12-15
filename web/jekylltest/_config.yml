@@ -1,0 +1,11 @@
+# Site settings
+title: Jekyll Test
+email: pdbartlett@gmail.com
+description: Test site using Jekyll
+baseurl: ""
+url: "http://example.com"
+twitter_username: pdbartlett
+github_username:  pdbartlett
+
+# Build settings
+markdown: kramdown
