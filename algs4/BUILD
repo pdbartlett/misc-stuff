@@ -54,3 +54,24 @@ java_binary(
   ],
   main_class = "Subset",
 )
+
+java_library(
+  name = "a3",
+  srcs = [
+    "BruteCollinearPoints.java",
+    "FastCollinearPoints.java",
+    "LineSegment.java",
+    "Point.java",
+  ],
+  deps = ["@algs4_jar//jar"],
+)
+
+java_binary(
+  name = "a3_test",
+  srcs = ["Fcpt.java"],
+  deps = [
+    ":a3",
+    "@algs4_jar//jar",
+  ],
+  main_class = "Fcpt",
+)
