@@ -75,3 +75,24 @@ java_binary(
   ],
   main_class = "Fcpt",
 )
+
+java_library(
+  name = "a4_board",
+  srcs = ["Board.java"],
+)
+
+java_binary(
+  name = "a4_board_test",
+  runtime_deps = [":a4_board"],
+  main_class = "Board",
+)
+
+java_binary(
+  name = "a4_solver",
+  srcs = ["Solver.java"],
+  deps = [
+    ":a4_board",
+    "@algs4_jar//jar",
+  ],
+  main_class = "Solver",
+)
