@@ -96,3 +96,33 @@ java_binary(
   ],
   main_class = "Solver",
 )
+
+java_binary(
+  name = "a5_set",
+  srcs = ["PointSET.java"],
+  deps = ["@algs4_jar//jar"],
+  main_class = "PointSET",
+)
+
+
+java_library(
+  name = "a5_kdtree",
+  srcs = ["KdTree.java"],
+  deps = ["@algs4_jar//jar"],
+)
+
+java_binary(
+  name = "a5_test",
+  runtime_deps = [":a5_kdtree"],
+  main_class = "KdTree",
+)
+
+java_binary(
+  name = "a5_viz",
+  srcs = ["KdTreeVisualizer.java"],
+  deps = [
+    ":a5_kdtree",
+    "@algs4_jar//jar",
+  ],
+  main_class = "KdTreeVisualizer",
+)
