@@ -1,3 +1,5 @@
+# Bazel / Java
+bazel-*
 *.class
 *.log
 
@@ -25,7 +27,7 @@ build/*
 .classpath
 *.prefs
 
-# ABC (careful of XHTML)
+# ABC
 *.midi
 *.xhtml
 
@@ -33,4 +35,4 @@ build/*
 ews/*
 scratch/*
 *.pdf
-bazel-*
+*.zip
