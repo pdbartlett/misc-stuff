@@ -4,6 +4,8 @@ T:Chord test
 M:4/4
 L:1/4
 K:C clef=bass
+%%MIDI program 32
 C_maj Db_maj D_maj Eb_maj | E_maj F_maj Gb_maj G_maj | Ab_maj A_maj Bb_maj B_maj |
 C_min Db_min D_min Eb_min | E_min F_min Gb_min G_min | Ab_min A_min Bb_min B_min |
-C_7   Db_7   D_7   Eb_7   | E_7   F_7   Gb_7   G_7   | Ab_7   A_7   Bb_7   B_7   |]
+C_7   Db_7   D_7   Eb_7   | E_7   F_7   Gb_7   G_7   | Ab_7   A_7   Bb_7   B_7   |
+r4(`C_maj') | r4(`C_maj') | r4(`C_maj') | r2(`F_maj') r2(`G_maj') |]
