@@ -1,0 +1,36 @@
+include(`chords.m4')dnl
+include(`midi.m4')dnl
+X:1
+T:Midi test
+M:4/4
+L:1/4
+K:C
+V:T clef=treble
+%%MIDI program GM1I_AcousticGrandPiano
+%%MIDI chordprog GM1I_AcousticGuitarNylon
+V:B clef=bass
+%%MIDI program GM1I_AcousticBass
+V:P clef=perc
+%%MIDI channel 10
+%%MIDI drummap A GM1P_SnareDrum1
+%%MIDI drummap B GM1P_BassDrum1
+%%MIDI drummap C GM1P_RideCymbal1
+%%MIDI drummap D GM1P_Maracas
+%%MIDI drummap E GM1P_Tambourine
+%%MIDI drummap F GM1P_CrashCymbal1
+%1
+[V:T] "C" C E F G | "G" G A B d | "C" G F E C | "C" C E F G |
+[V:B] C_maj(4)    | G_maj(4)    | C_maj(4)    | C_maj(4)    |
+[V:P] B A B A     | B D D E     | B A B A     | B D D C     |
+% 5
+[V:T] "C" C E F G | "F" F G A c | "C" G F E C | "C" C E F G |
+[V:B] C_maj(4)    | F_maj(4)    | C_maj(4)    | C_maj(4)    |
+[V:P] B A B A     | B D D E     | B A B A     | B D D C     |
+% 9
+[V:T] "Am"A B c e | "F" F G A c |"Am"e c B A  | "C" C E F G |
+[V:B] A_min(4)    | F_maj(4)    | A_min(4)    | C_maj(4)    |
+[V:P] B A B A     | B D D E     | B A B A     | B D D C     |
+% 13
+[V:T] "C" C E F G | "G" G A B d | "C" C E F G | "C" G F E C ||
+[V:B] C_maj(4)    | G_maj(4)    | C_maj(4)    | C_maj(4)    ||
+[V:P] B A B A     | B D D E     | B A B A     | B A A F     ||

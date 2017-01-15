@@ -11,8 +11,6 @@ define(`r3',`rep(3,`$1')')
 define(`r4',`rep(4,`$1')')
 define(`r8',`rep(8,`$1')')
 # Major triads
-define(`bar',`rep(4,`$1')')
-define(`hlf',`rep(2,`$1')')
 define(`C_maj',  `[C,E,G,]$1')
 define(`Db_maj', `[_D,F,_A,]$1')
 define(`D_maj',  `[D,^F,A,]$1')
