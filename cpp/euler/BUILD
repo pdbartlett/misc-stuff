@@ -11,6 +11,11 @@ cc_binary(
 )
 
 cc_binary(
+  name = "p079",
+  srcs = ["p079.cc"],
+)
+
+cc_binary(
   name = "p089",
   srcs = ["p089.cc"],
 )
