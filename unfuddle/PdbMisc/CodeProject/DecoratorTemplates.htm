@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0097)http://www.codeproject.com/script/Submit/ViewHTML.asp?guid=DecoratorTemplates%2Fcpp11%2F20%2F2003 -->
+<!-- HTML for article "Wrapper classes using C++ decorator templates" by Paul Bartlett,Paul Bartlett
+     URL: http://www.codeproject.com/cpp/DecoratorTemplates.asp
+
+     Article content copyright Paul Bartlett,Paul Bartlett
+     All formatting, additions and alterations Copyright © CodeProject, 1999-2005
+--><!----------------------------- Ignore -----------------------------><HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="DecoratorTemplates_files/global.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR></HEAD>
+<BODY>
+<P><B>Please choose 'View Source' in your browser to view the HTML, or File | 
+Save to save this file to your hard drive for editing.</B></P>
+<HR noShade SIZE=1>
+<!----------------------------- Ignore -----------------------------><!----------------------------- Article Starts ----------------------------->
+<UL class=download>
+  <LI><A 
+  href="http://www.codeproject.com/cpp/DecoratorTemplates/DecoratorTemplates_src.zip">Download 
+  source - 3 Kb</A> </LI></UL>
+<H2>Introduction</H2>
+<P>This article presents a new (to me at least) spin on the decorator pattern, 
+and demonstrates its use in building a flexible framework of wrapper 
+classes.</P>
+<H2>Background</H2>
+<P>The "Gang of Four" describe the decorator pattern as an <I>object 
+structural</I> one, in that it endows an existing object with extra behaviour 
+dynamically at runtime. Here we use templates to add behaviour to a class 
+statically at compile-time.</P>
+<P>This article is an extension of a <A 
+href="http://blogs.geekdojo.net/pdbartlett/posts/301.aspx">blog post</A> I wrote 
+shortly after "discovering" the technique.</P>
+<H2>Using the code</H2>
+<P>The code is provided mainly to illustrate the use of "decorator templates" as 
+a flexible composition technique, though some portions of the code itself may 
+obviously be of use to anyone else building wrapper classes.</P>
+<P>The basic form of a <I>decorator template</I> is as follows:</P><PRE>template &lt; [ class CPolicy1 , ... ] typename TBase &gt;
+class CDecoratorT : public TBase
+{
+    // ...
+};
+</PRE>
+<P>Because <CODE>TBase</CODE> can itself be a decorated class, this allows 
+arbitrary levels of nesting.</P>
+<P>Initially the <CODE>TBase</CODE> template parameter was first, followed by 
+the optional policy classes. Though this seemed logical, it led to the decorator 
+template and its policy class(es) becoming "separated" when nesting was 
+used.</P>
+<P>The wrapper framework itself takes advantage of this nesting by building up 
+the wrapper in various layers:</P>
+<TABLE border=1>
+  <THEAD>
+  <TR>
+    <TD><B>Layer</B></TD>
+    <TD><B>Purpose</B></TD>
+    <TD><B>Type of class used</B></TD>
+    <TD><B>Example</B></TD></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>Storage</TD>
+    <TD>Provides storage for the underlying type</TD>
+    <TD>Template</TD>
+    <TD><CODE>CTypeHolderT</CODE></TD></TR>
+  <TR>
+    <TD>Generic per-type functionality</TD>
+    <TD>Uses policy classes to select the correct implementation of generic 
+      functionality for a given wrapped type</TD>
+    <TD>Decorator template</TD>
+    <TD><CODE>CDeepCopyableT</CODE></TD></TR>
+  <TR>
+    <TD>Type-specific functionality</TD>
+    <TD>Hand-written classes to add useful methods to the wrapper</TD>
+    <TD>Normal or possibly template</TD>
+    <TD><CODE>CHandleWrapperImpl</CODE></TD></TR>
+  <TR>
+    <TD>Generic per-wrapper functionality</TD>
+    <TD>Provides implementations of optional functionality, to be called 
+      either by the "client" class (see below) or externally</TD>
+    <TD>Decorator template</TD>
+    <TD><CODE>CDeepCopyCtorT</CODE></TD></TR>
+  <TR>
+    <TD>"Client"</TD>
+    <TD>Provides implementation of "non-inheritable" methods (e.g. 
+      constructors) in terms of the previous layer. The nature of C++ templates 
+      mean that there will be a compilation error if and only if the method is 
+      used but not defined</TD>
+    <TD>Template</TD>
+    <TD><CODE>CWrapperT</CODE></TD></TR></TBODY></TABLE>
+<P>There are also two other categories of classes which are not layers:</P>
+<TABLE border=1>
+  <THEAD>
+  <TR>
+    <TD><B>Category</B></TD>
+    <TD><B>Purpose</B></TD>
+    <TD><B>Type of class used</B></TD>
+    <TD><B>Example</B></TD></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>Policy classes</TD>
+    <TD>Used by decorator templates to provide a type-specific implementation 
+      of generic behaviour</TD>
+    <TD>Normal or template</TD>
+    <TD><CODE>CCloseHandle</CODE></TD></TR>
+  <TR>
+    <TD>Miscellaneous helpers</TD>
+    <TD>Various</TD>
+    <TD>Usually template</TD>
+    <TD><CODE>CAcquirerT</CODE></TD></TR></TBODY></TABLE>
+<P>An example usage would therefore be:</P><PRE>typedef CDestroyableT       &lt; CCloseHandle,
+        CDeepCopyableT      &lt; CDuplicateHandle,
+        CInvalidatableT     &lt; CInvalidValueT&lt; HANDLE , NULL &gt;,
+        CShallowCopyableT   &lt; CCopyByAssignmentT&lt; HANDLE &gt;,
+        CTypeHolderT        &lt; HANDLE &gt; &gt; &gt; &gt; &gt;
+
+        CHandleWrapperBase;
+        
+class CHandleWrapperImpl : public CHandleWrapperBase
+{
+    bool Open(LPCTSTR szFileName)
+    {
+        // ...
+    }
+    
+    // ...
+};
+
+typedef      CWrapperT
+        &lt;    COperatorT
+        &lt;    CDefCtorT
+        &lt;    CTCtorShallowT
+        &lt;    CHandleWrapperImpl &gt; &gt; &gt; &gt;
+        
+        CHandleWrapper;
+</PRE>
+<H2>To do</H2>
+<P>This is merely a brief overview of the code, which is unfortunately rather 
+short of meaningful comments. It is therefore my intention either to update the 
+code with some useful comments (possibly Doxygen-style ones), or possibly extend 
+the article to give a full walkthrough of the code. Any feedback as to which 
+people would prefer would be most welcome, as of course would any questions, 
+suggestions, etc. about the code itself.</P>
+<H2>History</H2>
+<UL>
+  <LI>20 November 2003 - initial version 
+  <LI>24 November 2003 - minor correction: decorator is "object structural", not 
+  "object constructional" as I misremembered it </LI></UL><!----------------------------- Article Ends -----------------------------></BODY></HTML>

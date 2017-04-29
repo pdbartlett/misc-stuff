@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="page2html.xsl" ?>
+<page title="Home">
+<para><text>Welcome!</text></para>
+<section title="Intro">
+<para><text>Blah, blah, blah...</text></para>
+</section>
+<section title="Projects">
+<para><text>Are listed below:</text></para>
+<subsection title="WhaTBI?">
+<para><text>About WhaTBI?</text></para>
+</subsection>
+<subsection title="DhtmlCms?">
+<para><text>About DhtmlCms</text></para>
+</subsection>
+<subsection title="Google">
+<para><text>About </text><link href="http://www.google.com/">Google</link><text> (only joking!)</text></para>
+</subsection>
+</section>
+</page>
+

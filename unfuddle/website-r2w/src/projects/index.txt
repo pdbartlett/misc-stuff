@@ -1,0 +1,60 @@
+restindex
+    crumb: projects
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+========
+Projects
+========
+
+Projectile commenting
+---------------------
+
+``b@rtletts`` website
+*********************
+
+This website, which as you can see, still has quite a bit of work to do...
+
+It is built with rest2web_, a Python_ application built on top of the docutils_
+library. This converts reStructuredText, a simple but effective plain text markup format,
+to HTML. It can also convert to other formats, but I don't (yet) use this ability. I have,
+though, extended it a little with a wrapper script and a plugin - see `code samples`_ for
+details.
+
+.. _rest2web:       http://www.voidspace.org.uk/python/rest2web/
+.. _Python:         http://www.python.org/
+.. _docutils:       http://docutils.sourceforge.net/
+.. _`code samples`: samples/index.html
+
+WhaTBI? (What's The Big Idea?)
+******************************
+
+There's some pretty basic (and often obsolete) documentation for this over on my blog_,
+but I hope to improve on it here on this site.
+
+My intention is to eventually port the concepts to multiple platforms, as shown below:
+
+=============== =========== ==============================================================
+Project name    Platform    Status
+=============== =========== ==============================================================
+WhaTBI?         .NET        v1.1 version quite advanced, but always more to do. Conversion
+                            to v2.0 (Whidbey) imminent
+--------------- ----------- --------------------------------------------------------------
+WhatBean?       Java        Not started
+--------------- ----------- --------------------------------------------------------------
+WhatBUnk!       COM/COM+    Not started
+--------------- ----------- --------------------------------------------------------------
+WhatAGem!       Ruby        Small proof-of-concept done
+=============== =========== ==============================================================
+
+I am also in the process of creating a membership log application for my Dad which uses the
+framework, and which I hope will also be the basis for putting some UI stuff into it. I'll
+upload a copy when it gets to a suitable level of completion.
+
+.. _blog:   http://blogs.geekdojo.net/pdbartlett/articles/WhatbiHome.aspx
+
+Code samples
+************
+
+See `code samples`_ section.

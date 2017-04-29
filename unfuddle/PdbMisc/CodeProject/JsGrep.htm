@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0090)http://www.codeproject.com/script/Submit/ViewHTML.asp?guid=oojsgrep%2Fjscript12%2F1%2F2003 -->
+<!-- HTML for article "JsGrep - an OO-ish implementation of grep in JScript" by Paul Bartlett,Paul Bartlett
+     URL: http://www.codeproject.com/jscript/oojsgrep.asp
+
+     Article content copyright Paul Bartlett,Paul Bartlett
+     All formatting, additions and alterations Copyright © CodeProject, 1999-2005
+--><!----------------------------- Ignore -----------------------------><HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="JsGrep_files/global.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR></HEAD>
+<BODY>
+<P><B>Please choose 'View Source' in your browser to view the HTML, or File | 
+Save to save this file to your hard drive for editing.</B></P>
+<HR noShade SIZE=1>
+<!----------------------------- Ignore -----------------------------><!----------------------------- Article Starts ----------------------------->
+<UL class=download>
+  <LI><A 
+  href="http://www.codeproject.com/jscript/oojsgrep/jsgrep_src.zip">Download 
+  source - 2 Kb</A> </LI></UL>
+<H2>Introduction</H2>
+<P>This article showcases JScript's ability to allow useful scripts to be 
+written in a relatively object-oriented manner. 
+<H2>Background</H2>
+<P>This utility was first "published" via <A 
+href="http://blogs.geekdojo.net/pdbartlett">my blog</A>. 
+<H2>Using the code</H2>
+<P>The code should be run under using the Windows Scripting Host (WSH) Console 
+client, <I>cscript.exe</I>, e.g.:</P><PRE lang=text>cscript jsgrep.js -il "MyHeader\.h" *.cpp</PRE>
+<P>To set the console client to be the default, use:</P><PRE lang=text>cscript /H:cscript</PRE>
+<P>You can then run the utility simply with:</P><PRE lang=text>jsgrep -il "MyHeader\.h" *.cpp</PRE>
+<P>To run the utility under the <A 
+href="http://www.microsoft.com/scripting/">Windows Script Debugger</A>, if 
+installed, use:</P><PRE lang=text>cscript //x jsgrep.js -il "MyHeader\.h" *.cpp</PRE>
+<H2>Understanding the code</H2>
+<P>As is often the way with these things, the code is easier to understand in a 
+different order to that in which it appears in the source file. In this 
+particular case, it's easiest to look at the main program logic before the 
+classes which implement it. The first section of this declares a map of command 
+line switches (all initially false), then parses the command line arguments to 
+determine which are set:</P><PRE lang=jscript>var mapOpts =
+{
+    'c' : false // (c)ount
+,   'i' : false // (i)gnore case
+,   'l' : false // (l)ist files
+,   'n' : false // show line (n)umbers
+,   'r' : false // (r)ecursively match file names
+,   'v' : false // in(v)ert match (i.e. show non-matching lines)
+};
+
+var i, cArgs = WScript.Arguments.length;
+var nFirstNonOptArg = cArgs;
+
+for (i = 0; i &lt; cArgs; ++i)
+{
+    var strArg = WScript.Arguments(i);
+    if (strArg == '--')
+    {
+        // end of args flag (to allow REs beginning with '-')
+        nFirstNonOptArg = ++i;
+        break;
+    }
+    else if (strArg.charAt(0) == '-')
+    {
+        var j, cChars = strArg.length;
+        for (j = 1; j &lt; cChars; ++j)
+           mapOpts[strArg.charAt(j)] = true;
+    }
+    else
+    {
+        nFirstNonOptArg = i;
+        break;
+    }
+}
+</PRE>
+<P>The next chunk of code deals with the non-switch command line arguments: 
+exactly one regular expression followed by zero or more files specs. If the 
+latter contain any wildcard characters (* or ?), they are expanded by shelling a 
+<CODE>DIR /B</CODE> command, a process which I believe is known as 
+<I>globbing</I>.</P><PRE lang=jscript>if (nFirstNonOptArg == cArgs)
+{
+    // No RE
+    WScript.Echo('usage: jsgrep [-cilnrv] regexp [file ...]');
+    WScript.Quit(1);
+}
+
+var arrFiles = new Array();
+var oShell = null;
+
+for (i = nFirstNonOptArg + 1; i &lt; cArgs; ++i)
+{
+    var strFileArg = WScript.Arguments(i);
+    if (strFileArg.indexOf('*') &gt;= 0 || strFileArg.indexOf('?') &gt;= 0)
+    {
+        if (oShell == null)
+            oShell = new ActiveXObject('WScript.Shell');
+        var nLastSep = strFileArg.lastIndexOf('\\');
+        var strPath = (nLastSep &gt;= 0) ? 
+           strFileArg.slice(0, ++nLastSep) : '';
+        var strCmd = 'cmd.exe /c dir /b ';
+        if (mapOpts['r'])
+            strCmd += '/s ';
+        var procGlob = oShell.Exec(strCmd + strFileArg);
+        while (!procGlob.StdOut.AtEndOfStream)
+        {
+            if (mapOpts['r'])
+                arrFiles[arrFiles.length] = procGlob.StdOut.ReadLine();
+            else
+                arrFiles[arrFiles.length] = strPath + 
+                     procGlob.StdOut.ReadLine();
+        }
+    }
+    else
+        arrFiles[arrFiles.length] = strFileArg;
+}
+
+var cFiles = arrFiles.length;
+
+if (cFiles == 0)
+{
+    if (nFirstNonOptArg &lt; cArgs - 1)
+    {
+        WScript.Echo('no matching files found');
+        WScript.Quit(1)
+    }
+    else
+    {
+        arrFiles[0] = '-'; // stdin
+        cFiles = 1;
+    }
+}
+
+var re = new RegExp(WScript.Arguments(nFirstNonOptArg), 
+    mapOpts['i'] ? 'i' : '');
+var bNegateMatch = mapOpts['v'];
+
+var bSingleFile = (cFiles == 1);
+</PRE>
+<P>The main logic of the script is expressed in terms of a "helper" object, 
+<CODE>oAction</CODE>. Its instantiation and various implementations will be 
+covered later, but for now all we need to know is that it must implement the 
+following "interface":</P><PRE lang=cs>void FilePreamble(string strFile, bool bIsOnlyFile);
+bool Action();
+void FilePostamble(string strFile, bool bIsOnlyFile);
+void ProgPostamble(bool bSingleFileOnly);
+</PRE>
+<P>The logic itself is then relatively simple iteration and helper method 
+invocation, though there is a disproportionately large amount of logic dedicated 
+to properly handling <CODE>stdin</CODE> as an explicit or implicit source of 
+input:</P><PRE lang=jscript>var strCurrFile = '', nLineNumber = 1;
+var oFSO = new ActiveXObject('Scripting.FileSystemObject');
+var ts;
+
+for (i = 0; i &lt; cFiles; ++i)
+{
+    strCurrFile = arrFiles[i];
+    var bNeedClose = false;
+
+    if (strCurrFile == '-')
+    {
+        ts = WScript.stdin;
+    }
+    else
+    {
+        try
+        {
+            ts = oFSO.OpenTextFile(strCurrFile);
+            bNeedClose = true;
+        }
+        catch(e)
+        {
+            WScript.Echo('Failed to open "' + strCurrFile + '" - ' + 
+                 e.description);
+            continue;
+        }
+    }
+
+    nLineNumber = 1;
+    oAction.FilePreamble(strCurrFile, bSingleFile);
+    
+    var bContinue = true;
+
+    while (bContinue &amp;&amp; !ts.AtEndOfStream)
+    {
+        var strLine = ts.ReadLine();
+
+        if ((strLine.match(re) == null) == bNegateMatch)
+            bContinue = oAction.Action(strLine);
+
+        ++nLineNumber;
+    }
+
+    oAction.FilePostamble(strCurrFile, bSingleFile);
+
+    if (bNeedClose) ts.Close();
+}
+
+oAction.ProgPostamble(bSingleFile);
+</PRE>
+<P>Next in the tour of the code comes the instantiation of the helper object. 
+There is a choice of implementation: either a Printer, which shows each matching 
+line and is the default (no switches) behaviour; or a Counter, which is badly 
+named as it might not be required to actually keep the count, but just to 
+identify that there is at least one match:</P><PRE lang=jscript>var oAction = mapOpts['c'] ? new Counter(true) : mapOpts['l'] ? 
+    new Counter(false) : new Printer(mapOpts['n']);</PRE>
+<P>Finally comes the implementations of the helper object. All that is of note 
+here is the fact that JScript objects are implemented as <I>expando</I> ones 
+(i.e. they implement COM's <CODE>IDispatchEx</CODE> interface), so the methods 
+can be attached to the object at construction time. I'm convinced there must be 
+a more elegant way of doing this, with <I>prototypes</I> perhaps, but it works 
+fine in this simple example:</P><PRE lang=jscript>// Counter
+
+function Count_FilePreamble(strFile, bIsOnlyFile)
+{
+    this.cFileMatches = 0;
+}
+
+function Count_Action(strLine)
+{
+    ++this.cFileMatches;
+    ++this.cTotalMatches;
+       
+    return this.bCountReqd;
+}
+
+function Count_FilePostamble(strFile, bIsOnlyFile)
+{
+    if (bIsOnlyFile)
+    {
+        if (this.bCountReqd)
+            WScript.Echo(this.cFileMatches);
+        else
+            WScript.Echo('Match found');
+    }
+    else if (this.cFileMatches &gt; 0)
+    {
+        if (this.bCountReqd)
+            WScript.Echo(strFile + ": " + this.cFileMatches);
+        else
+            WScript.Echo(strFile);
+    }
+}
+
+function Count_ProgPostamble(bOneFileOnly)
+{
+    if (this.bCountReqd &amp;&amp; !bOneFileOnly)
+        WScript.Echo('Total: ' + this.cTotalMatches);
+}
+
+function Counter(bCountReqd)
+{
+    // properties
+    this.bCountReqd     = bCountReqd;
+    this.cFileMatches   = 0;
+    this.cTotalMatches  = 0;
+
+    // methods
+    this.FilePreamble   = Count_FilePreamble;
+    this.Action         = Count_Action;
+    this.FilePostamble  = Count_FilePostamble;
+    this.ProgPostamble  = Count_ProgPostamble;
+}
+
+// Printer
+
+function Print_Action(strLine)
+{
+    if (bSingleFile)
+        WScript.Echo((this.bNumbered ? nLineNumber : '') + strLine);
+    else
+        WScript.Echo(strCurrFile + (this.bNumbered ? '(' 
+              + nLineNumber + ')' : '') + ': ' + strLine);
+       
+    return true;
+}
+
+function Printer(bNumbered)
+{
+    // properties
+    this.bNumbered      = bNumbered;
+
+    // methods
+    this.FilePreamble   = DoNothing2;
+    this.Action         = Print_Action;
+    this.FilePostamble  = DoNothing2;
+    this.ProgPostamble  = DoNothing1;
+}
+
+</PRE>
+<H2>History</H2>
+<UL>
+  <LI>28 November 2003 - Initial version 
+  <LI>03 December 2003 - Correct small, but important, typo in matching logic 
+  (code error, so affects article and source), and added support for recursive 
+  expansion of file name wildcards </LI></UL><!----------------------------- Article Ends -----------------------------></BODY></HTML>

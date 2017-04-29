@@ -1,0 +1,73 @@
+total = 10
+right = 0
+
+TextWindow.WriteLine("Press ENTER to start...")
+TextWindow.Read()
+
+startHours = Clock.Hour
+startMins = Clock.Minute
+startSeconds = Clock.Second
+
+For i = 1 To total
+
+  askedBefore = 1
+  While (askedBefore = 1)
+      GetNumber()
+      num1 = n
+      GetNumber()
+      num2 = n
+      question = num1 + " x " + num2 + " = "
+      similar = num2 + " x " + num1 + " = "
+      askedBefore = Array.GetValue("Questions", question)
+  EndWhile
+
+  Array.SetValue("Questions", question, 1)
+  Array.SetValue("Questions", similar, 1)
+
+  TextWindow.ForegroundColor = "Cyan"
+  TextWindow.Write(question)
+  guess = TextWindow.ReadNumber()
+
+  answer = num1 * num2
+  TextWindow.Write("Correct answer is: " + answer + ". ")
+
+  If (guess = answer) Then
+    TextWindow.ForegroundColor = "Green"
+    TextWindow.WriteLine("Well done!")
+    right = right + 1
+  Else
+    TextWindow.ForegroundColor = "Red"
+    TextWindow.WriteLine("Better luck next time...")
+  EndIf
+
+EndFor
+
+takenSeconds = 3600 * (Clock.Hour - startHours)
+takenSeconds = takenSeconds + 60 * (Clock.Minute - startMins)
+takenSeconds = takenSeconds + (Clock.Second - startSeconds)
+
+If (right >= 9) Then
+  adjective = "Excellent"
+Else
+  If (right >=7) Then
+    adjective = "Good"
+  Else
+    If (right >= 5) Then
+      adjective = "OK"
+    Else
+      adjective = "Hmmm, you need a little more practice"
+    EndIf
+  EndIf
+EndIf
+  
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.WriteLine(adjective + "! You scored " + right + " out of " + total + ".")
+TextWindow.WriteLine("And you took " + takenSeconds + " seconds.")
+TextWindow.ForegroundColor = "White"
+
+Sub GetNumber
+  n = Math.GetRandomNumber(10) + 2
+  If (n = 10) Then
+    n = 12
+  EndIf
+EndSub

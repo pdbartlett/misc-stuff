@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+  Copyright 2002-2004 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<status>
+
+  <developers>
+    <person name="Paul Bartlett"      email="pdbartlett@yahu.kom"   id="PDB" />
+  </developers>
+
+  <changes>
+    <release version="0.3" date="16 May 2005">
+      <action dev="PDB" type="update" context="admin">
+        Some more content added (but still much more to do...)
+      </action>
+      <action dev="PDB" type="update" context="admin">
+        More logo image tweaks
+      </action>
+      <action dev="PDB" type="update" context="admin">
+        Added deployment credit for Matt Hawley's "Unleash It!" tool 
+      </action>
+    </release>
+    <release version="0.2" date="13 May 2005">
+      <action dev="PDB" type="update" context="admin">
+        A little more content added (but much more still to do...)
+      </action>
+      <action dev="PDB" type="update" context="admin">
+        "Group" image added, and "project" one improved (IMHO, anyway!)
+      </action>
+      <action dev="PDB" type="update" context="admin">
+        CSS tweaked for banner and footer
+      </action>
+    </release>
+    <release version="0.1" date="12 May 2005">
+      <action dev="PDB" type="add" context="admin">
+        Switched to building with Apache Forrest
+      </action>
+    </release>
+  </changes>
+
+  <todo>
+    <actions priority="high">
+      <action context="general" dev="PDB">
+      	Add pages for each person
+      </action>
+      <action context="general" dev="PDB">
+      	Upload and link some more photos
+      </action>
+    </actions>
+  </todo>
+
+</status>

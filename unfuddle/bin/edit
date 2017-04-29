@@ -1,0 +1,12 @@
+#!/bin/bash
+action=`basename $0`
+target=`which $1`
+if [[ -n $target ]]; then
+  if [[ $action == show ]]; then
+    more $target
+  else
+    $EDITOR $target
+  fi
+else
+  echo "$1 not found on path"
+fi

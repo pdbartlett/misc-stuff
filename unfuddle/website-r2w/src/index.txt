@@ -1,0 +1,35 @@
+restindex
+    crumb: home
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+=========
+Home page
+=========
+
+Welcome to the Bartletts' website!
+----------------------------------
+
+Introduction
+************
+
+Hello! We're Paul_, Rosie_ and Sophie_ Bartlett, and this is our little corner of cyberspace.
+There's not too much here at the moment, but we're hoping to add the following as time permits:
+
+#. family photos_
+#. a little about ourselves_ and our interests
+#. anything else that springs to mind
+
+About this site
+***************
+
+For technical information about this site, see its `project description`_
+
+.. _Paul:                   people/paul/index.html
+.. _Rosie:                  people/rosie.html
+.. _Sophie:                 people/sophie.html
+.. _photos:                 photos/index.html
+.. _ourselves:              people/index.html
+.. _`project description`:  projects/index.html#b-rtletts-website
+

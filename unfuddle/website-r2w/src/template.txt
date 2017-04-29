@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <title>b@rtletts: <% title %></title>
+    <link rel="stylesheet" href="<% path_to_root %>docutils.css" type="text/css" />
+    <link rel="stylesheet" href="<% path_to_root %>site.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=<% final_encoding %>" />
+</head>
+
+<body>
+
+    <div class="site-header">
+        <image src="<% path_to_root %>images/bartletts.gif" />
+        <span class="header-title">The Bartletts' Website</span>
+    </div>
+
+    <div class="navbar">
+        <span class="navbar-label">You are here:</span>
+        <#
+            item = '%s'
+            anchor = '<a class="navlink" href="%s">%s</a>'
+            divider = ' / '
+            print_crumbs(breadcrumbs, item, anchor, divider)
+        #>
+    </div>
+
+    <div class="site-main">
+    
+        <% body %>
+        
+        <div class="document-footer-left">
+            Built with: <a href="http://www.voidspace.org.uk/python/rest2web">rest2web</a> /
+            Stats from: <a href="http://www.webstats4u.com/stats?ADUw8wyUEHafSy04/CCXXg02m+GQ">Webstats4U</a>
+        </div>
+            
+        <div class="document-footer-left">
+            <!-- Begin Webstats4U code -->
+            <!-- Title: The Bartletts -->
+            <!-- URL: http://bartletts.pwp.blueyonder.co.uk/ -->
+            <script language="JavaScript" type="text/javascript" 
+            src="http://m1.webstats4u.com/m.js">
+            </script>
+            <script language="JavaScript" type="text/javascript">
+            <!--
+              webstats4u("ADUw8wyUEHafSy04/CCXXg02m+GQ", 0);
+            // -->
+            </script>
+            <noscript>
+            <a target="_blank" 
+            href="http://www.webstats4u.com/stats?ADUw8wyUEHafSy04/CCXXg02m+GQ"><img
+            src="http://m1.webstats4u.com/n?id=ADUw8wyUEHafSy04/CCXXg02m+GQ"
+            border="0" width="18" height="18"
+            alt="Webstats4U - Free web site statistics
+            Personal homepage website counter"></a><br>
+            <a target="_blank" href="http://www.webstats4u.com/">Free counter</a>
+            </noscript>
+            <!-- End Webstats4U code -->
+        </div>
+        
+        <div class="document-footer-right">
+            Copyright &copy; 2005 <a href="http://blogs.geekdojo.net/pdbartlett/contact.aspx">Paul D. Bartlett</a>
+        </div>
+        
+    </div>
+
+    <div class="navtree">
+        <span class="navtree-title">Site map</span><br />
+        <#
+            def printLink(page, level):
+                indent = '<span class="navtree-indent">%s</span>' % ('> ' * level) 
+                print '%s <a class="navlink" href="%s">%s</a><br />' % (indent, page['target'], page['crumb'])
+            
+            def processTree(tree, level):
+                printLink(tree, level)
+                for page in tree['pages']:
+                    if not page['pages']:
+                        printLink(page, level + 1)
+                for page in tree['pages']:
+                    if page['pages']:
+                        processTree(page, level + 1)
+            
+            processTree(indextree, 0)
+        #>
+    </div>
+
+</body>
+
+</html>

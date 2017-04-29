@@ -1,0 +1,11 @@
+/**
+    \page intro Introducing Membership Log
+    This page is an introduction to the Membership Log application.
+    \section install Installing Membership Log
+    If you are reading this then it is more than likely that you have already installed the Membership Log
+    application, but if not just locate and run <CODE>INSTALL.EXE</CODE> on your installation media.
+    \section changes Notes on recent changes
+    There are now two properties for the money owed by a member: <EM>Owed</EM> is a formatted text string whereas
+    <EM>Owed Calc</EM> is still numeric and suitable for filtering (e.g. a "debtors" filter that consists of the
+    expression <CODE>Owed Calc greater than 0</CODE>).
+**/

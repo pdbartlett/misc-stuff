@@ -1,0 +1,2 @@
+#!/bin/bash
+cd ~/bin && ln utils $1 && emacs $1 && cd -

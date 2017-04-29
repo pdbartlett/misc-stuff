@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, Sans-Serif;
+    background-color: #B3B38F;
+    padding: 0px;
+    margin: 0px;
+}
+
+.site-header img {
+    float: left;
+}
+
+.header-title {
+    float: right;
+    padding-right: 5px;
+    font-size: 45px;
+}
+
+.subtitle {
+    margin-top: -15px;
+    padding-bottom: 5px;
+    border-bottom: black 1px solid;
+}
+
+.navbar {
+    clear: both;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    background-color: #B39B8F;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.navbar-label {
+    font-weight: bold;
+}
+
+.site-credits {
+    font-size: 75%;
+    margin-top: 20px;
+}
+
+.site-main {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    background-color: #FFFFCC;
+    border-left: black 1px solid;
+    border-right: black 2px solid;
+    border-bottom: black 2px solid;
+    margin-right: 10px;
+}
+
+.document h1 {
+    font-size: 150%;
+}
+
+.document h2 {
+    font-size: 125%;
+}
+
+.document h1 a.reference {
+    color: black;
+    text-decoration: none;
+}
+
+.document {
+    border-bottom: black 1px solid;
+    margin-bottom: 10px;
+}
+
+.document-footer-left {
+    font-size: 75%;
+    float: left;
+}
+
+.document-footer-right {
+    font-size: 75%;
+    text-align: right;
+}
+
+.navtree {
+    padding-top: 10px;
+}
+
+.navtree-title {
+    font-weight: bold;
+}
+
+.navtree-indent {
+    color: white;
+}
+
+a.navlink {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover.navlink {
+    text-decoration: underline;
+    color: white;
+}
+

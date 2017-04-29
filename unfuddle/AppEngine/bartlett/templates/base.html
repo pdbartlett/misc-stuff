@@ -1,0 +1,22 @@
+<!-- TODO(pdbartlett): add DOCTYPE -->
+<html>
+  <head>
+    <title>The Bartletts</title>
+    <link rel="stylesheet" type="text/css" href="/static/main.css"/>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="navbox">
+      <div id="navtitle">Site links</div>
+      <ul>
+        {% for link in links %}
+          {{ link.render_in_list }}
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="content">{{ content }}</div>
+    <div id="footer">
+      <span>Copyright &copy; {{ today.year }} Paul Bartlett. All rights reserved.</span>
+    </div>
+  </body>
+</html>

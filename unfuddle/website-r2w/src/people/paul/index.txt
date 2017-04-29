@@ -1,0 +1,100 @@
+restindex
+    crumb: paul
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+====
+Paul
+====
+
+From coping to managing...
+--------------------------
+
+About me
+********
+
+I'm now a software development manager, but in my coding days mainly used C++ and Java, and still play with just about
+any language (including C#, Ruby, Python and Scheme) in my "spare" time. The following sections go into a bit more detail...
+
+CV / Resume
+***********
+
+When it's done, you'll be able to browse the online version of my CV_.
+
+Blogging / online
+*****************
+
+I (semi-)actively maintain a weblog called `Paul's Imaginary Friend`_ (thanks again to Ryan_ for allowing me "in"),
+supposedly on .NET development issues but often on more general development or other things entirely. It leads a bit of
+a double life, sometimes thinking it's a bliki_. Until this site is properly up and running then that's probably the
+best place to go.
+
+In additon, the following are all obsolete or experimental ones, included here mainly to give some pointers as to places
+where you can start blogging relatively easily:
+
+- my `original weblog`_, now obsolete, with `blogger.com`_ (now part of Google_)
+- `Paul's Beta Space`_ as an experiment with `MSN Spaces`_
+- another experiment_, this time with `Yahoo! 360`_
+
+I also use a few "social" websites, such as CodeProject_, del.icio.us_, Flickr_, FriendsReunited_, linkedin_ and SuprGlu_.
+
+Technical
+*********
+
+Writing
+~~~~~~~
+
+In addition to my blog posts_ I have also written a few longer "articles" there, though these mainly take the form of
+lists_ of useful free software.
+
+I have also written a couple of "real" articles for CodeProject_, though:
+
+- `Article One`_: Wrapper classes using C++ decorator templates
+- `Article Two`_: JsGrep - an OO-ish implementation of grep in JScript
+
+Code
+~~~~
+
+My current projects_ have their own section, which is coming along - slowly!
+
+I also have various code samples floating around. Some of these are already online (e.g. accompanying the CodeProject_
+articles mentioned above) and others yet to be published. I've started to bring these together on this site to give
+examples of using the various languages and technologies I've worked and/or played with - see the `code samples`_
+section for what I've managed to do so far.
+
+Other interests
+***************
+
+In no particular order:
+
+- genealogy
+- PS2 gaming (esp. Gran Turismo 4)
+- reading, technical and otherwise
+- watching football (Southampton), rugby (Bath) and cricket (Hampshire)
+- anything my daughter is into (currently GT4, so that's a bonus)
+
+.. _CV:                         cv.html
+.. _`Paul's Imaginary Friend`:  http://blogs.geekdojo.net/pdbartlett/
+.. _bliki:                      http://blogs.geekdojo.net/pdbartlett/articles/HomePage.aspx
+.. _Ryan:                       http://blogs.geekdojo.net/ryan/
+.. _`original weblog`:          http://pdbartlett.blogspot.com/
+.. _`blogger.com`:              http://www.blogger.com/
+.. _google:                     http://www.google.com/
+.. _`Paul's Beta Space`:        http://spaces.msn.com/members/pdbartlett/
+.. _`MSN spaces`:               http://spaces.msn.com/
+.. _experiment:                 http://360.yahoo.com/pdbartlett
+.. _`Yahoo! 360`:               http://360.yahoo.com/
+.. _CodeProject:                http://www.codeproject.com/
+.. _del.icio.us:                http://del.icio.us/pdbartlett/
+.. _Flickr:                     http://www.flickr.com/
+.. _FriendsReunited:            http://www.friendsreunited.co.uk/
+.. _linkedin:                   http://www.linkedin.com/
+.. _SuprGlu:                    http://pdbartlett.suprglu.com/
+.. _posts:                      `Paul's Imaginary Friend`_
+.. _lists:                      http://pdbartlett.url123.com/lists
+.. _`Article One`:              http://www.codeproject.com/cpp/DecoratorTemplates.asp
+.. _`Article Two`:              http://www.codeproject.com/jscript/oojsgrep.asp
+.. _projects:                   ../../projects/index.html
+.. _`code samples`:             ../../projects/samples/index.html
+

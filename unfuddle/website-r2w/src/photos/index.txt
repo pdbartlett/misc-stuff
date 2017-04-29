@@ -1,0 +1,27 @@
+restindex
+    crumb: photos
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+======
+Photos
+======
+
+What a picture, what a photograph...
+------------------------------------
+
+I've been rather better at taking photos than uploading them, so at present we've
+only got two small sets uploaded, both at `Yahoo! Photos`_:
+
+- `Early Sophie`_ - Sophie_ between 0 and 3 months
+- Miscellaneous_ - a few oddities I had around one day and uploaded
+
+Hopefully I'll get my act together soon, though, and get rather more of our recent
+ones uploaded, and maybe even some older ones scanned and uploaded.
+
+.. _`Yahoo! Photos`:    http://photos.yahoo.com/
+.. _`Early Sophie`:     http://uk.pg.photos.yahoo.com/ph/pdbartlett/album?.dir=7148
+.. _Miscellaneous:      http://uk.pg.photos.yahoo.com/ph/pdbartlett/album?.dir=f166
+
+.. _Sophie:             ../people/sophie.html

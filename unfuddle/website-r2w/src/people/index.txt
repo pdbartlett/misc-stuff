@@ -1,0 +1,60 @@
+restindex
+    crumb: people
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+==
+Us
+==
+
+Meet the Bartletts
+------------------
+
+Paul_
+*****
+
+========== =======================================
+|paul-pic| I'm a software developer, mainly using
+           C++ and Java professionally, but just
+           about any language (including C#, Ruby,
+           Python and Scheme) in my "spare" time.
+           
+           `Read on...`__
+========== =======================================
+
+__ Paul_
+
+Rosie_
+******
+
++-----------------------------------------+-------------+
+| "World-class wife, mother and all-round | TODO        |
+| nice person"                            |             |
+| -- Paul                                 |             |
+|                                         |             |
+| `Read on...`__                          |             |
++-----------------------------------------+-------------+
+
+__ Rosie_
+
+Sophie_
+*******
+
+============ =======================================
+|sophie-pic| "Princess-in-training", and two-time
+             star of BBC's `City Hospital`_
+
+             `Read on...`__
+============ =======================================
+
+__ Sophie_
+
+.. _Paul:               paul/index.html
+.. _Rosie:              rosie.html
+.. _Sophie:             sophie.html
+.. _`City Hospital`:    http://www.bbc.co.uk/health/tv_and_radio/cityhospital_index.shtml
+
+.. |paul-pic|   image:: ../images/pdb.jpg
+.. |sophie-pic| image:: ../images/scb.jpg
+

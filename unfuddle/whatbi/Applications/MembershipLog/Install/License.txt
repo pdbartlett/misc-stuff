@@ -1,0 +1,9 @@
+Copyright (C) Paul D. Bartlett 2004-2005
+All rights reserved.
+
+This software is supplied "as is" with no warranty, expressed or implied. The author accepts no liability for any losses, howsoever caused, resulting from the use of this software.
+
+This software is a free beta version. You are therefore permitted to distribute it in object form provided that:
+
+(a) this license notice is kept intact and unchanged in the distributed package
+(b) you do not misrepresent the source of the software

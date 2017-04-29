@@ -1,0 +1,93 @@
+body {
+font-family: Arial, Helvetica;
+background: #ffffff;
+}
+
+h1 {
+background: #000080;
+color: #ffffff;
+}
+
+h2 {
+background: #8080FF;
+}
+
+h3.redP {
+background: #800000;
+color: #ffffff;
+}
+
+h3.greenP {
+background: #008000;
+color: #ffffff;
+}
+
+h3.refactP {
+background: #404040;
+color: #ffffff;
+}
+
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+

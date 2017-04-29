@@ -1,0 +1,14 @@
+restindex
+    crumb: rosie
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+=====
+Rosie
+=====
+
+"World-class wife, mother and all-round nice person" -- Paul
+------------------------------------------------------------
+
+TODO

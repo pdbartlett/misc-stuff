@@ -1,0 +1,47 @@
+[Version]
+Class=IEXPRESS
+SEDVersion=3
+[Options]
+PackagePurpose=InstallApp
+ShowInstallProgramWindow=0
+HideExtractAnimation=0
+UseLongFileName=1
+InsideCompressed=0
+CAB_FixedSize=0
+CAB_ResvCodeSigning=0
+RebootMode=I
+InstallPrompt=%InstallPrompt%
+DisplayLicense=%DisplayLicense%
+FinishMessage=%FinishMessage%
+TargetName=%TargetName%
+FriendlyName=%FriendlyName%
+AppLaunched=%AppLaunched%
+PostInstallCmd=%PostInstallCmd%
+AdminQuietInstCmd=%AdminQuietInstCmd%
+UserQuietInstCmd=%UserQuietInstCmd%
+SourceFiles=SourceFiles
+[Strings]
+InstallPrompt=The installer will first check for pre-requisite components. Once this check is complete, please select "Finish" to continue to the installation of the product itself. Continue with installation?
+DisplayLicense=
+FinishMessage=
+TargetName=.\bin\Install.exe
+FriendlyName=Membership Log
+AppLaunched=PSetup.exe
+PostInstallCmd=<None>
+AdminQuietInstCmd=
+UserQuietInstCmd=
+FILE0="Setup.exe"
+FILE1="unicows.dll"
+FILE2="PSetup.exe"
+FILE3="Psetup.ini"
+[SourceFiles]
+SourceFiles0=.\bin\
+SourceFiles1=C:\Program Files\Microsoft Component Installer SDK for Windows\
+SourceFiles2=.\Applications\MembershipLog\Install\
+[SourceFiles0]
+%FILE0%=
+[SourceFiles1]
+%FILE1%=
+%FILE2%=
+[SourceFiles2]
+%FILE3%=

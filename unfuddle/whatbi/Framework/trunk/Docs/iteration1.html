@@ -1,0 +1,313 @@
+<HTML>
+<HEAD>
+<TITLE>WhaTBI? Iteration 1</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="whatbi.css"/>
+</HEAD>
+<BODY>
+
+<H1>WhaTBI? Iteration 1</H1>
+
+<H2>Introduction</H2>
+
+<P>The purpose of this first iteration is to develop a very simple, read-only &quot;datasource&quot;. Note that at this stage this will be the
+only datasource implementation, so there should be no need at this time to factor out the datasource interface(s).</P>
+
+<H2>Code</H2>
+
+<H3 CLASS="redP">&quot;Red&quot; phase</H3>
+
+<P>Our first job is to create unit tests that fail:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Tests/HardCoded.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Unit</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">tests</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">for</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Examples.HardCodedDataSource</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">red</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> NUnit<SPAN CLASS="syntax18">.</SPAN>Framework<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">.</SPAN>Examples<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">.</SPAN>Tests
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax18">[</SPAN>TestFixture<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">class</SPAN> HardCodedTest
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">private</SPAN> HardCodedDataSource ds <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax8">new</SPAN> <SPAN CLASS="syntax6">HardCodedDataSource</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">GetAll</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            ICollection all <SPAN CLASS="syntax18">=</SPAN> ds<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">GetAll</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+            Assert<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">AreEqual</SPAN>(all<SPAN CLASS="syntax18">.</SPAN>Count<SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax5">4</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">ValidGets</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Fred</SPAN><SPAN CLASS="syntax13">&quot;</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">2</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Wilma</SPAN><SPAN CLASS="syntax13">&quot;</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">3</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Barney</SPAN><SPAN CLASS="syntax13">&quot;</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">4</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Betty</SPAN><SPAN CLASS="syntax13">&quot;</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">InvalidGets</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">0</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax14">null</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">5</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax14">null</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">private</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax10">int</SPAN> i<SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax10">object</SPAN> o)
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax10">object</SPAN> obj <SPAN CLASS="syntax18">=</SPAN> ds<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">Get</SPAN>(i)<SPAN CLASS="syntax18">;</SPAN>
+            Assert<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">AreEqual</SPAN>(o<SPAN CLASS="syntax18">,</SPAN> obj)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<P>These actual fail quite spectacularly, as they do not even compile! So let's add a minimal implementation of our simple datasource,
+such that the unit tests compile even though they do not yet succeed:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Examples/HardCoded.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Simple,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">read-only</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">datasource</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">red</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">.</SPAN>Examples
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">class</SPAN> HardCodedDataSource
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">public</SPAN> ICollection <SPAN CLASS="syntax6">GetAll</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">throw</SPAN> <SPAN CLASS="syntax8">new</SPAN> <SPAN CLASS="syntax6">NotImplementedException</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">object</SPAN> <SPAN CLASS="syntax6">Get</SPAN>(<SPAN CLASS="syntax10">object</SPAN> key)
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">throw</SPAN> <SPAN CLASS="syntax8">new</SPAN> <SPAN CLASS="syntax6">NotImplementedException</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<H3 CLASS="greenP">&quot;Green&quot; phase</H3>
+
+<P>Now it's time to fix the example datasource code, in the simplest possible way:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Examples/HardCoded.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Simple,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">read-only</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">datasource</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">green</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">.</SPAN>Examples
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">class</SPAN> HardCodedDataSource
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">public</SPAN> ICollection <SPAN CLASS="syntax6">GetAll</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax8">new</SPAN> String<SPAN CLASS="syntax18">[</SPAN><SPAN CLASS="syntax18">]</SPAN><SPAN CLASS="syntax18">{</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Fred</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Wilma</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Barney</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Betty</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">}</SPAN><SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">object</SPAN> <SPAN CLASS="syntax6">Get</SPAN>(<SPAN CLASS="syntax10">object</SPAN> key)
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">switch</SPAN>(Int32<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">Parse</SPAN>(key<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">ToString</SPAN>()))
+            <SPAN CLASS="syntax18">{</SPAN>
+                <SPAN CLASS="syntax8">case</SPAN> <SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">:</SPAN> <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Fred</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">;</SPAN>
+                <SPAN CLASS="syntax8">case</SPAN> <SPAN CLASS="syntax5">2</SPAN><SPAN CLASS="syntax18">:</SPAN> <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Wilma</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">;</SPAN>
+                <SPAN CLASS="syntax8">case</SPAN> <SPAN CLASS="syntax5">3</SPAN><SPAN CLASS="syntax18">:</SPAN> <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Barney</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">;</SPAN>
+                <SPAN CLASS="syntax8">case</SPAN> <SPAN CLASS="syntax5">4</SPAN><SPAN CLASS="syntax18">:</SPAN> <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Betty</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax18">}</SPAN>
+            <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax14">null</SPAN><SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<P>One point of interest here is that we have a read-only datasource which is returning references to its elements. This is OK in this
+simple case, as the elements in question are strings and therefore immutable, but needs some consideration when we move to a more
+general implementation.</P>
+
+<H3 CLASS="refactP">&quot;Refactor&quot; phase</H3>
+
+<P>The most obvious candidate for refactoring is the repeated test data, so we'd like to create a slightly less hard-coded datasource
+(still read-only) whose contents we can specify when it is created. This would make the tests cases as below:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Tests/ReadOnlyList.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Simple,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">read-only</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">list</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">datasource</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">refactor</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> NUnit<SPAN CLASS="syntax18">.</SPAN>Framework<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi<SPAN CLASS="syntax18">.</SPAN>Tests
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax18">[</SPAN>TestFixture<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">class</SPAN> ReadOnlyListTest
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">private</SPAN> String<SPAN CLASS="syntax18">[</SPAN><SPAN CLASS="syntax18">]</SPAN> TestData <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax8">new</SPAN> String<SPAN CLASS="syntax18">[</SPAN><SPAN CLASS="syntax18">]</SPAN><SPAN CLASS="syntax18">{</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Fred</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Wilma</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Barney</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax13">Betty</SPAN><SPAN CLASS="syntax13">&quot;</SPAN><SPAN CLASS="syntax18">}</SPAN><SPAN CLASS="syntax18">;</SPAN> 
+        <SPAN CLASS="syntax8">private</SPAN> ReadOnlyList ds<SPAN CLASS="syntax18">;</SPAN>
+
+        <SPAN CLASS="syntax18">[</SPAN>SetUp<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">Init</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            ds <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax8">new</SPAN> <SPAN CLASS="syntax6">ReadOnlyList</SPAN>(TestData)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">GetAll</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            ICollection all <SPAN CLASS="syntax18">=</SPAN> ds<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">GetAll</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+            Assert<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">AreEqual</SPAN>(all<SPAN CLASS="syntax18">.</SPAN>Count<SPAN CLASS="syntax18">,</SPAN> TestData<SPAN CLASS="syntax18">.</SPAN>Length)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">ValidGets</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">for</SPAN> (<SPAN CLASS="syntax10">int</SPAN> i <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">;</SPAN> i <SPAN CLASS="syntax18">&lt;</SPAN><SPAN CLASS="syntax18">=</SPAN> TestData<SPAN CLASS="syntax18">.</SPAN>Length<SPAN CLASS="syntax18">;</SPAN> <SPAN CLASS="syntax18">+</SPAN><SPAN CLASS="syntax18">+</SPAN>i)
+            <SPAN CLASS="syntax18">{</SPAN>
+                <SPAN CLASS="syntax6">GetHelper</SPAN>(i<SPAN CLASS="syntax18">,</SPAN> TestData<SPAN CLASS="syntax18">[</SPAN>i<SPAN CLASS="syntax18">-</SPAN><SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">]</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax18">}</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax18">[</SPAN>Test<SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">InvalidGets</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax5">0</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax14">null</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax6">GetHelper</SPAN>(TestData<SPAN CLASS="syntax18">.</SPAN>Length <SPAN CLASS="syntax18">+</SPAN> <SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax14">null</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">private</SPAN> <SPAN CLASS="syntax10">void</SPAN> <SPAN CLASS="syntax6">GetHelper</SPAN>(<SPAN CLASS="syntax10">int</SPAN> i<SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax10">object</SPAN> o)
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax10">object</SPAN> obj <SPAN CLASS="syntax18">=</SPAN> ds<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">Get</SPAN>(i)<SPAN CLASS="syntax18">;</SPAN>
+            Assert<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">AreEqual</SPAN>(o<SPAN CLASS="syntax18">,</SPAN> obj)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<P>Implementing the new class is then relatively simple, using the <CODE>ICollection::CopyTo</CODE> method to populate an array member
+variable:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">List.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">List-based</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">datasources</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">refactor</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">class</SPAN> ReadOnlyList
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">private</SPAN> Object<SPAN CLASS="syntax18">[</SPAN><SPAN CLASS="syntax18">]</SPAN> m_data<SPAN CLASS="syntax18">;</SPAN>
+        
+        <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax6">ReadOnlyList</SPAN>(ICollection data)
+        <SPAN CLASS="syntax18">{</SPAN>
+            m_data <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax8">new</SPAN> Object<SPAN CLASS="syntax18">[</SPAN>data<SPAN CLASS="syntax18">.</SPAN>Count<SPAN CLASS="syntax18">]</SPAN><SPAN CLASS="syntax18">;</SPAN>
+            data<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">CopyTo</SPAN>(m_data<SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax5">0</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">public</SPAN> ICollection <SPAN CLASS="syntax6">GetAll</SPAN>()
+        <SPAN CLASS="syntax18">{</SPAN>
+            <SPAN CLASS="syntax8">return</SPAN> (ICollection)Utility<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">GetReadOnly</SPAN>(m_data)<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+        
+        <SPAN CLASS="syntax8">public</SPAN> Object <SPAN CLASS="syntax6">Get</SPAN>(Object key)
+        <SPAN CLASS="syntax18">{</SPAN>
+            Int32 i<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax8">if</SPAN> (Int32<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">TryParse</SPAN>(key<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">ToString</SPAN>()<SPAN CLASS="syntax18">,</SPAN> <SPAN CLASS="syntax8">out</SPAN> i) <SPAN CLASS="syntax18">&amp;</SPAN><SPAN CLASS="syntax18">&amp;</SPAN> i <SPAN CLASS="syntax18">&gt;</SPAN> <SPAN CLASS="syntax5">0</SPAN> <SPAN CLASS="syntax18">&amp;</SPAN><SPAN CLASS="syntax18">&amp;</SPAN> i <SPAN CLASS="syntax18">&lt;</SPAN><SPAN CLASS="syntax18">=</SPAN> m_data<SPAN CLASS="syntax18">.</SPAN>Length) 
+                <SPAN CLASS="syntax8">return</SPAN> Utility<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">GetReadOnly</SPAN>(m_data<SPAN CLASS="syntax18">[</SPAN>i<SPAN CLASS="syntax18">-</SPAN><SPAN CLASS="syntax5">1</SPAN><SPAN CLASS="syntax18">]</SPAN>)<SPAN CLASS="syntax18">;</SPAN>
+            
+            <SPAN CLASS="syntax8">return</SPAN> <SPAN CLASS="syntax14">null</SPAN><SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<P>The sharp-eyed amongst you might, though, notice that the return values from <CODE>Get</CODE> and <CODE>GetAll</CODE> are obtained
+via a call to <CODE>Utility.GetReadOnly</CODE>. This is to handle the issue raised earlier about returning writable objects from a
+read-only datasource. Unlike C++, the CLR does not support <CODE>const</CODE> objects and methods (neither does Java for that matter),
+so we must do something ourselves. This &quot;something&quot; is encapsulated in that static helper method:</P>
+
+<PRE><SPAN CLASS="syntax1">/*</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Project:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">WhaTBI?</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">(What's</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">The</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Big</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">Idea?)</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Filename:</SPAN><SPAN CLASS="syntax1">   </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Utility.cs</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Description:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Various</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">utilities</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*</SPAN><SPAN CLASS="syntax1">  </SPAN><SPAN CLASS="syntax1">Version:</SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">    </SPAN><SPAN CLASS="syntax1">Iteration</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">1,</SPAN><SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">refactor</SPAN>
+<SPAN CLASS="syntax1"> </SPAN><SPAN CLASS="syntax1">*/</SPAN>
+
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">;</SPAN>
+<SPAN CLASS="syntax9">using</SPAN> System<SPAN CLASS="syntax18">.</SPAN>Collections<SPAN CLASS="syntax18">;</SPAN>
+
+<SPAN CLASS="syntax9">namespace</SPAN> Pdbartlett<SPAN CLASS="syntax18">.</SPAN>Whatbi
+<SPAN CLASS="syntax18">{</SPAN>
+    <SPAN CLASS="syntax9">namespace</SPAN> Custom
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax10">interface</SPAN> IGetReadOnly
+        <SPAN CLASS="syntax18">{</SPAN>
+            Object <SPAN CLASS="syntax6">GetReadOnly</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+    
+    <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax8">static</SPAN> <SPAN CLASS="syntax10">class</SPAN> Utility
+    <SPAN CLASS="syntax18">{</SPAN>
+        <SPAN CLASS="syntax8">public</SPAN> <SPAN CLASS="syntax8">static</SPAN> Object <SPAN CLASS="syntax6">GetReadOnly</SPAN>(Object o)
+        <SPAN CLASS="syntax18">{</SPAN>
+            Custom<SPAN CLASS="syntax18">.</SPAN>IGetReadOnly custom <SPAN CLASS="syntax18">=</SPAN> o <SPAN CLASS="syntax8">as</SPAN> Custom<SPAN CLASS="syntax18">.</SPAN>IGetReadOnly<SPAN CLASS="syntax18">;</SPAN> 
+            <SPAN CLASS="syntax8">if</SPAN> (custom <SPAN CLASS="syntax18">!</SPAN><SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax14">null</SPAN>)
+                <SPAN CLASS="syntax8">return</SPAN> custom<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">GetReadOnly</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+            
+            ICollection coll <SPAN CLASS="syntax18">=</SPAN> o <SPAN CLASS="syntax8">as</SPAN> ICollection<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax8">if</SPAN> (coll <SPAN CLASS="syntax18">!</SPAN><SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax14">null</SPAN>)
+            <SPAN CLASS="syntax18">{</SPAN>
+                Object<SPAN CLASS="syntax18">[</SPAN><SPAN CLASS="syntax18">]</SPAN> readOnly <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax8">new</SPAN> Object<SPAN CLASS="syntax18">[</SPAN>coll<SPAN CLASS="syntax18">.</SPAN>Count<SPAN CLASS="syntax18">]</SPAN><SPAN CLASS="syntax18">;</SPAN>
+                
+                <SPAN CLASS="syntax10">int</SPAN> i <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax5">0</SPAN><SPAN CLASS="syntax18">;</SPAN>
+                <SPAN CLASS="syntax8">foreach</SPAN> (Object item <SPAN CLASS="syntax8">in</SPAN> coll)
+                    readOnly<SPAN CLASS="syntax18">[</SPAN>i<SPAN CLASS="syntax18">+</SPAN><SPAN CLASS="syntax18">+</SPAN><SPAN CLASS="syntax18">]</SPAN> <SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax6">GetReadOnly</SPAN>(item)<SPAN CLASS="syntax18">;</SPAN>
+                    
+                <SPAN CLASS="syntax8">return</SPAN> readOnly<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax18">}</SPAN>
+            
+            ICloneable cloneable <SPAN CLASS="syntax18">=</SPAN> o <SPAN CLASS="syntax8">as</SPAN> ICloneable<SPAN CLASS="syntax18">;</SPAN>
+            <SPAN CLASS="syntax8">if</SPAN> (cloneable <SPAN CLASS="syntax18">!</SPAN><SPAN CLASS="syntax18">=</SPAN> <SPAN CLASS="syntax14">null</SPAN>)
+                <SPAN CLASS="syntax8">return</SPAN> cloneable<SPAN CLASS="syntax18">.</SPAN><SPAN CLASS="syntax6">Clone</SPAN>()<SPAN CLASS="syntax18">;</SPAN>
+            
+            <SPAN CLASS="syntax8">return</SPAN> o<SPAN CLASS="syntax18">;</SPAN>
+        <SPAN CLASS="syntax18">}</SPAN>
+    <SPAN CLASS="syntax18">}</SPAN>
+<SPAN CLASS="syntax18">}</SPAN>
+</PRE>
+
+<P>Here we define an interface that objects can implement to override out handling, for maximum flexibility. The helper method first
+checks for that interface, and uses it if available. Possibilities here include return the object itself if it is immutable, or a
+read-only version which has a restricted interface, or maybe even some form of dynamically-generated proxy. If this interface is not
+implemented, we next see whether the object passed is a collection, and if so call ourself recursively for each element. Next
+<CODE>ICloneable</CODE> is tried, to attempt to make a copy of the object. Note that as collections may well implement
+<CODE>ICloneable</CODE> as well, the ordering is important if the read-only behaviour of the items in the collection
+is to be preserved. Finally, as a last resort, the object itself is returned.</P>
+
+<P>One further issue that this helper function does raise is that of generics. If it had been implemented as a generic method then
+no cast would have been required in <CODE>GetAll</CODE>. This will be considered when the possibility of generic datasources is
+investigated.</P>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Very simple layout</title>
+<script language="JavaScript">
+<!--
+    function loadedHandler()
+    {
+        var here = document.location;
+        var search = here.search;
+        
+        var searchMap = new Array();
+        
+        if (search != null && search.length > 1)
+        {
+            search = search.substr(1); // ignore leading "?"
+            
+            var searchPairs = search.split("&");
+            var pair;
+            
+            for (index in searchPairs)
+            {
+                var parts = searchPairs[index].split("=", 2);
+                if (parts.length == 1)
+                    searchMap[ parts[0] ] = true;
+                else
+                    searchMap[ parts[0] ] = parts[1];
+            }
+        }
+        
+        var page = searchMap["page"];
+        if (page == null)
+            page = "home";
+            
+        var path = here.pathname;
+        var rootPath = path.substr(0, path.lastIndexOf("/"));
+            
+        var mainURL = here.protocol + "//" + here.host + rootPath + "/" + page + ".xml";
+        var main = document.getElementById("main");
+        if (main != null)
+            main.src = mainURL;
+    }
+// -->
+</script>
+</head>
+<frameset rows="10%,*" onLoad="loadedHandler()">
+    <frame id="header" src="header.html" />
+    <frameset cols="25%, *">
+        <frame id="map" src="map.xml" />
+        <frame id="main" />
+    </frameset>
+</frameset>
+</html>

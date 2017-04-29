@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/site.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/header.css"/>
+  </head>
+  <body>
+    <img src="/static/logo.gif" alt="PaulB -- TestApp"/>
+    <ul>
+      <li>
+        {% if user_desc %}
+          {{ user_desc }} (
+        {% endif %}
+        {% if is_admin %}
+          <a href="#">Sales</a>, 
+        {% endif %}
+        <a target="_parent" href="{{ user_link }}">{{ link_text }}</a>
+        {% if user_desc %}
+          )
+        {% endif %}
+      </li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a target="content" href="/contact">Contact us</a></li>
+    </ul>
+    <div></div>
+  </body>
+</html>

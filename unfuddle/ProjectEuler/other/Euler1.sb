@@ -1,0 +1,26 @@
+total = 0
+For i = 1 To 999
+  If (Math.Remainder(i, 3) = 0) Then
+    total = total + i
+  Else
+    If (Math.Remainder(i, 5) = 0) Then
+      total = total + i
+    EndIf
+  EndIf
+EndFor
+TextWindow.WriteLine("Brute force: " + total)
+
+Sub sumTo
+  sum = (n / 2) * (n + 1)
+EndSub
+
+n = 333
+sumTo()
+total = 3 * sum
+n = 199
+sumTo()
+total = total + 5 * sum
+n = 66
+sumTo()
+total = total - 15 * sum
+TextWindow.WriteLine("Series: " + total)

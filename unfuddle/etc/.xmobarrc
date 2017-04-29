@@ -1,0 +1,14 @@
+Config { font = "-misc-fixed-*-*-*-*-12-*-*-*-*-*-*-*"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Top
+       , lowerOnStart = True
+       , commands = [ Run Battery [] 150
+                    , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+    		    , Run Date "%a %b %_d %Y %H:%M" "date" 10
+		    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%cpu% | %battery% } %StdinReader% { <fc=#ee9a00>%date%</fc>"
+       }

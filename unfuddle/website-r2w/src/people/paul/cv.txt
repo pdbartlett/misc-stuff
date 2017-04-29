@@ -1,0 +1,14 @@
+restindex
+    crumb: cv
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+================
+Curriculum vitae
+================
+
+Paul David Bartlett
+-------------------
+
+TODO

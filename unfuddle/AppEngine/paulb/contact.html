@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/site.css"/>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    {% if posted %}
+      <p>Thank you for taking the time to contact us -- we&apos;ll reply as
+         soon as we possibly can...</p>
+    {% endif %}
+    {% if messages or admin %}
+      <h2>Message history</h2>
+      <div>
+      {% for message in messages %}
+        {{ message.getSummary }}<br/>
+      {% endfor %}
+      </div>
+    {% else %}
+      <p>You can use the form below to ask questions about our products, make
+         comments about the site, or anything else for that matter.</p>
+      <p>Though it&apos;s by no means necessary, if you have a Google account
+         then you may wish to login using the link above. This will mean that
+         we remember you details so you don&apos;t have to enter them on any
+         future messages, and also that you can view a history of your messages
+         sent, our replies and also any orders you make.</p>
+    {% endif %}
+    {% if not admin %}
+      <h2>Send new message</h2>
+      <form action="/contact" method="POST">
+        <table>
+          <tr>
+            <td>Your email address:</td>
+            <td><input name="email" size="50" value="{{ email }}"/></td>
+          </tr>
+          <tr>
+            <td>Subject:</td>
+            <td><input name="subject" size="50"/></td>
+          </tr>
+        </table>
+        <textarea name="content" cols="80" rows="12"/></textarea><br/>
+        <input name="submit" type="submit" value="Send"/>
+      </form>
+    {% endif %}
+  </body>
+</html>

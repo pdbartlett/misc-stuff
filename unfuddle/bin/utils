@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cmd=$(basename $0)
+
+case $cmd in
+  # Helper "scriptlets"
+  acs)         apt-cache search "$@" | grep -v ^lib | sort | more ;;
+  apt-upgrade) sudo -v
+               sudo apt-get update
+               sudo apt-get dist-upgrade
+               sudo apt-get autoremove
+               ;;
+  editcron)    crontab -l > ~/etc/crontab.`date +%Y%m%d.%H%M%S`
+               crontab -e
+               crontab -l > ~/etc/crontab
+               ;;
+  histgrep)    grep -i $1 ~/.bash_history;;
+  ldir)        [[ -d $1 ]] && ls -hlF | grep "[[:space:]]$1/";;
+  psgrep)      ps -ef | grep -Ei $1 | grep -v 'grep';;
+  really)      ls -hlF `which $1`;;
+  setgrep)     set | grep -i $1;;
+  vix)         vi -X $1 && chmod u+x $1;;
+esac

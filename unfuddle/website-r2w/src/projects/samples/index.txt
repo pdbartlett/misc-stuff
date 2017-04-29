@@ -1,0 +1,72 @@
+restindex
+    crumb: samples
+    output-encoding: utf8
+    template-encoding: utf8
+/restindex
+
+============
+Code samples
+============
+
+*Micellanea technica*
+---------------------
+
+=================== =================== ======================================================== =====================
+Language/Technology Project (if any)    Description                                              Links
+=================== =================== ======================================================== =====================
+C++ (templates)                         The example code from my `C++ decorator templates`_      `SmartWrapper.h`_
+                                        article on CodeProject_
+------------------- ------------------- -------------------------------------------------------- ---------------------
+C++ (WTL)                               A couple of WTL samples, zipped up for your downloading  `WTL.zip`_
+                                        pleasure. **HelloWtl** is the ubiquitous "Hello world!"
+                                        application, and **WtlMinimal** is a minimal "real" app.
+------------------- ------------------- -------------------------------------------------------- ---------------------
+C# (v2.0)           `WhaTBI?`_          A example of generics and explicit interface             `generics.cs`_
+                                        implementation which shows the way `WhaTBI?`_ might
+                                        evolve (more details_ here)
+------------------- ------------------- -------------------------------------------------------- ---------------------
+JavaScript                              The implementation of "grep" using OO features of        `jsgrep.js`_
+                                        JavaScript from article_ of the same name on
+                                        CodeProject_
+------------------- ------------------- -------------------------------------------------------- ---------------------
+PHP                 `b@rtletts`_        Simple command-line wrapper over GeSHi_ (Generic Syntax  `callGeSHi.php`_
+                                        Highlighter) used in `codelist.py`_.
+------------------- ------------------- -------------------------------------------------------- ---------------------
+Python              `b@rtletts`_        rest2web_ wrapper script to handle copying "resource"    `build.py`_
+                                        files from source tree to destination folder
+------------------- ------------------- -------------------------------------------------------- ---------------------
+Python              `b@rtletts`_        rest2web_ plugin to generate code listings (uses         `codelist.py`_
+                                        `callGeSHi.php`_)
+------------------- ------------------- -------------------------------------------------------- ---------------------
+Ruby                                    `Watir`_-related helper class and module, plus an        `watirTest.rb`_ and
+                                        example unit test                                        `googleTest.rb`_
+------------------- ------------------- -------------------------------------------------------- ---------------------
+Ruby                `WhaTBI?`_          The `WhaTBI?`_ build system is implemented using Ruby.   `build.rb`_,
+                                        The code samples are the build library (`build.rb`_),    `PdbMisc.rb`_ and
+                                        a small utility library (`PdbMisc.rb`_) and an example   `whatbiBuild.rb`_
+                                        build script (`whatbiBuild.rb`_).
+=================== =================== ======================================================== =====================
+
+.. _details:                    http://blogs.geekdojo.net/pdbartlett/archive/2005/03/16/7445.aspx
+.. _`C++ decorator templates`:  http://www.codeproject.com/cpp/DecoratorTemplates.asp
+.. _article:                    http://www.codeproject.com/jscript/oojsgrep.asp
+.. _CodeProject:                http://www.codeproject.com/
+.. _`WhaTBI?`:                  ../index.html#whatbi-what-s-the-big-idea
+.. _`b@rtletts`:                ../index.html#b-rtletts-website
+.. _GeSHi:                      http://qbnz.com/highlighter/
+.. _rest2web:                   http://www.voidspace.org.uk/python/rest2web/
+.. _Watir:                      http://wtr.rubyforge.org/
+
+.. _`SmartWrapper.h`:           SmartWrapper_h.html
+.. _`generics.cs`:              generics_cs.html
+.. _`jsgrep.js`:                jsgrep_js.html
+.. _`callGeSHi.php`:            callGeSHi_php.html
+.. _`build.py`:                 build_py.html
+.. _`codelist.py`:              codelist_py.html
+.. _`watirTest.rb`:             watirTest_rb.html
+.. _`googleTest.rb`:            googleTest_rb.html
+.. _`build.rb`:                 build_rb.html
+.. _`PdbMisc.rb`:               PdbMisc_rb.html
+.. _`whatbiBuild.rb`:           whatbiBuild_rb.html
+
+.. _`WTL.zip`:                  zipped/WTL.zip
