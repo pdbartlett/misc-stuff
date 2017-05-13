@@ -1,0 +1,137 @@
+<html>
+ <head>
+  <title>Cub Challenge</title>
+  <style type="text/css">
+   body {
+    font-family: Arial;
+    font-size: 14pt;
+   }
+   h1 {
+    color: #484;
+    font-size: 40pt;
+    font-weight: bold;
+   }
+   img {
+    vertical-align: -15%;
+    margin-right: 50px;
+   }
+   .blurb {
+    font-style: italic;
+    font-size: 16pt;
+   }
+   form {
+    font-weight: bold;
+   }
+   input {
+    margin-left: 20px;
+   }
+  </style>
+  <script type="text/javascript">
+   // Data.
+   var questions = [
+    "Please enter your group name.",
+    "Please enter your access code.",
+    "To confirm you are a member of cubs, what is the first name of the current Chief Scout?",
+    "There is a bag of possibly useful kit which is locked. The code is 3006. Once you have" +
+     " opened the bag please place the items somewhere safe and easy to get to, as you may need" +
+     " some of them later.<br/><br/>Once you are done with the kit, please decode the following" +
+     " message to continue: SVAQ GUR PBQRJBEQ",
+    "You should now follow this instruction. Ask a leader where the codeword is hidden as you will" +
+     " need it to carry on. Please <i>DO</i> take care as you are in an emergency situation, so" +
+     " there might be unexpected dangers.<br/><br/>Once you have you codeword please enter it here.",
+    "Now use the codeword to decode the following message: ZZNE VDQP",
+    "And this one:<br/><img src='pigpen.png'/>",
+    "And finally decode this message: -.. --- - ... / .- -. -.. / -.. .- ... .... . ...",
+    "You will now learn about the evacuation plan. You will need to walk to a meeting place," +
+     " called the <i>rendez-vous point</i> or <i>RVP</i>, and will get there via two" +
+     " <i>waypoints</i> that are on the route. Your first waypoint is at OS grid reference" +
+     " TQ 026 771. Please show you have found it on the map by entering what type of building it is.",
+    "Your second waypoint is at SU 997 788. Please also enter the building type.",
+    "Your final destination, the RVP, is the Scout HQ at SU 983 789. Please confirm you have" +
+     " found it on the map by entering the name of the group that are based there.",
+    "Please enter the full OS grid reference of where you currently are, in the same way as they" +
+     " were shown in the previous questions (2 letters, space, 3 numbers, space, 3 numbers).",
+    "And now please give the distance from your current location through the 2 waypoints to the" +
+     " RVP (to the nearest kilometre)",
+   ];
+   var answers = [
+    "Colnbrook",
+    "DontPanic",
+    "Bear",
+    "FIND THE CODEWORD",
+    "CubsRock",
+    "WELL DONE",
+    "KEEP CALM AND CARRY ON",
+    "DOTS AND DASHES",
+    "School",
+    "Fire station",
+    "3rd Upton",
+    "SU 027 773",
+    "5",
+   ];
+   var counter = 1;
+   // Functions
+   function onLoad() {
+    var form = document.getElementById("form");
+    if (form.attachEvent) {
+     form.attachEvent("submit", formSubmit);
+    } else {
+     form.addEventListener("submit", formSubmit);
+    }
+    showChallenge();
+   }
+   function showChallenge() {
+    var q = document.getElementById("challenge");
+    var a = document.getElementById("answer");
+    if (counter > questions.length) {
+     q.innerHTML = "<img src='tick.jpg'/> TEST COMPLETED. Well done, you passed!!!<br/><br/>" +
+      "Please check everyone is fit and able to walk then contact Scouting HQ with the password '" +
+      "walkdontrun" + "' to arrange for transport from the RVP.";
+     hide(document.getElementById("label"));
+     hide(a);
+     hide(document.getElementById("go"));
+    } else {
+     q.innerHTML = questions[counter - 1];
+     a.value = ""
+    }
+   }
+   function hide(e) {
+    e.style.display = "none";
+   }
+   function formSubmit(e) {
+    if (e.preventDefault) e.preventDefault();
+    if (checkAnswer()) {
+     counter++;
+     showChallenge();
+    } else {
+     alert("Wrong! Please try again.");
+    }
+    return false;
+   }
+   function checkAnswer() {
+    var a = document.getElementById("answer");
+    return (canonicalize(a.value) == canonicalize(answers[counter - 1]));
+   }
+   function canonicalize(s) {
+    return s.toLowerCase().replace(/ /g, "");
+   }
+  </script>
+ </head>
+ <body onLoad="onLoad();">
+  <h1><img src='cubs.jpg'/> Exercise &quot;I'm a cub, get me out of here!&quot;</h1>
+  <hr/>
+  <p class="blurb">
+   You should already have been contacted by Scouting HQ with your access details. Please, complete
+   the challenges that will appear below and enter all your answers carefully to move on to the next
+   one.
+  </p><p>
+   Stay calm, think clearly, and most of all: <b>good luck</b>!
+  </p>
+  <hr/>
+  <form id="form">
+   <p id="challenge"> </p>
+   <label id="label">ANSWER:</label><input id="answer" type="text"/><input id="go" type="submit"/>
+  </form>
+  <hr/>
+ </body>
+</html>
