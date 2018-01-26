@@ -85,8 +85,7 @@ int main(int argc, char** argv) {
   std::ifstream infile("/Users/pdbartlett/src/cpp/euler/p089_roman.txt");
   int cch = 0;
   std::string roman;
-  while (std::getline(infile, roman))
-  {
+  while (std::getline(infile, roman)) {
     int dec = roman_to_dec(roman);
     std::string minimal(dec_to_roman(dec));
     std::cout << roman << ", " << dec << ", " << minimal << std::endl;
