@@ -1,24 +1,21 @@
 graph poems {
-  node [shape=box];
+  overlap=false;
+  node [shape=box style=rounded];
   
-  // Poem names.
-  tree [label="A Poison Tree"];
-  senn [label="Destruction of Sennacherib"];
-  prel [label="Extract from 'The Prelude'"];
-  man  [label="The Man He Killed"];
-  kate [label="Cousin Kate"];
-  half [label="Half-caste"];
-  expo [label="Exposure"];
-  chrg [label="The Charge of the Light Brigade"];
-  cat  [label="Catrin"];
-  tog  [label="War Photographer"];
-  belf [label="Belfast Confetti"];
-  game [label="The Class Game"];
-  pops [label="Poppies"];
-  np   [label="No Problem"];
-  what [label="What Were They Like?"];
-  
-  // Dummy connections
-  tree -- senn -- prel -- man -- kate -- half -- expo -- chrg;
-  chrg -- cat -- tog -- belf -- game -- pops -- np -- what -- tree;
+  // Node definitions (poems).
+  tree [label=<A Poison Tree<br/>William Blake (1794)>];
+  senn [label=<Destruction of Sennacherib<br/>Lord Byron (1815)>];
+  prel [label=<Extract from "The Prelude"<br/>William Wordsworth (1850)>];
+  man  [label=<The Man He Killed<br/>Thomas Kardy (1902)>];
+  kate [label=<Cousin Kate<br/>Christina Rosetti (1860)>];
+  half [label=<Half-caste<br/>John Agard (1996)>];
+  expo [label=<Exposure<br/>Wilfred Owen (1917)>];
+  chrg [label=<The Charge of the Light Brigade<br/>Alfred, Lord Tennyson (1854)>];
+  cat  [label=<Catrin<br/>Gillian Clarke (1978)>];
+  tog  [label=<War Photographer<br/>Carole Satyamurti (1987)>];
+  belf [label=<Belfast Confetti<br/>Ciaran Carson (1990)>];
+  game [label=<The Class Game<br/>Mary Casey (1981)>];
+  pops [label=<Poppies<br/>Jane Weir (2005)>];
+  np   [label=<No Problem<br/>Benjamin Zephaniah (1996)>];
+  what [label=<What Were They Like?<br/>Denise Levertov (1967)>];
 }
