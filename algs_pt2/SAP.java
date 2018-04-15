@@ -66,11 +66,12 @@ public class SAP {
   }
 
   private void validateIndices(Iterable<Integer> is) {
+	  if (is == null) throw new IllegalArgumentException("Null iterable passed");
     for (int i : is) validateIndex(i);
   }
 
   private void validateIndex(int i) {
-    if (i < 0 || i >= g.V()) throw new IndexOutOfBoundsException("Invalid index: " + i);
+    if (i < 0 || i >= g.V()) throw new IllegalArgumentException("Invalid index: " + i);
   }
 
   // do unit testing of this class

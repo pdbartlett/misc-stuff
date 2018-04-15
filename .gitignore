@@ -34,5 +34,6 @@ build/*
 # Misc.
 ews/*
 scratch/*
+testdata/*
 *.pdf
 *.zip

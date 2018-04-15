@@ -1,0 +1,24 @@
+graph poems {
+  node [shape=box];
+  
+  // Poem names.
+  tree [label="A Poison Tree"];
+  senn [label="Destruction of Sennacherib"];
+  prel [label="Extract from 'The Prelude'"];
+  man  [label="The Man He Killed"];
+  kate [label="Cousin Kate"];
+  half [label="Half-caste"];
+  expo [label="Exposure"];
+  chrg [label="The Charge of the Light Brigade"];
+  cat  [label="Catrin"];
+  tog  [label="War Photographer"];
+  belf [label="Belfast Confetti"];
+  game [label="The Class Game"];
+  pops [label="Poppies"];
+  np   [label="No Problem"];
+  what [label="What Were They Like?"];
+  
+  // Dummy connections
+  tree -- senn -- prel -- man -- kate -- half -- expo -- chrg;
+  chrg -- cat -- tog -- belf -- game -- pops -- np -- what -- tree;
+}

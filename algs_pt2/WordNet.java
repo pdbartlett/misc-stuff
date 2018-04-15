@@ -18,7 +18,7 @@ public class WordNet {
     for (String line : lines) {
       String[] parts = line.split(",");
       if (index != Integer.parseInt(parts[0])) {
-        throw new RuntimeException("Unexpected index: " + parts[0]);
+        throw new RuntimeException("Unexpected synset index: got " + parts[0] + ", wanted " + index);
       }
       this.synsets[index] = parts[1];
       for (String noun : parts[1].split(" ")) {
@@ -51,12 +51,16 @@ public class WordNet {
 
   // distance between nounA and nounB (defined below)
   public int distance(String nounA, String nounB) {
+    if (!isNoun(nounA)) throw new IllegalArgumentException("Invalid noun: " + nounA);
+    if (!isNoun(nounB)) throw new IllegalArgumentException("Invalid noun: " + nounB);
     return sap.length(nounIndices.get(nounA), nounIndices.get(nounB));
   }
 
   // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
   // in a shortest ancestral path (defined below)
   public String sap(String nounA, String nounB) {
+    if (!isNoun(nounA)) throw new IllegalArgumentException("Invalid noun: " + nounA);
+    if (!isNoun(nounB)) throw new IllegalArgumentException("Invalid noun: " + nounB);
     int index = sap.ancestor(nounIndices.get(nounA), nounIndices.get(nounB));
     return synsets[index];
   }

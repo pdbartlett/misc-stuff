@@ -14,11 +14,14 @@ public class Outcast {
     for (int i = 0; i < nouns.length; ++i) {
       int sum = 0;
       for (int j = 0; j < nouns.length; ++j) {
-        sum += wordnet.distance(nouns[i], nouns[j]);
+		    if (i != j) sum += wordnet.distance(nouns[i], nouns[j]);
       }
       if (sum > distance) {
+        StdOut.println("New leader: " + nouns[i] + " at distance " + sum);
         distance = sum;
         index = i;
+      } else if (sum == distance) {
+        StdOut.println("Tie at distance " + distance + " between " + nouns[i] + " and " + nouns[index]);
       }
     }
     return nouns[index];
