@@ -1,0 +1,56 @@
+graph Features {
+  fontname=Arial;
+  label=<<font point-size="24"><b>Conflict Poems&thinsp;&mdash;&thinsp;Features</b><br/>&nbsp;</font>>;
+  labelloc=t;
+
+  node [shape=box fontname=Arial];
+  overlap=false;
+  splines=true;
+  
+  // Node definitions (poems).
+  tree [label=<A Poison Tree<br/>William Blake (1794)>];
+  senn [label=<Destruction of Sennacherib<br/>Lord Byron (1815)>];
+  prel [label=<Extract from "The Prelude"<br/>William Wordsworth (1850)>];
+  man  [label=<The Man He Killed<br/>Thomas Kardy (1902)>];
+  kate [label=<Cousin Kate<br/>Christina Rosetti (1860)>];
+  half [label=<Half-caste<br/>John Agard (1996)>];
+  expo [label=<Exposure<br/>Wilfred Owen (1917)>];
+  chrg [label=<The Charge of the Light Brigade<br/>Alfred, Lord Tennyson (1854)>];
+  cat  [label=<Catrin<br/>Gillian Clarke (1978)>];
+  tog  [label=<War Photographer<br/>Carole Satyamurti (1987)>];
+  belf [label=<Belfast Confetti<br/>Ciaran Carson (1990)>];
+  game [label=<The Class Game<br/>Mary Casey (1981)>];
+  pops [label=<Poppies<br/>Jane Weir (2005)>];
+  np   [label=<No Problem<br/>Benjamin Zephaniah (1996)>];
+  what [label=<What Were They Like?<br/>Denise Levertov (1967)>];
+  
+  // Node definitions (minor themes).
+  bib [label="Biblical" shape=oval];
+  dia [label="Dialect" shape=oval];
+  fp  [label="1st Person" shape=oval];
+  rhy [label="Rhyming" shape=oval];
+  lof [label="Lack of Figurative Language" shape=oval];
+  mfl [label="Much Figurative Language" shape=oval];
+  
+  // Edge definitions (connections).
+  tree -- bib; pops -- mfl;
+  senn -- bib; what -- mfl;
+  expo -- bib; tree -- rhy;
+  chrg -- bib; senn -- rhy;
+  half -- dia; man  -- rhy;
+  np   -- dia; kate -- rhy;
+  game -- dia; np   -- rhy;
+  tree -- fp;  tree -- lof;
+  prel -- fp;  man  -- lof;
+  man  -- fp;  game -- lof;
+  kate -- fp;  np   -- lof;
+  half -- fp;  senn -- mfl;
+  expo -- fp;  prel -- mfl;
+  cat  -- fp;  kate -- mfl;
+  tog  -- fp;  half -- mfl;
+  belf -- fp;  expo -- mfl;
+  game -- fp;  chrg -- mfl;
+  pops -- fp;  cat  -- mfl;
+  np   -- fp;  tog  -- mfl;
+  belf -- mfl;
+}
