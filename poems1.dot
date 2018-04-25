@@ -1,6 +1,11 @@
-graph poems {
+graph themes {
+  fontname=Arial;
+  label=<<font point-size="24"><b>Conflict Poems&thinsp;&mdash;&thinsp;Themes</b><br/>&nbsp;</font>>;
+  labelloc=t;
+
+  node [shape=box fontname=Arial];
   overlap=false;
-  node [shape=box style=rounded];
+  splines=true;
   
   // Node definitions (poems).
   tree [label=<A Poison Tree<br/>William Blake (1794)>];
@@ -18,4 +23,32 @@ graph poems {
   pops [label=<Poppies<br/>Jane Weir (2005)>];
   np   [label=<No Problem<br/>Benjamin Zephaniah (1996)>];
   what [label=<What Were They Like?<br/>Denise Levertov (1967)>];
+  
+  // Node definitions (major themes).
+  rel [label="Relationships" shape=circle];
+  nat [label="Nature" shape=circle];
+  war [label="War" shape=circle];
+  soc [label="Social Issues" shape=circle];
+  
+  // Edge definitions (connections).
+  tree -- rel;
+  kate -- rel;
+  cat  -- rel;
+  pops -- rel;
+  senn -- nat;
+  prel -- nat;
+  expo -- nat;
+  senn -- war;
+  man  -- war;
+  expo -- war;
+  chrg -- war;
+  tog  -- war;
+  belf -- war;
+  pops -- war;
+  what -- war;
+  kate -- soc;
+  half -- soc;
+  game -- soc;
+  np   -- soc;
+  what -- soc;
 }
