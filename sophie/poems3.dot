@@ -11,7 +11,7 @@ graph purpose {
   tree [label=<A Poison Tree<br/>William Blake (1794)>];
   senn [label=<Destruction of Sennacherib<br/>Lord Byron (1815)>];
   prel [label=<Extract from "The Prelude"<br/>William Wordsworth (1850)>];
-  man  [label=<The Man He Killed<br/>Thomas Kardy (1902)>];
+  man  [label=<The Man He Killed<br/>Thomas Hardy (1902)>];
   kate [label=<Cousin Kate<br/>Christina Rosetti (1860)>];
   half [label=<Half-caste<br/>John Agard (1996)>];
   expo [label=<Exposure<br/>Wilfred Owen (1917)>];

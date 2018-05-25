@@ -3,6 +3,11 @@ bazel-*
 *.class
 *.log
 
+# Haskell
+*.hi
+*.o
+Main
+
 # sbt specific
 dist/*
 target/
