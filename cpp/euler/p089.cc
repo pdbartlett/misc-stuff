@@ -82,7 +82,11 @@ int main(int argc, char** argv) {
   test("MCMXCIX", 1999);
 
   // Problem itself.
-  std::ifstream infile("/Users/pdbartlett/src/cpp/euler/p089_roman.txt");
+  if (argc != 2) {
+    std::cerr << "Expecting exactly one parameter (file to process)";
+    return 1;
+  }
+  std::ifstream infile(argv[1]);
   int cch = 0;
   std::string roman;
   while (std::getline(infile, roman)) {
