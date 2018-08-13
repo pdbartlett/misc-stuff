@@ -1,5 +1,3 @@
-package common
-
 object Primes {
 
   private var cache: Map[Int, Boolean] = Map(0 -> false, 1 -> false)
