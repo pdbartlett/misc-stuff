@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+
+\usepackage{filecontents}
+\begin{filecontents*}{example-refs.bib}
+@book{
+  smith2013ex,
+  author = "Smith, J.",
+  title = "{An Example for Us All}",
+  year = 2013,
+  publisher = "Practice-Hall Inc."
+ }
+@book{
+  jones2009eg,
+  author = "Jones, W.",
+  title = "{Examples in Latin}",
+  year = 2009,
+  publisher = "Cantabridgia Universita Press"
+ }
+\end{filecontents*}
+
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\addbibresource{example-refs.bib}
+
+\title{Example paper testing \LaTeX\ features}
+\author{Paul Bartlett \and{Sophie Bartlett}}
+\date{24 December 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, et cum causae ocurreret appellantur. Dicit quaeque maiestatis
+sea no. Id eum sanctus offendit, ei eum officiis tractatos adipiscing. Aliquid ornatus gloriatur ad
+est. \parencite{smith2013ex}
+
+And as stated in \textcite{jones2009eg}: ``Reque feugiat eos an, sit mutat numquam in. Quo ei
+odio facete constituam, aeque admodum at vel. In nonumes percipit menandri quo. At duo enim
+vocent. Ei vidisse detracto sed, iracundia quaerendum ex eum. Mea affert laboramus eu, vis tollit
+consectetuer et.''
+
+\printbibliography 
+
+\end{document}
