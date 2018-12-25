@@ -1,7 +1,31 @@
-\documentclass[a4paper]{article}
+\documentclass[11pt,a4paper]{article}
 
+% Document metadata
+\title{Example paper testing \LaTeX\ features}
+\author{Sophie Clare Bartlett}
+\date{24 December 2018}
+
+% Make title and author available
+\makeatletter
+\let\inserttitle\@title
+\let\insertauthor\@author
+\makeatother
+
+% Put title and author in header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{``\inserttitle''}
+\rhead{\insertauthor}
+
+% Double-space for manual marking
+\usepackage{setspace}
+\doublespacing
+
+% Inline bibliography to keep everything in one file
 \usepackage{filecontents}
-\begin{filecontents*}{example-refs.bib}
+\begin{filecontents*}{example.tmp.bib}
 @book{
   smith2013ex,
   author = "Smith, J.",
@@ -18,27 +42,22 @@
  }
 \end{filecontents*}
 
+% Use BibLaTex with inline bibliography for citations and references
 \usepackage[style=authoryear-ibid,backend=biber]{biblatex}
-\addbibresource{example-refs.bib}
+\addbibresource{example.tmp.bib}
 
-\title{Example paper testing \LaTeX\ features}
-\author{Paul Bartlett \and{Sophie Bartlett}}
-\date{24 December 2018}
+% Lorem ipsum package for demo use only
+\usepackage{lipsum}
 
+% The document itself. Uncomment \maketitle for fancy title
 \begin{document}
+%\maketitle
 
-\maketitle
+\lipsum[1] \parencite{smith2013ex}
 
-\section{Introduction}
-Lorem ipsum dolor sit amet, et cum causae ocurreret appellantur. Dicit quaeque maiestatis
-sea no. Id eum sanctus offendit, ei eum officiis tractatos adipiscing. Aliquid ornatus gloriatur ad
-est. \parencite{smith2013ex}
+And as stated in \textcite{jones2009eg}: ``\lipsum[2]''
 
-And as stated in \textcite{jones2009eg}: ``Reque feugiat eos an, sit mutat numquam in. Quo ei
-odio facete constituam, aeque admodum at vel. In nonumes percipit menandri quo. At duo enim
-vocent. Ei vidisse detracto sed, iracundia quaerendum ex eum. Mea affert laboramus eu, vis tollit
-consectetuer et.''
+\lipsum[3-8]
 
 \printbibliography 
-
 \end{document}

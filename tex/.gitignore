@@ -23,6 +23,7 @@
 *-blx.bib
 *.brf
 *.run.xml
+*.tmp.bib
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
