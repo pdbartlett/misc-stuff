@@ -14,10 +14,10 @@
 % Put title and author in header
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\setlength{\headheight}{14pt}
 \fancyhf{}
 \lhead{``\inserttitle''}
 \rhead{\insertauthor}
+\addtolength{\headheight}{2pt} % space for the rule
 
 % Double-space for manual marking
 \usepackage{setspace}
@@ -39,6 +39,13 @@
   title = "{Examples in Latin}",
   year = 2009,
   publisher = "Cantabridgia Universita Press"
+ }
+@book{
+  foo1999ba,
+  author = "Streetcat, R",
+  title = "{A Bad Example}",
+  year = 1999,
+  publisher = "Doesn't Really Matter"
  }
 \end{filecontents*}
 
