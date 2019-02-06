@@ -1,0 +1,10 @@
+<html>
+ <body>
+  <dl>
+@@@
+   <dt>$1</dt>
+   <dd>$2</dd>
+@@@
+  </dl>
+ </body>
+</html>
