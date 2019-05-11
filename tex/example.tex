@@ -1,9 +1,23 @@
 \documentclass[11pt,a4paper]{article}
 
 % Document metadata
-\title{Example paper testing \LaTeX\ features}
-\author{Sophie Clare Bartlett}
-\date{24 December 2018}
+\title{Example article testing \LaTeX\ features}
+\author{Paul D. Bartlett}
+\date{2018--2019}
+
+% Packages needed
+\usepackage[generate,ps2eps]{abc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\usepackage{booktabs}
+\usepackage{chemfig}
+\usepackage[basic,box,gate,oldgate,ic,optics,physics]{circ}
+\usepackage{csvsimple}
+\usepackage{fancyhdr}
+\usepackage{filecontents}
+\usepackage{float}
+\usepackage{lipsum}
 
 % Make title and author available
 \makeatletter
@@ -12,19 +26,21 @@
 \makeatother
 
 % Put title and author in header
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{``\inserttitle''}
 \rhead{\insertauthor}
 \addtolength{\headheight}{2pt} % space for the rule
 
-% Double-space for manual marking
-\usepackage{setspace}
-\doublespacing
+% Inline datafile
+\begin{filecontents*}{data.tmp.csv}
+x,y
+1,2
+3,4
+5,6
+\end{filecontents*}
 
-% Inline bibliography to keep everything in one file
-\usepackage{filecontents}
+% Inline bibliography
 \begin{filecontents*}{example.tmp.bib}
 @book{
   smith2013ex,
@@ -49,22 +65,123 @@
  }
 \end{filecontents*}
 
-% Use BibLaTex with inline bibliography for citations and references
-\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
 \addbibresource{example.tmp.bib}
 
-% Lorem ipsum package for demo use only
-\usepackage{lipsum}
-
-% The document itself. Uncomment \maketitle for fancy title
+% The document itself
 \begin{document}
-%\maketitle
+\maketitle
 
-\lipsum[1] \parencite{smith2013ex}
+\begin{abstract}
+An example document to showcase and experiment with various \LaTeX\ features that
+are useful in different situations---but which would not usually be expected to be used
+together in a single document.
+\end{abstract}
 
-And as stated in \textcite{jones2009eg}: ``\lipsum[2]''
+\tableofcontents
+\listoftables
+\listoffigures
 
-\lipsum[3-8]
+\section{Equations}
 
-\printbibliography 
+\subsection{Quadratic formula}
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+\subsection{Maxwell's equations}
+\begin{align}
+\nabla \cdot \mathbf{D} &= \rho\\
+\nabla \cdot \mathbf{B} &= 0\\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}} {\partial t}\\
+\nabla \times \mathbf{H} &= \mathbf{J} + \frac{\partial \mathbf{D}} {\partial t}
+\end{align}
+
+\subsection{Inverse of a 2x2 matrix}
+\begin{align}
+A^{-1} &= \frac{1}{\det(A)} \operatorname{adj}(A)\\
+\begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}^{-1}
+&=
+\frac{1}{ad-bc}
+\begin{pmatrix}
+d & -b\\
+-c & a
+\end{pmatrix}
+\end{align}
+
+\section{Data handling}
+\begin{table}[ht]
+\centering
+\csvautobooktabular{data.tmp.csv}
+\caption{Sample data}
+\end{table}
+
+\section{Chemistry}
+\begin{figure}[H]
+\centering
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[7]O-H)=[1]O}
+\caption{Structure of ethanol}
+\end{figure}
+
+\section{Electronics}
+
+\begin{figure}[H]
+\centering
+\begin{circuit}0
+\npn1 {?} B l % transistor
+\frompin npn1C % draw from collector
+\- 1 u % some wire
+\nl\A1 {$I_C$} u % amperemeter for current of collector
+\atpin npn1B % continue drawing from base
+\- 1 l % some wire
+\R1 {510k} l % resistor
+\- 1 l % some wire to the edge
+\centerto A1 % draw centered to amperemeter 1
+\nl\A2 {$I_B$} u % amperemeter 2
+\frompin A2b % link amperemeter 2 with resistor
+\vtopin R1l
+\frompin A1t
+\- 1 u
+\.1 % junction
+\frompin A2t % wire to amperemeter 2
+\vtopin .1
+\htopin .1
+\- 1 u
+\cc\connection1 {$U_b$} c u % driving voltage
+\frompin npn1E
+\- 1 d
+\GND1 % ground
+\end{circuit}
+\caption{A simple circuit}
+\label{circuit}
+\end{figure}
+
+\section{Music}
+\begin{figure}[H]
+% Set name to Out to match default Out.ps (cannot get options="-O=" to work)
+\begin{abc}[program=/Users/pdbartlett/homebrew/bin/abcm2ps,name=Out]
+X:4
+T:Cronins Hornpipe
+R:hornpipe
+S:Keenan and Glackin
+E:7
+M:C|
+L:1/8
+K:G
+BA|GABc dBde|gage dega|bage dBGB|cABG A2BA|!
+GABc dBde|gage dega|bage dBAB|G2G2 G2:|!
+fg|afd^c d2ga|bged e2ga|(3bag (3agf gedB|(3cBA AG AcBA|!
+GABc dBde|~g3e dega|bage dBAB|G2G2 G2:|!
+\end{abc}
+\caption{Musical score generated from ABC notation}
+\end{figure}
+
+\section{Citations}
+Citations can appear in parentheses after text \parencite{smith2013ex}. Or they can be placed
+inline as in \textcite{jones2009eg}. There should be two referenced texts in the bibliography
+below, as although three were defined one was not cited.
+\printbibliography
+
 \end{document}

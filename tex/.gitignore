@@ -10,10 +10,11 @@
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
+*.tmp.*
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+*.ps
+*.eps
+*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -23,7 +24,6 @@
 *-blx.bib
 *.brf
 *.run.xml
-*.tmp.bib
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
@@ -33,6 +33,9 @@
 *.pdfsync
 
 ## Auxiliary and intermediate files from other packages:
+
+# abc
+*.abc
 
 # algorithms
 *.alg
