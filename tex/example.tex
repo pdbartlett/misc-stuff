@@ -21,6 +21,7 @@
 \usepackage{chessboard}
 \usepackage[basic]{circ}
 \usepackage{csvsimple}
+\usepackage{cwpuzzle}
 \usepackage{dataplot}
 \usepackage{fancyhdr}
 \usepackage{filecontents}
@@ -40,6 +41,23 @@ x,y
 1,2
 3,4
 5,6
+\end{filecontents*}
+
+% Crossword definition
+\begin{filecontents*}{crossword.tmp.tex}
+\begin{Puzzle}{3}{3}%
+  | [1]B | E | [2]L |.
+  |    O | * |    I |.
+  | [3]O | N |    E |.
+\end{Puzzle}
+\begin{PuzzleClues}{\textbf{Across: }}%
+  \Clue{1}{BEL}{unit of sound}%
+  \Clue{3}{ONE}{Cyrus tooth count}%
+\end{PuzzleClues}%
+\begin{PuzzleClues}{\textbf{Down: }}%
+  \Clue{1}{BOO}{Nickname of \textit{1 across}}%
+  \Clue{2}{LIE}{not the truth; or Sweep photo pose}%
+\end{PuzzleClues}%
 \end{filecontents*}
 
 % Inline bibliography
@@ -189,10 +207,27 @@ GABc dBde|~g3e dega|bage dBAB|G2G2 G2:|!
 \section{Games \& Puzzles}
 \subsection{Chess}
 \begin{figure}[H]
+\centering
 \newchessgame
-\mainline{1. e4 e5 2. f4}
-\chessboard[showmover=false]
+\hidemoves{1. e4 e5 2. f4}
+\chessboard[
+  smallboard,
+  showmover=false,
+  pgfstyle=circle,
+  markfield=f4,
+]
 \caption{King's Gambit}
+\end{figure}
+
+\subsection{Crosswords}
+\begin{figure}[H]
+\input{crossword.tmp.tex}
+\caption{Simple crossword}
+\end{figure}
+\begin{figure}[H]
+\PuzzleSolution
+\input{crossword.tmp.tex}
+\caption{Solution to simple crossword}
 \end{figure}
 
 \section{Citations}
