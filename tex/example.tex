@@ -5,25 +5,27 @@
 \author{Paul D. Bartlett}
 \date{2018--2019}
 
-% Packages needed
-\usepackage[generate,ps2eps]{abc}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
-\usepackage{booktabs}
-\usepackage{chemfig}
-\usepackage[basic,box,gate,oldgate,ic,optics,physics]{circ}
-\usepackage{csvsimple}
-\usepackage{fancyhdr}
-\usepackage{filecontents}
-\usepackage{float}
-\usepackage{lipsum}
-
 % Make title and author available
 \makeatletter
 \let\inserttitle\@title
 \let\insertauthor\@author
 \makeatother
+
+% Packages needed
+\usepackage[ps2eps]{abc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\usepackage{booktabs}
+\usepackage{chemfig}
+\usepackage{chessboard}
+\usepackage[basic]{circ}
+\usepackage{csvsimple}
+\usepackage{dataplot}
+\usepackage{fancyhdr}
+\usepackage{filecontents}
+\usepackage{float}
+\usepackage{xskak}
 
 % Put title and author in header
 \pagestyle{fancy}
@@ -98,7 +100,7 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
 \subsection{Inverse of a 2x2 matrix}
 \begin{align}
-A^{-1} &= \frac{1}{\det(A)} \operatorname{adj}(A)\\
+\mathbf{A}^{-1} &= \frac{1}{\det(\mathbf{A})} \operatorname{adj}(\mathbf{A})\\
 \begin{pmatrix}
 a & b\\
 c & d
@@ -112,11 +114,17 @@ d & -b\\
 \end{align}
 
 \section{Data handling}
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \csvautobooktabular{data.tmp.csv}
 \caption{Sample data}
 \end{table}
+\DTLloaddb{data}{data.tmp.csv}
+\begin{figure}[H]
+\centering
+\DTLplot{data}{x=x,y=y,style=lines}
+\caption{A line plot}
+\end{figure}
 
 \section{Chemistry}
 \begin{figure}[H]
@@ -130,29 +138,29 @@ d & -b\\
 \begin{figure}[H]
 \centering
 \begin{circuit}0
-\npn1 {?} B l % transistor
-\frompin npn1C % draw from collector
-\- 1 u % some wire
-\nl\A1 {$I_C$} u % amperemeter for current of collector
-\atpin npn1B % continue drawing from base
-\- 1 l % some wire
-\R1 {510k} l % resistor
-\- 1 l % some wire to the edge
-\centerto A1 % draw centered to amperemeter 1
-\nl\A2 {$I_B$} u % amperemeter 2
-\frompin A2b % link amperemeter 2 with resistor
+\npn1 {?} B l               % transistor
+\frompin npn1C              % draw from collector
+\- 1 u                      % some wire
+\nl\A1 {$I_C$} u            % ammeter for current of collector
+\atpin npn1B                % continue drawing from base
+\- 1 l                      % some wire
+\R1 {510k} l                % resistor
+\- 1 l                      % some wire to the edge
+\centerto A1                % draw centered to ammeter 1
+\nl\A2 {$I_B$} u            % am3emeter 2
+\frompin A2b                % link ammeter 2 with resistor
 \vtopin R1l
 \frompin A1t
 \- 1 u
-\.1 % junction
-\frompin A2t % wire to amperemeter 2
+\.1                         % junction
+\frompin A2t                % wire to ammeter 2
 \vtopin .1
 \htopin .1
 \- 1 u
 \cc\connection1 {$U_b$} c u % driving voltage
 \frompin npn1E
 \- 1 d
-\GND1 % ground
+\GND1                       % ground
 \end{circuit}
 \caption{A simple circuit}
 \label{circuit}
@@ -163,7 +171,7 @@ d & -b\\
 % Set name to Out to match default Out.ps (cannot get options="-O=" to work)
 \begin{abc}[program=/Users/pdbartlett/homebrew/bin/abcm2ps,name=Out]
 X:4
-T:Cronins Hornpipe
+T:Cronin's Hornpipe
 R:hornpipe
 S:Keenan and Glackin
 E:7
@@ -176,6 +184,15 @@ fg|afd^c d2ga|bged e2ga|(3bag (3agf gedB|(3cBA AG AcBA|!
 GABc dBde|~g3e dega|bage dBAB|G2G2 G2:|!
 \end{abc}
 \caption{Musical score generated from ABC notation}
+\end{figure}
+
+\section{Games \& Puzzles}
+\subsection{Chess}
+\begin{figure}[H]
+\newchessgame
+\mainline{1. e4 e5 2. f4}
+\chessboard[showmover=false]
+\caption{King's Gambit}
 \end{figure}
 
 \section{Citations}
