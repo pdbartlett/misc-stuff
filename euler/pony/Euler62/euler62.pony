@@ -1,4 +1,5 @@
 use "collections"
+use "../pdblib"
 
 actor Main
   new create(env: Env) =>
@@ -10,11 +11,11 @@ actor Main
       let a = recover val Sort[Array[U8], U8](cube.string().array().clone()) end
       let key = String.from_array(a)
       let count = counts.get_or_else(key, 0) + 1
-      counts.update(key, count)
+      counts(key) = count
       if count == 1 then
-        firsts.update(key, cube)
+        firsts(key) = cube
       elseif count >= 5 then
-        env.out.print(firsts.get_or_else(key, 0).string())
+        Util.prints(env, firsts.get_or_else(key, 0))
         break
       end
       n = n + 1
