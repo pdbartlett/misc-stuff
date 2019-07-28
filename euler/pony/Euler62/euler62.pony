@@ -1,5 +1,5 @@
 use "collections"
-use "../pdblib"
+use "pdblib"
 
 actor Main
   new create(env: Env) =>
