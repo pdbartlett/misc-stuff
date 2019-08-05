@@ -3,6 +3,9 @@ bazel-*
 *.class
 *.log
 
+# Cargo / Rust
+Cargo.lock
+
 # Haskell
 *.hi
 *.o
