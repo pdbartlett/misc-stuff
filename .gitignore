@@ -5,6 +5,7 @@ bazel-*
 
 # Cargo / Rust
 Cargo.lock
+target/
 
 # Haskell
 *.hi
