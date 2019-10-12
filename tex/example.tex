@@ -12,9 +12,14 @@
 \makeatother
 
 % Packages needed
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
 \usepackage[ps2eps]{abc}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{bchart}
 \usepackage[style=authoryear-ibid,backend=biber]{biblatex}
 \usepackage{booktabs}
 \usepackage{chemfig}
@@ -26,6 +31,7 @@
 \usepackage{fancyhdr}
 \usepackage{filecontents}
 \usepackage{float}
+\usepackage{siunitx}
 \usepackage{xskak}
 
 % Put title and author in header
@@ -34,6 +40,10 @@
 \lhead{``\inserttitle''}
 \rhead{\insertauthor}
 \addtolength{\headheight}{2pt} % space for the rule
+
+% Add some more unit/prefix definitions
+\DeclareSIUnit\bit{b}
+\DeclareBinaryPrefix\gibi{Gi}{30}
 
 % Inline datafile
 \begin{filecontents*}{data.tmp.csv}
@@ -103,6 +113,10 @@ together in a single document.
 
 \section{Equations}
 
+\subsection{Units}
+The speed of light, $c$, is \SI{3e8}{\metre\per\second}.\\
+Network speeds of \SI[per-mode=symbol]{1}{\gibi\bit\per\second} are now commonplace.
+
 \subsection{Quadratic formula}
 \begin{equation}
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
@@ -132,16 +146,57 @@ d & -b\\
 \end{align}
 
 \section{Data handling}
+
 \begin{table}[H]
 \centering
 \csvautobooktabular{data.tmp.csv}
 \caption{Sample data}
 \end{table}
+
 \DTLloaddb{data}{data.tmp.csv}
 \begin{figure}[H]
 \centering
 \DTLplot{data}{x=x,y=y,style=lines}
 \caption{A line plot}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{bchart}[step=10,max=50]
+\bcbar[text=Yes]{7}
+\bcbar[text=No]{42}
+\bcbar[text=Maybe]{15}
+\bcxlabel{number of responses}
+\end{bchart}
+\caption{A bar chart}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{bchart}[plain,max=5]
+\bcbar[text=Q1]{2.2}
+\bcbar[text=Q2]{-0.6}
+\bcbar[text=Q3]{1.1}
+\bcxlabel{agreement score}
+\end{bchart}
+\caption{Another bar chart}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+xbar, xmin=-1.5,
+width=9cm, height=3.5cm, enlarge y limits=0.5,
+xlabel={agreement score},
+symbolic y coords={foooooooooooooooooooooooo,baaaaaaaaaaaaaaaaaaaar},
+ytick=data,
+nodes near coords, nodes near coords align={horizontal},
+]
+\addplot coordinates {(-0.6,baaaaaaaaaaaaaaaaaaaar) (4,foooooooooooooooooooooooo)};
+\end{axis}
+\end{tikzpicture}
+\caption{Bar chart with \textsc{pgfplots}}
 \end{figure}
 
 \section{Chemistry}
@@ -233,7 +288,14 @@ GABc dBde|~g3e dega|bage dBAB|G2G2 G2:|!
 \section{Citations}
 Citations can appear in parentheses after text \parencite{smith2013ex}. Or they can be placed
 inline as in \textcite{jones2009eg}. There should be two referenced texts in the bibliography
-below, as although three were defined one was not cited.
+below, as although three were defined one was not cited. Uncited texts can still be shown via
+a separate \texttt{refsection} and \texttt{\textbackslash nocite}.
+
 \printbibliography
+
+\begin{refsection}
+\nocite{foo1999ba}
+\printbibliography[heading=subbibliography, title={Uncited}]
+\end{refsection}
 
 \end{document}
