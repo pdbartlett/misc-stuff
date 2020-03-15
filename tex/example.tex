@@ -1,9 +1,9 @@
 \documentclass[11pt,a4paper]{article}
 
 % Document metadata
-\title{Example article testing \LaTeX\ features}
+\title{Example document testing \LaTeX\ features}
 \author{Paul D. Bartlett}
-\date{2018--2019}
+\date{2018--2020}
 
 % Make title and author available
 \makeatletter
@@ -15,8 +15,10 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 
-\usepackage[ps2eps]{abc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 
+\usepackage[ps2eps]{abc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{bchart}
@@ -28,10 +30,12 @@
 \usepackage{csvsimple}
 \usepackage{cwpuzzle}
 \usepackage{dataplot}
+\usepackage{dot2texi}
 \usepackage{fancyhdr}
 \usepackage{filecontents}
 \usepackage{float}
 \usepackage{pgf-pie}
+\usepackage{pgfplots}
 \usepackage{siunitx}
 \usepackage{xskak}
 
@@ -40,6 +44,7 @@
 \fancyhf{}
 \lhead{``\inserttitle''}
 \rhead{\insertauthor}
+\cfoot{\thepage}
 \addtolength{\headheight}{2pt} % space for the rule
 
 % Add some more unit/prefix definitions
@@ -161,10 +166,10 @@ d & -b\\
 \end{table}
 
 \DTLloaddb{data}{data.tmp.csv}
-\begin{figure}
+\begin{figure}[H]
 \centering
 \DTLplot{data}{x=x,y=y,style=lines}
-\caption{A line plot of the data in Table \ref{tab:data}}
+\caption{Line plot of the data in Table \ref{tab:data} using \textsc{dataplot}}
 \label{fig:plot}
 \end{figure}
 
@@ -176,7 +181,7 @@ d & -b\\
 \bcbar[text=Maybe]{15}
 \bcxlabel{number of responses}
 \end{bchart}
-\caption{A bar chart}
+\caption{Bar chart using \textsc{bchart}}
 \end{figure}
 
 \begin{figure}[H]
@@ -187,7 +192,7 @@ d & -b\\
 \bcbar[text=Q3]{1.1}
 \bcxlabel{agreement score}
 \end{bchart}
-\caption{Another bar chart}
+\caption{Another bar chart using \textsc{bchart}}
 \end{figure}
 
 \begin{figure}[H]
@@ -204,7 +209,7 @@ nodes near coords, nodes near coords align={horizontal},
 \addplot coordinates {(-0.6,baaaaaaaaaaaaaaaaaaaar) (4,foooooooooooooooooooooooo)};
 \end{axis}
 \end{tikzpicture}
-\caption{Bar chart with \textsc{pgfplots}}
+\caption{Bar chart using \textsc{pgfplots}}
 \end{figure}
 
 \begin{figure}[H]
@@ -213,7 +218,17 @@ nodes near coords, nodes near coords align={horizontal},
 \pie[sum=auto, text=pin, color={red, yellow, green, blue}]{
   1/Bad, 2/Good, 3/Better, 4/Best}
 \end{tikzpicture}
-\caption{A pie chart using \textsc{pgf-pie}}
+\caption{Pie chart using \textsc{pgf-pie}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[domain=-2*pi:2*pi]
+\addplot[mark=none, samples=100, red] function {sin(x)};
+\end{axis}
+\end{tikzpicture}
+\caption{Line graph from a function using \textsc{pgfplots} \& \textsc{gnuplot}}
 \end{figure}
 
 \section{Chemistry}
@@ -237,7 +252,7 @@ nodes near coords, nodes near coords align={horizontal},
 \R1 {510k} l                % resistor
 \- 1 l                      % some wire to the edge
 \centerto A1                % draw centered to ammeter 1
-\nl\A2 {$I_B$} u            % am3emeter 2
+\nl\A2 {$I_B$} u            % ammeter 2
 \frompin A2b                % link ammeter 2 with resistor
 \vtopin R1l
 \frompin A1t
@@ -252,7 +267,7 @@ nodes near coords, nodes near coords align={horizontal},
 \- 1 d
 \GND1                       % ground
 \end{circuit}
-\caption{A simple circuit}
+\caption{Simple circuit}
 \label{circuit}
 \end{figure}
 
@@ -306,7 +321,7 @@ GABc dBde|~g3e dega|bage dBAB|G2G2 G2:|!
 Citations can appear in parentheses after text \parencite{smith2013ex}. Or they can be placed
 inline as in \textcite{jones2009eg}. There should be two referenced texts in the bibliography
 below, as although three were defined one was not cited. Uncited texts can still be shown via
-a separate \texttt{refsection} and \texttt{\textbackslash nocite}.
+a separate \texttt{\textbackslash refsection} and \texttt{\textbackslash nocite}.
 
 \printbibliography
 
