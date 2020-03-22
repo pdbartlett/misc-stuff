@@ -21,6 +21,7 @@
 \usepackage[ps2eps]{abc}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{auto-pst-pdf}
 \usepackage{bchart}
 \usepackage[style=authoryear-ibid,backend=biber]{biblatex}
 \usepackage{booktabs}
@@ -34,8 +35,8 @@
 \usepackage{fancyhdr}
 \usepackage{filecontents}
 \usepackage{float}
+\usepackage{graphviz}
 \usepackage{pgf-pie}
-\usepackage{pgfplots}
 \usepackage{siunitx}
 \usepackage{xskak}
 
@@ -229,6 +230,13 @@ nodes near coords, nodes near coords align={horizontal},
 \end{axis}
 \end{tikzpicture}
 \caption{Line graph from a function using \textsc{pgfplots} \& \textsc{gnuplot}}
+\end{figure}
+
+\section{Node graphs}
+\begin{figure}[H]
+\centering
+\digraph[scale=1.0]{temp}{a->b->c;}
+\caption{Node graph using \textsc{Graphviz}}
 \end{figure}
 
 \section{Chemistry}
