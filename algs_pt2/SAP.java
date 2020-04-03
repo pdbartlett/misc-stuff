@@ -66,7 +66,7 @@ public class SAP {
   }
 
   private void validateIndices(Iterable<Integer> is) {
-	  if (is == null) throw new IllegalArgumentException("Null iterable passed");
+    if (is == null) throw new IllegalArgumentException("Null iterable passed");
     for (int i : is) validateIndex(i);
   }
 
