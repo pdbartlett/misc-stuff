@@ -49,3 +49,4 @@ testdata/*
 hello
 *.pgf-plot.*
 temp*.dot
+*.pyc
