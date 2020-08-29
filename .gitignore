@@ -41,6 +41,7 @@ build/*
 *.xhtml
 
 # Misc.
+.exercism/
 ews/*
 scratch/*
 testdata/*
