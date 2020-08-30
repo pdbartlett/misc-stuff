@@ -1,0 +1,13 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+  name = "com_google_absl",
+  urls = ["https://github.com/abseil/abseil-cpp/archive/c51510d1d87ebce8615ae1752fd5aca912f6cf4c.zip"],
+  strip_prefix = "abseil-cpp-c51510d1d87ebce8615ae1752fd5aca912f6cf4c",
+)
+
+http_archive(
+  name = "rules_cc",
+  urls = ["https://github.com/bazelbuild/rules_cc/archive/262ebec3c2296296526740db4aefce68c80de7fa.zip"],
+  strip_prefix = "rules_cc-262ebec3c2296296526740db4aefce68c80de7fa",
+)
