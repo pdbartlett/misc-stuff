@@ -23,3 +23,17 @@ private:
   T* next_;
   T* end_;
 };
+
+template<typename T>
+class LocalPipeline {
+public:
+  explicit LocalPipeline(std::unique_ptr<Source<T>> src) : src_(std::move(src)) {}
+  void run(std::function<void(T)> f) {
+    T t;
+    while (src_->fetch(&t)) {
+      f(t);
+    }
+  }
+private:
+  std::unique_ptr<Source<T>> src_;
+};
