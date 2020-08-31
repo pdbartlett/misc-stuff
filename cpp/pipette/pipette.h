@@ -1,3 +1,8 @@
+#ifndef __PIPETTE_H__
+#define __PIPETTE_H__
+
+#include <future>
+
 template <typename T>
 class Source {
 public:
@@ -31,9 +36,11 @@ public:
   void run(std::function<void(T)> f) {
     T t;
     while (src_->fetch(&t)) {
-      f(t);
+      std::async(std::bind(f, t));
     }
   }
 private:
   std::unique_ptr<Source<T>> src_;
 };
+
+#endif // __PIPETTE_H__
