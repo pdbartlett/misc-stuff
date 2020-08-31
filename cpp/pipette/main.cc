@@ -15,6 +15,7 @@ int main(int argc, char* argv[]) {
   auto src =
       absl::make_unique<ArraySource<int>>(data, sizeof(data)/sizeof(data[0]));
   LocalPipeline<int> p(std::move(src));
-  p.run(print<int>);
+  p.source()->set_sink(print<int>);
+  p.run();
   return 0;
 }
