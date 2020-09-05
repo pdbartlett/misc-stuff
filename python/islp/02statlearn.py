@@ -55,6 +55,15 @@ ax = fig.gca(projection='3d')
 surf = ax.plot_surface(X, Y, ZA, cmap=cm.coolwarm, lw=0, antialiased=False)
 plt.show()
 
+A = np.transpose(np.arange(1, 17).reshape(4,4))
+print(A)
+print(A[1,2])
+print(A[(0,2),:][:,(1,3)])
+print(A[0:3,:][:,1:])
+print(A[:2])
+print(A[:,:2])
+print(A[0])
+
 print('\nPandas\n------')
 
 print(pd.Series([1,2,3,4,5]))
