@@ -85,4 +85,4 @@ print('K=3 =>', df.head(3).groupby('Y').count().sort_values(by='dist', # arbitra
 
 print('\nCollege.csv\n-----------')
 df = pd.read_csv('College.csv')
-#print(df)
+print(df)
