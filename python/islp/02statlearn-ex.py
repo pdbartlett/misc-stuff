@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 
 print('\nKNN\n---')
@@ -15,4 +16,19 @@ print('K=3 =>', df.head(3).groupby('Y').count().sort_values(by='dist', # arbitra
 
 print('\nCollege.csv\n-----------')
 df = pd.read_csv('College.csv')
-print(df)
+df.rename(columns={'Unnamed: 0': 'Name'}, inplace=True)
+df.set_index('Name', inplace=True)
+print(df.describe())
+fig = plt.figure()
+gs = fig.add_gridspec(10, 10)
+for r in range(10):
+    for c in range(10):
+        axes = fig.add_subplot(gs[r, c])
+        axes.xaxis.set_visible(False)
+        axes.yaxis.set_visible(False)
+        if r == c:
+            axes.annotate(df.columns.values[r], (0.5, 0.5),
+                xycoords='axes fraction', ha='center', va='center')
+        else:
+            df.plot.scatter(x=r, y=c, ax=axes)
+plt.show()
