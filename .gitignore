@@ -7,6 +7,9 @@ bazel-*
 Cargo.lock
 target/
 
+# Go
+go.sum
+
 # Haskell
 *.hi
 *.o
