@@ -32,7 +32,6 @@ func createTable(e entity, db *sql.DB) error {
 		cols = append(cols, fmt.Sprintf("%s %s", col.name, string(col.affinity)))
 	}
 	sql := fmt.Sprintf("CREATE TABLE %s (%s)", e.tableName(), strings.Join(cols, ","))
-	fmt.Println(sql)
 	_, err := db.Exec(sql)
 	return err
 }
