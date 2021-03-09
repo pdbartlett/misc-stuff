@@ -10,13 +10,14 @@ import (
 )
 
 type colAffinity string
+
 const (
-  integerAffinity colAffinity = "INTEGER"
-	textAffinity = "TEXT"
+	integerAffinity colAffinity = "INTEGER"
+	textAffinity                = "TEXT"
 )
 
 type column struct {
-	name string
+	name     string
 	affinity colAffinity
 }
 
@@ -37,8 +38,9 @@ func createTable(e entity, db *sql.DB) error {
 }
 
 type test struct{}
-func (t test) tableName() string { return "t"; }
-func (t test) columns() []column { return []column{{"i", integerAffinity}}; }
+
+func (t test) tableName() string { return "t" }
+func (t test) columns() []column { return []column{{"i", integerAffinity}} }
 
 func logFatal(err error) {
 	fmt.Println(err)
