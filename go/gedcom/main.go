@@ -3,7 +3,7 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"os"
+	"log"
 	"strings"
 
 	_ "modernc.org/sqlite"
@@ -41,22 +41,19 @@ type test struct{}
 func (t test) tableName() string { return "t" }
 func (t test) columns() []column { return []column{{"i", integerAffinity}} }
 
-func logFatal(err error) {
-	fmt.Println(err)
-	os.Exit(1)
-}
+var logger = log.Default()
 
 func main() {
 	db, err := sql.Open("sqlite", "test.db")
 	if err != nil {
-		logFatal(err)
+		logger.Fatalln(err)
 	}
 
 	if createTable(test{}, db); err != nil {
-		logFatal(err)
+		logger.Fatalln(err)
 	}
 
 	if err = db.Close(); err != nil {
-		logFatal(err)
+		logger.Fatalln(err)
 	}
 }
