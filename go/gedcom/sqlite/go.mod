@@ -1,4 +1,4 @@
-module pdbartlett.me/gedcom
+module pdbartlett.me/gedcom/sqlite
 
 go 1.16
 
