@@ -6,6 +6,7 @@ import (
   "log"
   "os"
   "path"
+  "strings"
 )
 
 func main() {
@@ -27,12 +28,11 @@ func main() {
   defer o.Close()
   w := bufio.NewWriter(o)
 
+  var b strings.Builder
   for {
     line, err := r.ReadString('\n')
     if len(line) > 0 {
-      if _, werr := w.WriteString(line); werr != nil {
-        log.Fatalf("Error writing to file: %v", werr)
-      }
+      process(line, w, &b)
     }
     if err == io.EOF {
       break
@@ -40,5 +40,11 @@ func main() {
     if err != nil {
       log.Fatalf("Error whilst reading file: %v", err)
     }
+  }
+}
+
+func process(line string, w *bufio.Writer, b *strings.Builder) {
+  if _, err := w.WriteString(line); err != nil {
+    log.Fatalf("Error writing to file: %v", err)
   }
 }
