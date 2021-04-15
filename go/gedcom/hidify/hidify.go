@@ -50,7 +50,7 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
       return err
     }
     if start && (buf[0] != '0') {
-      return fmt.Errorf("Expecting '0', got %q", buf[0])
+      return fmt.Errorf("expecting %q, got %q", '0', buf[0])
     }
     if (!start) && (buf[0] == '0') {
       break
@@ -62,7 +62,7 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
         return werr
       }
     }
-    
+
     start = false
 
     if err == io.EOF {
