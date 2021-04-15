@@ -46,6 +46,7 @@ build/*
 # Misc.
 .exercism/
 ews/*
+*.ged
 scratch/*
 testdata/*
 *.pdf
