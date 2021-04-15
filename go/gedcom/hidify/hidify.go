@@ -3,10 +3,10 @@ package main
 import (
   "bufio"
   "io"
+  "fmt"
   "log"
   "os"
   "path"
-  "strings"
 )
 
 func main() {
@@ -27,24 +27,50 @@ func main() {
   }
   defer o.Close()
   w := bufio.NewWriter(o)
+  defer w.Flush()
 
-  var b strings.Builder
   for {
-    line, err := r.ReadString('\n')
-    if len(line) > 0 {
-      process(line, w, &b)
-    }
+    err = processBlock(r, w)
     if err == io.EOF {
+      log.Println("Successfully reached EOF")
       break
     }
     if err != nil {
-      log.Fatalf("Error whilst reading file: %v", err)
+      log.Fatalf("Error whilst processing file: %v", err)
     }
   }
 }
 
-func process(line string, w *bufio.Writer, b *strings.Builder) {
-  if _, err := w.WriteString(line); err != nil {
-    log.Fatalf("Error writing to file: %v", err)
+func processBlock(r *bufio.Reader, w *bufio.Writer) error {
+  var err error
+  start := true
+  for {
+    buf, err := r.Peek(1)
+    if err != nil {
+      return err
+    }
+    if start && (buf[0] != '0') {
+      return fmt.Errorf("Expecting '0', got %q", buf[0])
+    }
+    if (!start) && (buf[0] == '0') {
+      break
+    }
+
+    line, err := r.ReadString('\n')
+    if len(line) > 0 {
+      if _, werr := w.WriteString(line); err != nil {
+        return werr
+      }
+    }
+    
+    start = false
+
+    if err == io.EOF {
+      break
+    }
+    if err != nil {
+      return err
+    }
   }
+  return err
 }
