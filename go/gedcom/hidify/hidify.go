@@ -7,6 +7,7 @@ import (
   "log"
   "os"
   "path"
+  "strconv"
   "strings"
 )
 
@@ -40,7 +41,6 @@ func main() {
   for {
     err = processBlock(r, w)
     if err == io.EOF {
-      log.Println("Successfully reached EOF")
       break
     }
     if err != nil {
@@ -53,6 +53,8 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
   var err error
   var buf strings.Builder
   isIndi := MAYBE
+  hide := true
+  isInBirt := false
 
   for {
     ch, err := r.Peek(1)
@@ -67,9 +69,10 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
     }
 
     line, err := r.ReadString('\n')
+    stripped := strings.TrimSpace(line)
 
     if isIndi == MAYBE {
-      if strings.HasSuffix(line, "INDI\n") {
+      if strings.HasSuffix(stripped, "INDI") {
         isIndi = YES
       } else {
         isIndi = NO
@@ -82,6 +85,24 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
       }
     } else {
       buf.WriteString(line)
+      switch {
+      case stripped == "1 NAME Rosalyn Ann /Dolan/",
+           stripped == "1 NAME Paul David /Bartlett/":
+        hide = false
+      case strings.HasPrefix(stripped, "1 DEAT"):
+        hide = false
+      case strings.HasPrefix(stripped, "1 BIRT"):
+        isInBirt = true
+      case strings.HasPrefix(stripped, "2 DATE") && isInBirt:
+        ll := len(stripped)
+        year, err := strconv.Atoi(stripped[ll-4:ll])
+        if hide && err != nil {
+          hide = year > 1900
+        }
+        isInBirt = false
+      default:
+        // Do nothing.
+      }
     }
 
     if err == io.EOF {
@@ -97,7 +118,10 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
     for {
       line, berr := br.ReadString('\n')
       switch {
-      case strings.HasPrefix(line, "0"), strings.HasPrefix(line, "1 FAM"):
+      case strings.HasPrefix(line, "0"),
+           strings.HasPrefix(line, "1 FAM"),
+           strings.HasPrefix(line, "1 SEX"),
+           !hide:
         if _, werr := w.WriteString(line); werr != nil {
           return werr
         }
@@ -111,8 +135,10 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
         return berr
       }
     }
-    if _, werr := w.WriteString("1 NAME Hidden /Person/\n"); werr != nil {
-      return werr
+    if hide {
+      if _, werr := w.WriteString("1 NAME Hidden /Person/\n"); werr != nil {
+        return werr
+      }
     }
   }
 
