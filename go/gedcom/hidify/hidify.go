@@ -92,8 +92,28 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
     }
   }
 
-  if _, werr := w.WriteString(buf.String()); werr != nil {
-    return werr
+  if isIndi == YES {
+    br := bufio.NewReader(strings.NewReader(buf.String()))
+    for {
+      line, berr := br.ReadString('\n')
+      switch {
+      case strings.HasPrefix(line, "0"), strings.HasPrefix(line, "1 FAM"):
+        if _, werr := w.WriteString(line); werr != nil {
+          return werr
+        }
+      default:
+        // Do nothing.
+      }
+      if berr == io.EOF {
+        break
+      }
+      if berr != nil {
+        return berr
+      }
+    }
+    if _, werr := w.WriteString("1 NAME Hidden /Person/\n"); werr != nil {
+      return werr
+    }
   }
 
   return err
