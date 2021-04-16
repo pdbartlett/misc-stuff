@@ -7,6 +7,14 @@ import (
   "log"
   "os"
   "path"
+  "strings"
+)
+
+type ternary int
+const (
+  YES ternary = iota
+  NO
+  MAYBE
 )
 
 func main() {
@@ -43,27 +51,38 @@ func main() {
 
 func processBlock(r *bufio.Reader, w *bufio.Writer) error {
   var err error
-  start := true
+  var buf strings.Builder
+  isIndi := MAYBE
+
   for {
-    buf, err := r.Peek(1)
+    ch, err := r.Peek(1)
     if err != nil {
       return err
     }
-    if start && (buf[0] != '0') {
-      return fmt.Errorf("expecting %q, got %q", '0', buf[0])
+    if isIndi == MAYBE && ch[0] != '0' {
+      return fmt.Errorf("expecting %q, got %q", '0', ch[0])
     }
-    if (!start) && (buf[0] == '0') {
+    if isIndi != MAYBE && ch[0] == '0' {
       break
     }
 
     line, err := r.ReadString('\n')
-    if len(line) > 0 {
-      if _, werr := w.WriteString(line); err != nil {
-        return werr
+
+    if isIndi == MAYBE {
+      if strings.HasSuffix(line, "INDI\n") {
+        isIndi = YES
+      } else {
+        isIndi = NO
       }
     }
 
-    start = false
+    if isIndi == NO {
+      if _, werr := w.WriteString(line); werr != nil {
+        return werr
+      }
+    } else {
+      buf.WriteString(line)
+    }
 
     if err == io.EOF {
       break
@@ -72,5 +91,10 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
       return err
     }
   }
+
+  if _, werr := w.WriteString(buf.String()); werr != nil {
+    return werr
+  }
+
   return err
 }
