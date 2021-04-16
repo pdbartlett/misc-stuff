@@ -100,8 +100,6 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
           hide = year > 1900
         }
         isInBirt = false
-      default:
-        // Do nothing.
       }
     }
 
@@ -117,16 +115,13 @@ func processBlock(r *bufio.Reader, w *bufio.Writer) error {
     br := bufio.NewReader(strings.NewReader(buf.String()))
     for {
       line, berr := br.ReadString('\n')
-      switch {
-      case strings.HasPrefix(line, "0"),
-           strings.HasPrefix(line, "1 FAM"),
-           strings.HasPrefix(line, "1 SEX"),
-           !hide:
+      if (!hide) ||
+         strings.HasPrefix(line, "0") ||
+         strings.HasPrefix(line, "1 FAM") ||
+         strings.HasPrefix(line, "1 SEX")  {
         if _, werr := w.WriteString(line); werr != nil {
           return werr
         }
-      default:
-        // Do nothing.
       }
       if berr == io.EOF {
         break
