@@ -1,3 +1,5 @@
+typedef void (*HANDLER)(void *p, int msg, int data);
+
 class Pin {
 public:
   Pin(int pin, int mode) : pin_(pin), state_(LOW) {
@@ -35,7 +37,7 @@ public:
   static const int MSG_DOWN = 1;
   static const int MSG_UP = 2;
   
-  Button(int pin, void (*handler)(void *p, int msg, int data))
+  Button(int pin, HANDLER handler)
       : pin_(pin, INPUT_PULLUP), handler_(handler) {}
       
   void poll() {
@@ -62,7 +64,7 @@ private:
   Pin pin_;
   int state_;
   int change_millis_;
-  void (*handler_)(void *p, int msg, int data);
+  HANDLER handler_;
 };
 
 Pin* led;
