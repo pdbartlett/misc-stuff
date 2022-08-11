@@ -51,7 +51,6 @@ scratch/*
 testdata/*
 *.pdf
 *.zip
-hello
 *.pgf-plot.*
 temp*.dot
 *.pyc
