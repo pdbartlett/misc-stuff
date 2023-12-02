@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+
+\title{Statistics}
+\author{Paul D. Bartlett}
+\date{October 2022 and onwards}
+
+% Make title and author available
+\makeatletter
+\let\inserttitle\@title
+\let\insertauthor\@author
+\makeatother
+
+% Packages
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{mismath}
+\usepackage{pgfplots}                                                           
+\usepackage{pgf}
+\usepackage{tikz}
+
+\pgfplotsset{compat=newest}
+
+% Put title and author in header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{``\inserttitle''}
+\rhead{\insertauthor}
+\cfoot{\thepage}
+\addtolength{\headheight}{2pt} % space for the rule
+
+% Define a command to add an example plot
+\newcommand{\myplot}[1]{
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[trim axis left]
+\begin{axis}[domain=-10:10]
+\addplot[mark=none, samples=100, red] function {#1};
+\draw[ultra thin, gray] (axis cs:\pgfkeysvalueof{/pgfplots/xmin},0) -- (axis cs:\pgfkeysvalueof{/pgfplots/xmax},0);
+\draw[ultra thin, gray] (axis cs:0,\pgfkeysvalueof{/pgfplots/ymin}) -- (axis cs:0,\pgfkeysvalueof{/pgfplots/ymax});
+\end{axis}
+\end{tikzpicture}
+\caption{$f(x) = #1$}
+\end{figure}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Mean, variance \& standard deviation}
+\subsection{Sigma notation}
+For a set of $N$ observations ($x_1, x_2, ..., x_N$) we write the sum of the values as:
+\begin{equation*}
+\text{sum} = x_1 + x_2 + ... + x_N = \sum_{i=1}^{N}x_i
+\end{equation*}
+\subsection{Mean}
+The mean (usually denoted as $\mu$ or $\overline{x}$) is defined as the sum of the values divided by their count,
+and is therefore given by:
+\begin{equation*}
+\text{mean} = \mu = \overline{x} = \frac{\sum\limits_{i=1}^{N}x_i}{N}
+\end{equation*}
+\subsection{Variance and standard deviation}
+The mean is a measure of central tendency (as are other averages such as median or mode), but it is often also
+useful to have a measure of spread. The range (maximum minus minimum) is the simplest such measure, but only
+shows total spread of values not how they are distributed. It might therefore be tempting to calculate a ``typical'' spread as the mean
+deviation of values from the mean, but unfortunately this always evaluates to zero:
+\begin{align*}
+\text{deviation from mean} &= \Delta_i = x_i - \overline{x} \\
+\text{mean deviation from mean} &= \frac{\sum\limits_{i=1}^{N}\Delta_i}{N} \\
+                                &= \frac{\sum\limits_{i=1}^{N}(x_i - \overline{x})}{N} \\
+                                &= \frac{\sum\limits_{i=1}^{N}x_i}{N} - \overline{x} \\
+                                &= \overline{x} - \overline{x} \\
+                                &= 0
+\end{align*}
+This is because the sum of positive deviations equates to the sum of negative deviations and
+the two cancel out. To make all the
+deviation measures positive we can square them before summing, so we define variance as the mean squared
+deviation from the mean:
+\begin{equation*}
+\text{variance} = \frac{\sum\limits_{i=1}^{N}(x_i - \overline{x})^2}{N}
+\end{equation*}
+Unfortunately that means that the units of variance are the square of the units of $x_i$, e.g. if the observations
+were of people's height in metres, the variance would be in square metres (area!). We therefore define standard
+deviation as the root mean squared deviation from the mean:
+\begin{equation*}
+\text{standard deviation} = \sigma = \sqrt{\frac{\sum\limits_{i=1}^{N}(x_i - \overline{x})^2}{N}}
+\end{equation*}
+We can therefore denote variance as $\sigma^2$, and can simplify its calculation as follows:
+\begin{align*}
+\sigma^2 &= \frac{\sum\limits_{i=1}^{N}(x_i - \overline{x})^2}{N} \\
+         &= \frac{\sum\limits_{i=1}^{N}(x_i^2 - 2\overline{x}x_i + \overline{x}^2)}{N} \\
+         &= \frac{\sum\limits_{i=1}^{N}x_i^2}{N} - 2\overline{x}\frac{\sum\limits_{i=1}^{N}x_i}{N} + \overline{x}^2 \\
+         &= \overline{x^2} - 2\overline{x}^2 + \overline{x}^2 \\
+         &= \overline{x^2} - \overline{x}^2
+\end{align*}
+
+\section{The Normal Distribution}
+\subsection{Derivation}
+We know instinctively, or by observation, that many naturally occurring measurements cluster
+around a typical value, with higher or lower values becoming less and less frequent as they
+become more extreme. What might the mathematical description for such a ``bell-shaped curve''
+look like?
+
+Let us consider various functions, $f(x)$, and take a step-wise approach to finding a suitable
+one, starting with the simplest possibility: $f(x) = x$:
+
+\myplot{x}
+
+This has two obvious errors: (a) it is not symmetrical, and (b) it goes negative. Both of these
+can be solved by using $f(x) = x^2$:
+
+\myplot{x^2}
+
+\end{document}

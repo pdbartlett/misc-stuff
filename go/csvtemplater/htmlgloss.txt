@@ -2,8 +2,8 @@
  <body>
   <dl>
 @@@
-   <dt>$1</dt>
-   <dd>$2</dd>
+   <dt>{{ index . 0 }}</dt>
+   <dd>{{ index . 1 }}</dd>
 @@@
   </dl>
  </body>

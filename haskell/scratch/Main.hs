@@ -1,3 +1,10 @@
-module Main (main) where
-fac n = if n < 2 then 1 else n * fac (n - 1)
-main = print (fac 6)
+{-# LANGUAGE TypeApplications #-}
+module Main where
+import Data.IORef
+readWriteRef :: IO Int
+readWriteRef = do
+  myRef <- newIORef @Int 0
+  writeIORef myRef 7
+  readIORef myRef
+main :: IO ()
+main = readWriteRef >>= print
