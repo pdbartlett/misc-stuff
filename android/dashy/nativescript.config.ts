@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'uk.co.justdabbling.dashy',
+  id: 'org.nativescript.dashy',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {
