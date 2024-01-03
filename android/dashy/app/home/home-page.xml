@@ -5,6 +5,6 @@
     </ActionBar>
 
     <GridLayout>
-        <!-- Add your page content here -->
+        <HtmlView html="{{ htmlString }}" />
     </GridLayout>
 </Page>
