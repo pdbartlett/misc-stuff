@@ -1,9 +1,23 @@
 package signifo
 
-import "testing"
+import (
+  "net/http"
+  "testing"
+)
 
 func TestRun(t *testing.T) {
-  if err := new(Server).Run(); err != nil {
-    t.Errorf("Run(): want=nil; got=%v", err)
+  port := ":3006"
+  ch := new(Server).Run(port)
+  url := "http://localhost" + port + "/" + QQQ
+  _, err := http.Get(url)
+  if err != nil {
+    t.Errorf("http.Get(%s): unexpected error %v", url, err)
+  }
+  err, ok := <-ch
+  if err != nil {
+    t.Errorf("unexpected error read from channel%v", err)
+  }
+  if ok {
+    t.Errorf("expected channel to be closed")
   }
 }

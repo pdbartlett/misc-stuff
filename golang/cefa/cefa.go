@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-  if err := new(signifo.Server).Run(); err != nil {
-    log.Fatalf("Server.Run() failed with %v", err)
+  for err := range  new(signifo.Server).Run(":2305") {
+    log.Printf("ERROR: %v", err)
   }
-  log.Println("Exiting normally")
+  log.Println("Exiting...")
 }
