@@ -2,6 +2,7 @@ package signifo
 
 import (
   "embed"
+  "fmt"
   "log"
   "net/http"
 )
@@ -17,8 +18,8 @@ type Server struct {}
 
 func (s *Server) Run(addr string) <-chan error {
   ch := make(chan error)
-  http.Handle("/static/", http.FileServerFS(staticFS))
-  http.HandleFunc(QQQ, func(w http.ResponseWriter, _ *http.Request) {
+  http.Handle(get("/static/"), http.FileServerFS(staticFS))
+  http.HandleFunc(post(QQQ), func(w http.ResponseWriter, _ *http.Request) {
     w.Write([]byte("Exiting..."))
     close(ch)
   })
@@ -37,10 +38,6 @@ type loggingResponseWriter struct {
   statusCode int
 }
 
-func NewLoggingResponseWriter(w http.ResponseWriter) *loggingResponseWriter {
-  return &loggingResponseWriter{w, http.StatusOK}
-}
-
 func (lrw *loggingResponseWriter) WriteHeader(code int) {
   lrw.statusCode = code
   lrw.ResponseWriter.WriteHeader(code)
@@ -49,8 +46,16 @@ func (lrw *loggingResponseWriter) WriteHeader(code int) {
 func loggingHandler() http.Handler {
   return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     log.Printf("<--- %s %s %s", r.RemoteAddr, r.Method, r.URL)
-    lrw := NewLoggingResponseWriter(w)
+    lrw := &loggingResponseWriter{w, http.StatusOK}
     http.DefaultServeMux.ServeHTTP(lrw, r)
     log.Printf("---> %s %s %s (%d)", r.RemoteAddr, r.Method, r.URL, lrw.statusCode)
   })
+}
+
+func get(path string) string {
+  return fmt.Sprintf("GET %s", path)
+}
+
+func post(path string) string {
+  return fmt.Sprintf("POST %s", path)
 }

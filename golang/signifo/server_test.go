@@ -2,16 +2,17 @@ package signifo
 
 import (
   "net/http"
+  "net/url"
   "testing"
 )
 
 func TestRun(t *testing.T) {
   port := ":3006"
   ch := new(Server).Run(port)
-  url := "http://localhost" + port + QQQ
-  _, err := http.Get(url)
+  path := "http://localhost" + port + QQQ
+  _, err := http.PostForm(path, make(url.Values))
   if err != nil {
-    t.Errorf("http.Get(%s): unexpected error %v", url, err)
+    t.Errorf("http.Post(%s): unexpected error %v", path, err)
   }
   err, ok := <-ch
   if err != nil {
