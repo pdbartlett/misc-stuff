@@ -8,7 +8,7 @@ import (
 
 func TestRun(t *testing.T) {
   port := ":3006"
-  ch := new(Server).Run(port)
+  ch := new(Server).RunAsync(port)
   path := "http://localhost" + port + QQQ
   _, err := http.PostForm(path, make(url.Values))
   if err != nil {
