@@ -10,5 +10,5 @@ func main() {
   for err := range  new(signifo.Server).Run(":2305") {
     log.Printf("ERROR: %v", err)
   }
-  log.Println("Exiting...")
+  log.Println("Exiting")
 }
