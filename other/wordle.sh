@@ -21,5 +21,5 @@ if [ -n "${PATT}" ]; then
   mv wordle.tmp2 wordle.tmp
 fi
 
-cat wordle.tmp
+column <wordle.tmp
 rm wordle.tmp
