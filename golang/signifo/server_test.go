@@ -8,7 +8,7 @@ import (
 func TestRun(t *testing.T) {
   port := ":3006"
   ch := new(Server).Run(port)
-  url := "http://localhost" + port + "/" + QQQ
+  url := "http://localhost" + port + QQQ
   _, err := http.Get(url)
   if err != nil {
     t.Errorf("http.Get(%s): unexpected error %v", url, err)
