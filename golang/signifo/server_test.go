@@ -12,11 +12,11 @@ func TestRun(t *testing.T) {
   path := "http://localhost" + port + QQQ
   _, err := http.PostForm(path, make(url.Values))
   if err != nil {
-    t.Errorf("http.Post(%s): unexpected error %v", path, err)
+    t.Errorf("http.Post(%s): unexpected error: %v", path, err)
   }
   err, ok := <-ch
   if err != nil {
-    t.Errorf("unexpected error read from channel%v", err)
+    t.Errorf("unexpected error read from channel: %v", err)
   }
   if ok {
     t.Errorf("expected channel to be closed")
