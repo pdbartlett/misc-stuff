@@ -13,13 +13,13 @@ struct Rank(u8);
 
 fn make_rank(ch: char) -> Rank {
     Rank(match ch {
-        '2'...'9' => (ch as u8) - ('0' as u8),
+        '2'..='9' => (ch as u8) - ('0' as u8),
         'T' => 10,
         'J' => 11,
         'Q' => 12,
         'K' => 13,
         'A' => 14,
-        _   => panic!(format!("Unexpected rank: {:?}", ch)),
+        _   => panic!("Unexpected rank: {:?}", ch),
     })
 }
 
