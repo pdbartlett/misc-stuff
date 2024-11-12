@@ -4,45 +4,48 @@ subtitle: Middle range order in amorphous red phosporus
 author: Paul D. Bartlett
 date: last-modified
 date-format: long
-format: 
+format:
   titlepage-pdf:
+    keep-tex: true
     documentclass: report
     classoption: ["a4paper"]
     number-sections: true
     titlepage: classic-lined
     titlepage-theme:
-      elements: ["\\headerblock", "\\vfill", "\\titleblock",
+      elements: [
+        "\\headerblock", "\\vfill", "\\titleblock",
         "\\authorblock", "\\dateblock", "\\vfill",
-        "\\footerblock"]
+        "\\footerblock"
+      ]
     titlepage-header: |
       Submitted for the degree of Bachelor of Arts \
       University of Cambridge Natural Sciences Tripos
     titlepage-footer: |
-      Department of Condensed Matter Physics \
-      Cavendish Laboratory, Cambridge
+      Theory of Condensed Matter Department \
+      Cavendish Laboratory \
+      Cambridge
     include-in-header:
       - text: |
           \usepackage{tcolorbox}
 filters:
   - latex-environment
 environments: [abstract,center,tcolorbox]
+commands: [pagenumbering,tableofcontents,thispagestyle]
 ---
 
-::: {.abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-elementum tellus eu lacus tempus viverra. Donec velit ligula,
-viverra vitae porta ut, commodo vel ex. Phasellus lacinia urna
-vel mi tincidunt, nec sagittis nisi efficitur. Phasellus libero
-nisi, consectetur ac pulvinar sed, porttitor ac leo. Phasellus
-finibus cursus metus non aliquam. Morbi ac malesuada neque. Ut
-lectus velit, feugiat vel fringilla ut, lacinia quis justo. Ut
-ligula lorem, euismod eget tempus eu, volutpat eget leo.
+[plain]{.thispagestyle}
 
-Fusce sed dolor sem. Duis porta pulvinar lectus, ac gravida leo
-cursus ac. Phasellus convallis maximus sem id tristique.
+[roman]{.pagenumbering}
+
+::: abstract
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum tellus eu lacus tempus viverra. Donec velit ligula, viverra vitae porta ut, commodo vel ex. Phasellus lacinia urna vel mi tincidunt, nec sagittis nisi efficitur. Phasellus libero nisi, consectetur ac pulvinar sed, porttitor ac leo. Phasellus finibus cursus metus non aliquam. Morbi ac malesuada neque. Ut lectus velit, feugiat vel fringilla ut, lacinia quis justo. Ut ligula lorem, euismod eget tempus eu, volutpat eget leo.
+
+Fusce sed dolor sem. Duis porta pulvinar lectus, ac gravida leo cursus ac. Phasellus convallis maximus sem id tristique.
 :::
 
-\tableofcontents
+[]{.tableofcontents}
+
+[arabic]{.pagenumbering}
 
 # Quarto
 
@@ -56,13 +59,13 @@ Quarto enables you to weave together content and executable code into a finished
 
 The following text should be centred:
 
-::: {.center}
+::: center
 Foo, bar, baz!
 :::
 
 And then back to normal again, but the next should be pretty:
 
-::: {.tcolorbox}
+::: tcolorbox
 Helllloooo!
 :::
 

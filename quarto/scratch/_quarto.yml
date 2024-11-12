@@ -1,5 +1,4 @@
 project:
   title: "scratch"
 
-editor: visual
-
+editor: source
