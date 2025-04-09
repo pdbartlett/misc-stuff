@@ -75,10 +75,8 @@ function psgrep() {
 }
 
 # Homebrew (first, so installed tools are visible)
-if [[ -d "${HOME}/homebrew" ]]; then
-  PATH="${HOME}/homebrew/sbin:${HOME}/homebrew/bin:${PATH}"
-fi
 if qwhich brew; then
+  PATH=$(brew --prefix)/sbin:$(brew --prefix)/bin:${PATH}
   export HOMEBREW_AUTO_UPDATE_SECS=14400
   export HOMEBREW_CLEANUP_MAX_AGE_DAYS=28
   export HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS=7
@@ -169,8 +167,22 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # Micromamba
 if qwhich micromamba; then
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE="$(brew --prefix)/opt/micromamba/bin/micromambar";
+export MAMBA_ROOT_PREFIX="${HOME}/micromamba";
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
   alias mm='micromamba'
   alias mmu='micromamba update'
+  export MM_DEF=data
+  micromamba activate ${MM_DEF}
 fi
 
 # Node / npm
@@ -227,9 +239,9 @@ function utd() {
     cua --yes
   fi
   if qwhich micromamba; then
-    banner 'micromamba'
-    mmu -a
-    echo "Installed: $(python -V)\nAvailable:"
+    banner "micromamba (${MM_DEF})"
+    mmu -an ${MM_DEF}
+    echo "Installed: $(python3 -V)\nAvailable:"
     mm search python -v 2>/dev/null | \
       egrep '^\s+(python )?3\.1[3-9]\.[0-9]+\s' | \
       sed 's/ python//'
@@ -276,22 +288,6 @@ function utd() {
   fi
   banner "Up-to-date as of $(date)"
 }
-
-if qwhich micromamba; then
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/Users/pdbartlett/homebrew/opt/micromamba/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/Users/pdbartlett/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-  micromamba activate data
-fi
 
 # Tidy up path
 PATH="${PATH}:${HOME}/bin"
