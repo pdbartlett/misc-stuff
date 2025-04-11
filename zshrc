@@ -75,8 +75,15 @@ function psgrep() {
 }
 
 # Homebrew (first, so installed tools are visible)
+for d in "/opt" "${HOME}"; do
+  local maybe="${d}/homebrew/bin/brew"
+  if [[ -x "${maybe}" ]]; then
+    local prefix="$(${maybe} --prefix)"
+    PATH="${prefix}/sbin":"${prefix}/bin":$PATH
+    break
+  fi
+done
 if qwhich brew; then
-  PATH=$(brew --prefix)/sbin:$(brew --prefix)/bin:${PATH}
   export HOMEBREW_AUTO_UPDATE_SECS=14400
   export HOMEBREW_CLEANUP_MAX_AGE_DAYS=28
   export HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS=7
@@ -169,7 +176,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 if qwhich micromamba; then
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="$(brew --prefix)/opt/micromamba/bin/micromambar";
+export MAMBA_EXE="$(brew --prefix)/opt/micromamba/bin/micromamba";
 export MAMBA_ROOT_PREFIX="${HOME}/micromamba";
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
