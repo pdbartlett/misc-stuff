@@ -99,6 +99,9 @@ if qwhich brew; then
     . $(brew --prefix)/etc/bash_completion
   fi
 fi
+if [[ -d /opt/homebrew/opt/curl/lib/pkgconfig ]]; then
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"
+fi
 
 # "Alternatives"
 if qwhich bat; then
@@ -197,6 +200,11 @@ if qwhich nodenv; then
   eval "$(nodenv init -)"
 fi
 
+# R
+if qwhich R; then
+  alias R='R --no-save'
+fi
+
 # Rbenv
 if qwhich rbenv; then
   eval "$(rbenv init -)"
@@ -266,9 +274,9 @@ function utd() {
   fi
   if qwhich R; then
     banner 'R'
-    R -q -e 'update.packages(ask=F, repos="https://cran.ma.imperial.ac.uk/")'
+    R -q -e 'update.packages(ask=F)'
     #R -q -e 'withr::with_makevars(c(OBJCXXFLAGS = "${CXX17STD}"), \
-    #         update.packages(ask=F, repos="https://cran.ma.imperial.ac.uk/"))'
+    #         update.packages(ask=F))'
   fi
   if qwhich rbenv; then
     banner 'rbenv'
