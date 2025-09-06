@@ -1,0 +1,2 @@
+#!gdi
+Hello, World!
