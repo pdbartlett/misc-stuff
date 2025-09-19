@@ -261,7 +261,7 @@ function utd() {
     cua --yes
   fi
   if qwhich micromamba; then
-    for e in data disc; do
+    for e in disc data; do
       banner "micromamba ($e)"
       mm activate "$e"
       mmu -a
