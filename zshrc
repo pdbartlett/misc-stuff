@@ -298,10 +298,6 @@ function utd() {
     rbenv versions
     (rbenv version | grep -qv system) && gem update
   fi
-  if qwhich rustup; then
-    banner 'rustup'
-    rustup update
-  fi
   local here="$(pwd)"
   local root="${HOME}/src"
   if [[ -d $root ]]; then
