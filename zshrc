@@ -217,6 +217,12 @@ if qwhich rbenv; then
   eval "$(rbenv init -)"
 fi
 
+# rustup
+if qwhich rustup; then
+  # homebrew installs rustup as kegonly, so add it to path ahead of brew itself
+  PATH="$(brew --prefix rustup)/bin:$PATH"
+fi
+
 # Scala
 if qwhich scala; then export SBT_OPTS='-XX:MaxPermSize=128M -Xmx8192M'; fi
 
@@ -297,6 +303,10 @@ function utd() {
     echo 'Installed:'
     rbenv versions
     (rbenv version | grep -qv system) && gem update
+  fi
+  if qwhich rustup; then
+    banner 'rustup'
+    rustup update
   fi
   local here="$(pwd)"
   local root="${HOME}/src"
