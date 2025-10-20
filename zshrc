@@ -273,7 +273,7 @@ function utd() {
       mmu -a
       echo "Installed: $(python3 -V)\nAvailable:"
       mm search python -v 2>/dev/null | \
-        egrep '^\s+(python )?3\.1[3-9]\.[0-9]+\s' | \
+        egrep '^\s+(python )?3\.1[4-9]\.[0-9]+\s' | \
         sed 's/ python//'
     done
   fi
