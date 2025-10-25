@@ -268,7 +268,7 @@ function utd() {
   if qwhich micromamba; then
     for e in $(ls "${HOME}/micromamba/envs"); do
       banner "micromamba ($e)"
-      mm env update "$e"
+      mm env update -n "$e"
     done
     banner "micromamba (current python)"
     echo "Installed: $(python3 -V)\nAvailable:"
