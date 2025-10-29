@@ -216,10 +216,13 @@ if qwhich rbenv; then
   eval "$(rbenv init -)"
 fi
 
-# rustup
+# rust / rustup / cargo
 if qwhich rustup; then
   # homebrew installs rustup as kegonly, so add it to path ahead of brew itself
   PATH="$(brew --prefix rustup)/bin:$PATH"
+fi
+if qwhich cargo; then
+  PATH="${PATH}:${HOME}/.cargo/bin"
 fi
 
 # Scala
