@@ -310,6 +310,10 @@ function utd() {
     banner 'rustup'
     rustup update
   fi
+  if qwhich cargo; then
+    banner 'cargo'
+    cargo install-update -a
+  fi
   local here="$(pwd)"
   local root="${HOME}/src"
   if [[ -d $root ]]; then
