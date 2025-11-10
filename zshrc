@@ -191,7 +191,8 @@ unset __mamba_setup
 # <<< mamba initialize <<<
   alias mm='micromamba'
   alias mmu='micromamba update'
-  micromamba activate data
+  export MM_ENV_DEFAULT=data
+  micromamba activate "${MM_ENV_DEFAULT}"
 fi
 
 # Node / npm / nodenv / nvm
@@ -271,9 +272,11 @@ function utd() {
   if qwhich micromamba; then
     for e in $(ls "${HOME}/micromamba/envs"); do
       banner "micromamba ($e)"
-      mm env update -n "$e"
+      mm activate "$e"
+      mmu -a
     done
-    banner "micromamba (current python)"
+    micromamba activate "${MM_ENV_DEFAULT}"
+    banner "micromamba (default env python)"
     echo "Installed: $(python3 -V)\nAvailable:"
     mm search python -v 2>/dev/null | \
       egrep '^\s+(python )?3\.1[4-9]\.[0-9]+\s' | \
