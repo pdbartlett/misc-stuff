@@ -1,72 +1,97 @@
-#![warn(clippy::all, rust_2018_idioms)]
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // hide console window on Windows in release
+use gloo_net::http::Request;
+use serde::Deserialize;
+use yew::prelude::*;
 
-// When compiling natively:
-#[cfg(not(target_arch = "wasm32"))]
-fn main() -> eframe::Result {
-    env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
-
-    let native_options = eframe::NativeOptions {
-        viewport: egui::ViewportBuilder::default()
-            .with_inner_size([400.0, 300.0])
-            .with_min_inner_size([300.0, 220.0])
-            .with_icon(
-                // NOTE: Adding an icon is optional
-                eframe::icon_data::from_png_bytes(&include_bytes!("../assets/icon-256.png")[..])
-                    .expect("Failed to load icon"),
-            ),
-        ..Default::default()
-    };
-    eframe::run_native(
-        "eframe template",
-        native_options,
-        Box::new(|cc| Ok(Box::new(pita::TemplateApp::new(cc)))),
-    )
+#[derive(Clone, PartialEq, Deserialize)]
+struct Video {
+  id: usize,
+  title: String,
+  speaker: String,
+  url: String,
 }
 
-// When compiling to web using trunk:
-#[cfg(target_arch = "wasm32")]
-fn main() {
-    use eframe::wasm_bindgen::JsCast as _;
+#[derive(Properties, PartialEq)]
+struct VideosListProps {
+  videos: Vec<Video>,
+  onclick: Callback<Video>,
+}
 
-    // Redirect `log` message to `console.log` and friends:
-    eframe::WebLogger::init(log::LevelFilter::Debug).ok();
+#[function_component(VideosList)]
+fn videos_list(VideosListProps { videos, onclick }: &VideosListProps) -> Html {
+  let onclick = onclick.clone();
+  videos.iter().map(|video| {
+    let on_video_click = {
+      let onclick = onclick.clone();
+      let video = video.clone();
+      Callback::from(move |_| {
+        onclick.emit(video.clone());
+      })
+    };
+    html! {
+      <p onclick={on_video_click}>{format!("{}: {}", video.speaker, video.title)}</p>
+    }
+  }).collect()
+}
 
-    let web_options = eframe::WebOptions::default();
+#[derive(Properties, PartialEq)]
+struct VideosDetailsProps {
+  video: Video,
+}
 
-    wasm_bindgen_futures::spawn_local(async {
-        let document = web_sys::window()
-            .expect("No window")
-            .document()
-            .expect("No document");
+#[function_component(VideoDetails)]
+fn video_details(VideosDetailsProps { video }: &VideosDetailsProps) -> Html {
+  html! {
+    <div>
+      <h3>{ video.title.clone() }</h3>
+      <img src="https://placehold.co/640x360.png?text=Video+Player+Placeholder" alt="video thumbnail" />
+    </div>
+  }
+}
 
-        let canvas = document
-            .get_element_by_id("the_canvas_id")
-            .expect("Failed to find the_canvas_id")
-            .dyn_into::<web_sys::HtmlCanvasElement>()
-            .expect("the_canvas_id was not a HtmlCanvasElement");
-
-        let start_result = eframe::WebRunner::new()
-            .start(
-                canvas,
-                web_options,
-                Box::new(|cc| Ok(Box::new(pita::TemplateApp::new(cc)))),
-            )
-            .await;
-
-        // Remove the loading text and spinner:
-        if let Some(loading_text) = document.get_element_by_id("loading_text") {
-            match start_result {
-                Ok(_) => {
-                    loading_text.remove();
-                }
-                Err(e) => {
-                    loading_text.set_inner_html(
-                        "<p> The app has crashed. See the developer console for details. </p>",
-                    );
-                    panic!("Failed to start eframe: {e:?}");
-                }
-            }
-        }
+#[function_component(App)]
+pub fn app() -> Html {
+  let videos = use_state(|| vec![]);
+  {
+    let videos = videos.clone();
+    use_effect_with((), move |_| {
+      let videos = videos.clone();
+      wasm_bindgen_futures::spawn_local(async move {
+        let fetched_videos: Vec<Video> = Request::get("/tutorial/data.json")
+          .send()
+          .await
+          .unwrap()
+          .json()
+          .await
+          .unwrap();
+        videos.set(fetched_videos);
+      });
+      || ()
     });
+  }  
+  let selected_video = use_state(|| None);
+  let on_video_click = {
+    let selected_video = selected_video.clone();
+    Callback::from(move |video: Video| {
+        selected_video.set(Some(video))
+    })
+  };
+  let details = selected_video.as_ref().map(|video| html! {
+    <VideoDetails video={video.clone()} />
+  });
+  html! {
+    <>
+      <h1>{ "RustConf Explorer" }</h1>
+      <div>
+        <h3>{"Videos to watch"}</h3>
+        <VideosList videos={(*videos).clone()} onclick={on_video_click} />
+      </div>
+      <div>
+        {for details}
+      </div>
+    </>
+  }
+}
+
+fn main() {
+    yew::Renderer::<App>::new().render();
 }
