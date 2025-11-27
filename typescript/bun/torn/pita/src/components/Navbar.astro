@@ -1,6 +1,11 @@
 ---
 import Navitem from "./Navitem.astro";
 import Settings from "./Settings";
+
+interface Props {
+  page: string  // Current page name
+}
+
 const { page } = Astro.props;
 ---
 

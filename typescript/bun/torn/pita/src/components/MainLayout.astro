@@ -1,6 +1,14 @@
 ---
 import "../components/main.scss"
 import Navbar from "../components/Navbar.astro"
+
+interface Props {
+	page: string		  // Page name
+	title: string			// (optional) Page title (uses name by default)
+	subtitle: string	// (optional) Page subtitle (omit by default)
+	blurb: string			// (optional) "Blurb" text (omit by default)
+}
+
 const { page, title="", subtitle, blurb } = Astro.props;
 ---
 
@@ -18,8 +26,8 @@ const { page, title="", subtitle, blurb } = Astro.props;
 				<div class="hero is-small is-info m-4">
 					<div class="hero-body">
 						<h1 class="title">{ title || page }</h1>
-						<h2 class="subtitle">{ subtitle }</h2>
-						<div set:html={blurb} />
+						{ subtitle && <h2 class="subtitle">{ subtitle }</h2> }
+						{ blurb && <div set:html={blurb} /> }
 					</div>
 				</div>
 			</section>
