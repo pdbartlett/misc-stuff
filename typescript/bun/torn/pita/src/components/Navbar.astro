@@ -7,12 +7,13 @@ interface Props {
 }
 
 const { page } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <div class="container">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">🌆 PITA!</a>
+      <Navitem page="🌆 PITA!" href="/" current="neverselect" />
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">

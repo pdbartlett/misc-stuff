@@ -5,5 +5,11 @@ import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact()]
+  site: "https://pdbartlett.github.io/pita",
+  base: "/pita",
+  trailingSlash: "never",
+  integrations: [preact()],
+  build: {
+    assets: "genfiles"
+  }
 });
