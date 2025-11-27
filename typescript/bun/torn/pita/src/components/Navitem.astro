@@ -1,0 +1,4 @@
+---
+const { page, href = "#", current = "" } = Astro.props;
+---
+<a class:list={["navbar-item", {"is-selected": current == page}]} href={href}>{page}</a>

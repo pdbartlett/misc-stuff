@@ -1,0 +1,23 @@
+---
+import Navitem from "./Navitem.astro";
+import Settings from "./Settings";
+const { page } = Astro.props;
+---
+
+<div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">🌆 PITA!</a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <Navitem page="Home" href="/" current={page} />
+        <Navitem page="Faction" href="/faction" current={page} />
+        <Navitem page="War" href="/war" current={page} />
+      </div>
+      <div class="navbar-end">
+        <Settings />
+      </div>
+    </div>
+  </nav>
+</div>

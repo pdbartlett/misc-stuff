@@ -1,0 +1,31 @@
+---
+import "../components/main.scss"
+import Navbar from "../components/Navbar.astro"
+const { page, title="", subtitle, blurb } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>PITA: {page}</title>
+	</head>
+	<body>
+    <Navbar page={page}/>
+    <main>
+			<section class="container">
+				<div class="hero is-small is-info m-4">
+					<div class="hero-body">
+						<h1 class="title">{ title || page }</h1>
+						<h2 class="subtitle">{ subtitle }</h2>
+						<div set:html={blurb} />
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<slot />
+			</section>
+		</main>
+  </body>
+</html>
