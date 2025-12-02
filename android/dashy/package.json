@@ -11,7 +11,7 @@
     "@nativescript/android": "8.6.2",
     "@nativescript/preview-cli": "1.0.12",
     "@nativescript/types": "~8.6.0",
-    "@nativescript/webpack": "~5.0.18",
+    "@nativescript/webpack": "~5.0.25",
     "typescript": "~5.2.0"
   }
 }
