@@ -9,15 +9,14 @@ interface Props {
 const { page } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
-
 <div class="container">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <Navitem page="🌆 PITA!" href="/" current="neverselect" />
+      <Navitem page="🌆 PITA!" href="" current="neverselect" />
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">
-        <Navitem page="Home" href="/" current={page} />
+        <Navitem page="Home" href="" current={page} />
         <Navitem page="Faction" href="/faction" current={page} />
         <Navitem page="War" href="/war" current={page} />
       </div>

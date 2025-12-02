@@ -7,6 +7,6 @@ interface Props {
 
 const { page, href = "#", current = "" } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const the_href = base+href || "/";
 ---
-<a class:list={["navbar-item", {"is-selected": current == page}]}
-   href={base+href}>{page}</a>
+<a class:list={["navbar-item", {"is-selected": current == page}]} href={the_href}>{page}</a>

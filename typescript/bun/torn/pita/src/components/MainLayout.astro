@@ -3,37 +3,33 @@ import "../components/main.scss"
 import Navbar from "../components/Navbar.astro"
 
 interface Props {
-	page: string		  // Page name
-	title: string			// (optional) Page title (uses name by default)
-	subtitle: string	// (optional) Page subtitle (omit by default)
-	blurb: string			// (optional) "Blurb" text (omit by default)
+	page: string		   // Page name
+	title?: string		 // (optional) Page title (uses name by default)
+	subtitle?: string	 // (optional) Page subtitle (omit by default)
+	blurb?: string		 // (optional) Blurb text as HTML (omit by default)
 }
 
-const { page, title="", subtitle, blurb } = Astro.props;
+const { page, title, subtitle, blurb } = Astro.props;
+const the_title = title || page;
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>PITA: {page}</title>
+		<title>PITA: {the_title}</title>
 	</head>
 	<body>
     <Navbar page={page}/>
-    <main>
-			<section class="container">
-				<div class="hero is-small is-info m-4">
-					<div class="hero-body">
-						<h1 class="title">{ title || page }</h1>
-						{ subtitle && <h2 class="subtitle">{ subtitle }</h2> }
-						{ blurb && <div set:html={blurb} /> }
-					</div>
+    <main class="container">
+			<div class="hero is-small is-info m-4">
+				<div class="hero-body">
+					<h1 class="title">{ the_title }</h1>
+					{ subtitle && <h2 class="subtitle">{ subtitle }</h2> }
+					{ blurb && <div set:html={blurb} /> }
 				</div>
-			</section>
-			<section class="container">
-				<slot />
-			</section>
+			</div>
+ 			<slot />
 		</main>
   </body>
 </html>

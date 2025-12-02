@@ -1,7 +1,7 @@
 ---
+import Cell from "../components/Cell.astro";
 import MainLayout from "../components/MainLayout.astro"
 ---
-
 <MainLayout page="Home" title="PITA!" subtitle="Paul's Inconceivable Torn App"
     blurb=`
 			<p>Welcome to PITA! This home page is a summary of your current status, along
@@ -10,5 +10,12 @@ import MainLayout from "../components/MainLayout.astro"
 			<p>And you use the other tabs to dive deeper into	more specific information!</p>
 		`
 >
-  <p>...</p>
+	<div class="grid is-col-min-20">
+		<Cell title="Example 1">TODO...</Cell>
+		<Cell title="Example 2">TODO...</Cell>
+		<Cell title="Example 3">TODO...</Cell>
+		<Cell title="Example 4">TODO...</Cell>
+		<Cell title="Example 5">TODO...</Cell>
+		<Cell title="Example 6">TODO...</Cell>
+	</div>
 </MainLayout>
