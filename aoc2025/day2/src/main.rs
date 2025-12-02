@@ -18,14 +18,14 @@ fn main() -> Result<()> {
       for n in start..=end {
         let s = n.to_string();
         let c = s.len();
-        if c % 2 == 0 {
-          let (lhs, rhs) = s.split_at(c/2);
-          if lhs == rhs { password1 += n; }
-        }
-        for i in 1..=c/2 {
+        for i in 2..=c {
           if c % i == 0 {
-            let part = &s[..i];
-            if s == part.repeat(c/i) { password2 += n; break; }
+            let part = &s[..c/i];
+            if s == part.repeat(i) {
+              if i == 2 { password1 += n; }
+              password2 += n;
+              break;
+            }
           }
         }
       }
