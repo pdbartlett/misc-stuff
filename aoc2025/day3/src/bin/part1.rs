@@ -1,4 +1,4 @@
-use anyhow::{anyhow, bail, Context, Result};
+use anyhow::{bail, Context, Result};
 use std::env;
 use std::fs;
 
@@ -11,20 +11,19 @@ fn main() -> Result<()> {
       .context(format!("Failed to read from file '{}'", args[1]))?;
   let mut password: u64 = 0;
   for line in data.trim().lines() {
-    let mut first: char = '0';
+    let mut first = b'0';
     let n = line.len();
-    for c in line.chars().take(n-1) {
+    for c in line.bytes().take(n-1) {
       if c > first { first = c; }
-      if c == '9' { break; }
+      if c == b'9' { break; }
     }
-    let mut second: char = '0';
-    let (_, rest) = line.split_once(first)
-        .ok_or(anyhow!("This shouldn't happen!"))?;
-    for c in rest.chars() {
+    let rest = line.bytes().skip_while(|&c| c != first);
+    let mut second = b'0';
+    for c in rest {
       if c > second { second = c; }
-      if c == '9' { break; }
-    }
-    let jolts = 10u8 * (first as u8 - '0' as u8) + (second as u8 - '0' as u8);
+      if c == b'9' { break; }
+    } 
+    let jolts = 10u8 * (first - b'0') + second - b'0';
     password += jolts as u64;
   }
   println!("Password is {}", password);

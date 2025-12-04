@@ -17,13 +17,12 @@ fn main() -> Result<()> {
       let n = s.len();
       let mut hi = s[1..].to_string();
       for i in 1..n {
-        let dropi= format!("{}{}", s[..i].to_string(), s[i+1..].to_string());
+        let dropi = format!("{}{}", &s[..i], &s[i+1..]);
         if dropi > hi { hi = dropi; }
       }
       s = hi;
     }
-    let n: u64 = s.parse().context(format!("Failed to parse {} as number", s))?;
-    password += n;
+    password += s.parse::<u64>()?;
   }
   println!("Password is {}", password);
   Ok(())
