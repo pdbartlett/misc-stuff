@@ -4,11 +4,11 @@ use std::env;
 use std::fs;
 
 fn main() -> Result<()> {
-  let args: Vec<String> = env::args().collect();
+  let args = env::args().collect::<Vec<_>>();
   if args.len() != 2 {
     bail!("Usage: {} <path>", args[0]);
   }
-  let data = fs::read_to_string(args[1].clone())
+  let data = fs::read_to_string(&args[1])
       .context(format!("Failed to read from file '{}'", args[1]))?;
   let mut grid = data.lines().map(|x| x.bytes().collect::<Vec<_>>()).collect::<Vec<_>>();
   let rows: i32 = grid.len().try_into()?;

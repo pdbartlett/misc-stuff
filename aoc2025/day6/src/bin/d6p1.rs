@@ -2,20 +2,20 @@ use anyhow::{anyhow, bail, Context, Result};
 use std::{env, fs};
 
 fn main() -> Result<()> {
-  let args: Vec<String> = env::args().collect();
+  let args = env::args().collect::<Vec<_>>();
   if args.len() != 2 {
     bail!("Usage: {} <path>", args[0]);
   }
-  let data = fs::read_to_string(args[1].clone())
+  let data = fs::read_to_string(&args[1])
       .context(format!("Failed to read from file '{}'", args[1]))?;
   let lines = data.lines().collect::<Vec<_>>();
   let mut nums: Vec<Vec<u128>> = vec!();
   for cell in lines[0].split_ascii_whitespace() {
     nums.push(vec!(cell.parse()?));
   }
-  for i in 1..lines.len()-1 {
-    for (j, cell) in lines[i].split_ascii_whitespace().enumerate() {
-      nums[j].push(cell.parse()?);
+  for line in lines.iter().skip(1).take(lines.len()-2) {
+    for (i, cell) in line.split_ascii_whitespace().enumerate() {
+      nums[i].push(cell.parse()?);
     }
   }
   let mut results: Vec<u128> = vec!();
@@ -23,7 +23,7 @@ fn main() -> Result<()> {
     results.push(match cell {
         "+" => nums[i].iter().sum(),
         "*" => nums[i].iter().product(),
-        op@_ => return Err(anyhow!("Unexpected operator: {}", op)),
+        op => return Err(anyhow!("Unexpected operator: {}", op)),
     })
   }
   println!("Password is {}", results.iter().sum::<u128>());

@@ -20,11 +20,11 @@ impl fmt::Display for Fresh {
 }
 
 fn main() -> Result<()> {
-  let args: Vec<String> = env::args().collect();
+  let args = env::args().collect::<Vec<_>>();
   if args.len() != 2 {
     bail!("Usage: {} <path>", args[0]);
   }
-  let data = fs::read_to_string(args[1].clone())
+  let data = fs::read_to_string(&args[1])
       .context(format!("Failed to read from file '{}'", args[1]))?;
   let mut lines = data.lines();
   let mut checks: Vec<Fresh> = vec!();
