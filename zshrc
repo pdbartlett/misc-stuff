@@ -56,6 +56,9 @@ export RCNAME=zshrc
 export RCPATH="${HOME}/.${RCNAME}"
 alias edrc="${EDITOR} ${RCPATH} && source ${RCPATH}"
 
+# Development
+export SCCACHE_CACHE_SIZE="10G"
+
 # Misc. aliases
 alias wordle="${HOME}/src/misc-stuff/other/wordle.sh"
 
