@@ -291,7 +291,8 @@ function utd() {
   fi
   if qwhich npm; then
     banner 'npm'
-    npm update
+    npm outdated -g
+    npm update -g
   fi
   if qwhich R; then
     banner 'R'
