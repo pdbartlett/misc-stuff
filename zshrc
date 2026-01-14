@@ -330,6 +330,10 @@ function utd() {
     gitall status -s
     cd "${here}"
   fi
+  if qwhich nvm; then
+    banner "nvm (info only)"
+    nvm ls
+  fi
   banner "Up-to-date as of $(date)"
 }
 
