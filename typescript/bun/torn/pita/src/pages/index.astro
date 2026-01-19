@@ -1,21 +1,17 @@
 ---
-import Cell from "../components/Cell.astro";
-import MainLayout from "../components/MainLayout.astro"
+// src/pages/index.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import TestCounter from '../components/TestCounter';
 ---
-<MainLayout page="Home" title="PITA!" subtitle="Paul's Inconceivable Torn App"
-    blurb=`
-			<p>Welcome to PITA! This home page is a summary of your current status, along
-			with some of the things you could do right now, with links to the suggested
-			sequence of actions.</p>
-			<p>And you use the other tabs to dive deeper into	more specific information!</p>
-		`
->
-	<div class="grid is-col-min-20">
-		<Cell title="Example 1">TODO...</Cell>
-		<Cell title="Example 2">TODO...</Cell>
-		<Cell title="Example 3">TODO...</Cell>
-		<Cell title="Example 4">TODO...</Cell>
-		<Cell title="Example 5">TODO...</Cell>
-		<Cell title="Example 6">TODO...</Cell>
-	</div>
+
+<MainLayout title="Torn Dashboard">
+    <h1 class="text-4xl font-bold mb-6 text-accent">System Check</h1>
+    
+    <div class="grid gap-4 w-full max-w-md">
+        <div class="alert alert-success">
+            <span>✅ Layouts & Tailwind are working!</span>
+        </div>
+
+        <TestCounter client:load />
+    </div>
 </MainLayout>

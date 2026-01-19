@@ -1,15 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-import preact from '@astrojs/preact';
+import react from '@astrojs/react';
+
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pdbartlett.github.io/pita",
-  base: "/pita",
-  trailingSlash: "never",
-  integrations: [preact()],
-  build: {
-    assets: "genfiles"
+  integrations: [react()],
+
+  vite: {
+    plugins: [tailwindcss()]
   }
 });

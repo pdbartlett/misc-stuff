@@ -1,0 +1,27 @@
+---
+// src/layouts/MainLayout.astro
+
+import '../styles/global.css'
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Torn Companion App" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-base-100 text-base-content min-h-screen">
+		<div class="container mx-auto p-4">
+            <slot />
+		</div>
+	</body>
+</html>
