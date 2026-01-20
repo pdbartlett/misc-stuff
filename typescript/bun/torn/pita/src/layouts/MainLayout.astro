@@ -1,8 +1,9 @@
 ---
-// src/layouts/MainLayout.astro
+import Settings from '../components/Settings.tsx';
 
-import '../styles/global.css'
-
+// This check runs server-side. It reads from localStorage-backed store,
+// so it will be empty on first build. The client-side logic handles the real check.
+// We use a script to ensure the check happens client-side before rendering.
 interface Props {
 	title: string;
 }
@@ -10,18 +11,41 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Torn Companion App" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-base-100 text-base-content min-h-screen">
-		<div class="container mx-auto p-4">
-            <slot />
-		</div>
+	<body>
+    <div id="app-wrapper" class="invisible">
+      <slot />
+    </div>
+    
+    <div id="settings-wrapper" class="invisible min-h-screen flex items-center justify-center bg-base-200">
+        <Settings client:only="react" />
+    </div>
+
+    <script>
+      // This script runs immediately on the client
+      import { apiKeys } from '../lib/store';
+      import { theme } from '../lib/store';
+
+      // Set theme on initial load
+      const currentTheme = theme.get().name;
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      // Check for API key and toggle visibility
+      const tornApiKey = apiKeys.get().torn;
+      if (tornApiKey) {
+        document.getElementById('app-wrapper').classList.remove('invisible');
+      } else {
+        document.getElementById('settings-wrapper').classList.remove('invisible');
+      }
+    </script>
 	</body>
 </html>

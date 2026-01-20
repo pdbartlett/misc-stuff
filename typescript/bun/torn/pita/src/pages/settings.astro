@@ -1,0 +1,10 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Settings from '../components/Settings.tsx';
+---
+
+<MainLayout title="Settings">
+	<main class="container mx-auto p-4 flex justify-center items-center min-h-screen">
+		<Settings client:only="react" />
+	</main>
+</MainLayout>

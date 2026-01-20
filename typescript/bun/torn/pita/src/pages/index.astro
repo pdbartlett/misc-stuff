@@ -1,17 +1,21 @@
 ---
-// src/pages/index.astro
 import MainLayout from '../layouts/MainLayout.astro';
-import TestCounter from '../components/TestCounter';
+import { Icon } from 'astro-icon/components';
+import { IndexPage } from '../components/IndexPage';
 ---
 
-<MainLayout title="Torn Dashboard">
-    <h1 class="text-4xl font-bold mb-6 text-accent">System Check</h1>
-    
-    <div class="grid gap-4 w-full max-w-md">
-        <div class="alert alert-success">
-            <span>✅ Layouts & Tailwind are working!</span>
-        </div>
-
-        <TestCounter client:load />
+<MainLayout title="Torn Companion">
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl">Torn App</a>
     </div>
+    <div class="flex-none">
+      <a href="/settings" class="btn btn-square btn-ghost">
+        <Icon name="mdi:cog" class="w-6 h-6" />
+      </a>
+    </div>
+  </div>
+	<main class="container mx-auto p-4">
+    <IndexPage client:only="react" />
+	</main>
 </MainLayout>
