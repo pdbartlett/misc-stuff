@@ -1,0 +1,15 @@
+[Unit]
+Description=Discord Bot: %I
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/discord/%I
+ExecStart=/usr/bin/python3 bot.py
+Restart=on-failure
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
