@@ -45,21 +45,26 @@ class Info(commands.Cog):
         if key and key in car_choices:
             reply = f'For {track.title()} I would use {car_choices[key]}.'
         else:
-            reply = "\n".join([f"{key}: {value}" for key, value in car_choices.items()])
+            reply = "\n".join([f"{key.replace('_', ' ').title()}: {value}" for key, value in car_choices.items()])
         reply += "\n\nBased on forum post: https://www.torn.com/forums.php#/p=threads&f=61&t=16411662&b=0&a=0&start=0&to=24971759"
         await interaction.response.send_message(reply)
 
 
 class MyBot(commands.Bot):
-    def __init__(self):
+    def __init__(self, torn_api_key: str): # Accept the key on init
         super().__init__(
             command_prefix=commands.when_mentioned_or(),
             intents=discord.Intents.default()
         )
+        self.torn_api_key = torn_api_key # Attach it to the bot instance
 
     async def setup_hook(self):
         logger.info("Loading Cogs...")
+        # Load your local Info cog
         await self.add_cog(Info(self))
+
+        # Load the new separate file (prices.py)
+        await self.load_extension("prices")
 
         logger.info("Syncing application commands with Discord...")
         await self.tree.sync()
@@ -69,9 +74,15 @@ class MyBot(commands.Bot):
         logger.info(f'Logged in as {self.user}')
 
 if __name__ == "__main__":
+    # Load your Discord token
     with open('.token', 'r') as file:
-        token = file.read().strip()
+        discord_token = file.read().strip()
 
-    bot = MyBot()
-    bot.run(token, log_handler=None)
+    # Load your Torn API key
+    with open('.torn_apikey', 'r') as file:
+        torn_key = file.read().strip()
+
+    # Pass the key into the bot
+    bot = MyBot(torn_api_key=torn_key)
+    bot.run(discord_token, log_handler=None)
 
