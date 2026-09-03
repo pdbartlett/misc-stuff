@@ -14,6 +14,7 @@ class Prices(commands.Cog):
         # 1. Static dictionary purely for fuzzy matching
         self.aliases = {
             "bct": "business class ticket",
+            "beer": "bottle of beer",
             "dp": "donator pack",
             "edvd": "erotic dvd",
             "fak": "first aid kit",
