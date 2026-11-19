@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+set -o errexit
+set -o nounset
+
+for repo in "${HOME}/src/github/"*/; do
+  [ -d "${repo}" ] || continue
+  (
+    set -o xtrace
+    git -C "${repo}" "$@"
+  )
+done
+
